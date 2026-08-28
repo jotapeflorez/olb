@@ -1400,6 +1400,20 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856905117",
+    "ref": "240095941GE2",
+    "nombre": "Garantía Extendida   H M200DI 2 Años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905118",
+    "ref": "240095932GE1",
+    "nombre": "Garantía Extendida   H M300DI 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856903692",
     "ref": "240093783GE2",
     "nombre": "Garantía Extendida  Altus 1250I 2 años",
@@ -1410,6 +1424,20 @@
     "id": "856905115",
     "ref": "240095931GE2",
     "nombre": "Garantía Extendida  H M150DI 2 Años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905116",
+    "ref": "240095941GE1",
+    "nombre": "Garantía Extendida  H M200DI 1 Año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905120",
+    "ref": "240095933GE1",
+    "nombre": "Garantía Extendida  H M400DI 1 año",
     "marca": "Mademsa",
     "categoria": "Garantía"
   },
@@ -3654,9 +3682,37 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856905122",
+    "ref": "240095942GE1",
+    "nombre": "Garantía Extendida H M100DI 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905123",
+    "ref": "240095942GE2",
+    "nombre": "Garantía Extendida H M100DI 2 Años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856905114",
     "ref": "240095931GE1",
     "nombre": "Garantía Extendida H M150DI 1 Año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905119",
+    "ref": "240095932GE2",
+    "nombre": "Garantía Extendida H M300DI 2 Años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905121",
+    "ref": "240095933GE2",
+    "nombre": "Garantía Extendida H M400DI 2 Años",
     "marca": "Mademsa",
     "categoria": "Garantía"
   },

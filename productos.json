@@ -5,7 +5,7 @@
     "nombre": "Centrífuga Mademsa 5Kg Carga Superior con Boquilla Antiderrame Primma 5N Blanca",
     "marca": "Mademsa",
     "categoria": "Centrifugas",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/186438-800-800/01---Centrifuga-Mademsa-Frontal-PRIMMA-5N-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/186439-800-800/02---Centrifuga-Mademsa-Hero-Image-PRIMMA-5N-1500px-jpg.png",
@@ -39,6 +39,20 @@
       "https://electroluxcl.vteximg.com.br/arquivos/ids/191329-800-800/04---AA-Split-Electrolux-Principal-Sellos-EAIX09G5MABXW-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/191330-800-800/05---AA-Split-Electrolux-Dimensiones-EAIX09G5MABXW-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/191331-800-800/02---AA-Split-Electrolux-Principal-Exterior-EAIX09G5MABXW-1500px.jpg"
+    ]
+  },
+  {
+    "id": "793400000",
+    "ref": "240077934",
+    "nombre": "Aire Acondicionado Portátil Electrolux 12.000 BTUs Frío/Calor Modo Turbo",
+    "marca": "Electrolux",
+    "categoria": "Climatización",
+    "disponible": true,
+    "imagenes": [
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/188915-800-800/AA-PORTATIL-EAP12B5TSCRW-VISTA1.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/188916-800-800/02.--Aire-portatil-Electrolux-Dimensiones-EAP12B5TSCRW-2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/188917-800-800/AA-PORTATIL-EAP12B5TSCRW-VISTA5.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/188918-800-800/AA-PORTATIL-EAP12B5TSCRW-VISTA2.jpg"
     ]
   },
   {
@@ -238,6 +252,20 @@
     ]
   },
   {
+    "id": "856904053",
+    "ref": "926565423",
+    "nombre": "Cocina a Gas 4 Platos Electrolux Doble Horno, Parrillas Hierro Fundido y PerfectCook F4EDB Negra",
+    "marca": "Electrolux",
+    "categoria": "Cocina",
+    "disponible": false,
+    "imagenes": [
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198808-800-800/01.--Cocina-4-platos-Electrolux-F4EDB-Principal--1200px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198809-800-800/03.--Cocina-4-platos-Electrolux-F4EDB-Principal-Sellos-1200px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198810-800-800/04.--Cocina-4-platos-Electrolux-F4EDB-Dimensiones-1200px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198811-800-800/07.--Cocina-4-platos-Electrolux-F4EDB-Superior-1200px.jpg"
+    ]
+  },
+  {
     "id": "856904547",
     "ref": "240094553+955117810",
     "nombre": "Cocina a Gas 4 Platos Mademsa FM4IP Negra + Hervidor Eléctrico Mademsa 1,8L MEK10 Acero Inoxidable",
@@ -313,12 +341,26 @@
     "nombre": "Cocina a Gas 4 platos Mademsa Horno a Vapor y Temporizador FM4TSC Silver",
     "marca": "Mademsa",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198911-800-800/01.--Cocina-a-gas-4-platos-Mademsa-FM4TSC-Principal--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198912-800-800/03.--Cocina-a-gas-4-platos-Mademsa-FM4TSC-Principal-Sellos-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198913-800-800/04.--Cocina-a-gas-4-platos-Mademsa-FM4TSC-Dimensiones-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198914-800-800/06.--Cocina-a-gas-4-platos-Mademsa-FM4TSC-Abierto-2000px.jpg"
+    ]
+  },
+  {
+    "id": "856904797",
+    "ref": "900276673",
+    "nombre": "Cocina a Gas 5 Platos Electrolux Efficient VaporBake, Triple Llama y Grill FE5SXC Inox",
+    "marca": "Electrolux",
+    "categoria": "Cocina",
+    "disponible": false,
+    "imagenes": [
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196638-800-800/01.--Cocina-a-Gas-5-Platos-Electrolux-Efficient-FE5SXC-Inox-Principal--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196639-800-800/03.--Cocina-a-Gas-5-Platos-Electrolux-Efficient-FE5SXC-Inox-Sellos-2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196640-800-800/04.--Cocina-a-Gas-5-Platos-Electrolux-Efficient-FE5SXC-Inox-Dimensiones-2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196641-800-800/06.--Cocina-a-Gas-5-Platos-Electrolux-Efficient-FE5SXC-Inox-Abierto-2000px.jpg"
     ]
   },
   {
@@ -341,7 +383,7 @@
     "nombre": "Cocina a Gas 5 Platos Electrolux Doble Horno, Parrillas Hierro Fundido y PerfectCook F5EDB Negra",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/199037-800-800/01.--Cocina-5-platos-Electrolux-F5EDB-Principal--1200px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/199038-800-800/03.--Cocina-5-platos-Electrolux-F5EDB-Principal-Sellos-1200px.jpg",
@@ -509,7 +551,7 @@
     "nombre": "Encimera a Gas 4 Platos Electrolux Experience Triple Llama y Parrilla Hierro Fundido KE4GC",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193332-800-800/01.--Encimera-4-platos-KE4GC-Electrolux-Principal---2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193333-800-800/03.--Encimera-4-platos-KE4GC-Electrolux-Principal-Sellos--2000px.jpg",
@@ -593,7 +635,7 @@
     "nombre": "Horno Empotrable Eléctrico Electrolux 50L Experience Air Fryer, PerfectCook360 y Panel Touch OE5EA",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/188603-800-800/01.--Horno-Empotrable-OE5EA---Electrolux-Principal---2000px-2000x2000.raw.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/188605-800-800/03.--Horno-Empotrable-OE5EA---Electrolux-Principal-Sellos--2000px-2000x2000.raw.jpg",
@@ -663,12 +705,26 @@
     "nombre": "Aspiradora Lava Tapiz y Alfombra Electrolux 1800W AcquaBoost Clean Azul ESC10",
     "marca": "Electrolux",
     "categoria": "Electrohogar",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198783-800-800/01.--Aspiradora-Lava-Tapiz-ESC10-Electrolux-Principal---1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198784-800-800/03.--Aspiradora-Lava-Tapiz-ESC10-Electrolux-Principal-Sellos--1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198785-800-800/04.--Aspiradora-Lava-Tapiz-ESC10-Electrolux-Dimensiones--1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198786-800-800/06.--Aspiradora-Lava-Tapiz-ESC10-Electrolux-Vista-trasera--1500px.jpg"
+    ]
+  },
+  {
+    "id": "856904374",
+    "ref": "900276838",
+    "nombre": "Batidora Planetaria Electrolux 5L 6 Velocidades 800W KMP70 Gris",
+    "marca": "Electrolux",
+    "categoria": "Electrohogar",
+    "disponible": true,
+    "imagenes": [
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198753-800-800/06.--Batidora-Planetaria-Electrolux-Lateral-KMP70-1500px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198754-800-800/03.--Batidora-Planetaria-Electrolux-Principal-Sellos-KMP70-1500px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198755-800-800/04.--Batidora-Planetaria-Electrolux-Dimensiones-KMP70-1500px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198756-800-800/05.--Batidora-Planetaria-Electrolux-Frontal-KMP70-1500px.jpg"
     ]
   },
   {
@@ -817,7 +873,7 @@
     "nombre": "Microondas Electrolux 31 Litros Digital Descongelamiento Asistido ME31N Negro",
     "marca": "Electrolux",
     "categoria": "Electrohogar",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187252-800-800/01.--MWO--Electrolux-Principal-ME31N-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187253-800-800/03.--MWO--Electrolux-Principal-Sellos-ME25N-1500px.jpg",
@@ -1064,6 +1120,20 @@
     ]
   },
   {
+    "id": "856904838",
+    "ref": "900081636",
+    "nombre": "Lavadora Automática Electrolux 16kg Carga Superior Inverter Disolución Máxima Jet&Clean EMTL16IO Onix",
+    "marca": "Electrolux",
+    "categoria": "Lavado",
+    "disponible": true,
+    "imagenes": [
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/197855-800-800/01.--Lavadora-carga-superior-EMTL16IO-Principal--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/197856-800-800/02.--Lavadora-carga-superior-EMTL16IO-Principal-Sellos-2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/197857-800-800/03.--Lavadora-carga-superior-EMTL16IO-Dimensiones-2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/197858-800-800/05.--Lavadora-carga-superior-EMTL16IO-Superior-2000px.jpg"
+    ]
+  },
+  {
     "id": "856904840",
     "ref": "900081639",
     "nombre": "Lavadora Automática Electrolux 18kg Carga Superior Inverter Disolución Máxima Jet&Clean EMTL18IB Negra",
@@ -1125,26 +1195,12 @@
     "nombre": "Lavadora Automática Fensa 18Kg Carga Superior Control Tiempo Premium Care 18SZ Gris",
     "marca": "Fensa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/184411-800-800/06.--Lavadora-Fensa-Superior-Abierta-Premium-Care-18SZ-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/184412-800-800/03.--Lavadora-Fensa-Medidas-Premium-Care-18SZ-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/184413-800-800/12.--Lavadora-Fensa-Ambientada-Premium-Care-18SZ-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/184414-800-800/05.--Lavadora-Fensa-Superior-Premium-Care-18SZ-1500px.png"
-    ]
-  },
-  {
-    "id": "856903282",
-    "ref": "240093819",
-    "nombre": "Lavadora Automática Fensa 21Kg Carga Superior Ahorro de Agua Premium Care 21 Negra",
-    "marca": "Fensa",
-    "categoria": "Lavado",
-    "disponible": true,
-    "imagenes": [
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/184512-800-800/07.--Lavadora-Fensa-abierta-zoom-PremiumCare-21-Black-1500px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/184513-800-800/03.--Lavadora-Fensa-Principal-Sellos-PremiumCare-21-Black-1500px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/184514-800-800/04.--Lavadora-Fensa-Dimensiones-PremiumCare-21-Black-1500px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/184515-800-800/11.--Lavadora-Fensa-ambientada-2-PremiumCare-21-Black-1500px.jpg"
     ]
   },
   {
@@ -1181,7 +1237,7 @@
     "nombre": "Lavadora Automática Mademsa 12Kg Carga Superior Fuzzy Automático 12 SZG Gris",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187670-800-800/04.--Lavadora-carga-superior-Mademsa-Superior-12SZG-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187671-800-800/03.--Lavadora-carga-superior-Mademsa-Medidas-12SZG-1500px.jpg",
@@ -1223,7 +1279,7 @@
     "nombre": "Lavadora Automática Mademsa 16Kg Carga Superior Dispensador Easy&Clean MDWMT16S Silver",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196378-800-800/06.--Lavadora-Mademsa-MDWMT16S-Electrolux-Superior--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196379-800-800/03.--Lavadora-Mademsa-MDWMT16S-Electrolux-Principal-Sellos--2000px.jpg",
@@ -1237,7 +1293,7 @@
     "nombre": "Lavadora Automática Mademsa 16Kg Carga Superior Dispensador Easy&Clean MDWMT16W Blanca",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196365-800-800/06.--Lavadora-Mademsa-MDWMT16W-Electrolux-Superior--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196366-800-800/03.--Lavadora-Mademsa-MDWMT16W-Electrolux-Principal-Sellos--2000px.jpg",
@@ -1335,7 +1391,7 @@
     "nombre": "Lavadora Automática Mademsa 21Kg Carga Superior Dispensador Easy&Clean MDWMT21O Ónix",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196430-800-800/06.--Lavadora-Mademsa-MDWMT21O-Electrolux-Superior--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196431-800-800/03.--Lavadora-Mademsa-MDWMT21O-Electrolux-Principal-Sellos-2000px.jpg",
@@ -1517,7 +1573,7 @@
     "nombre": "Secadora de Ropa Mademsa 9Kg Carga Frontal Secado Automático y Panel Digital 9D BZG PRO Blanca",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193882-800-800/01.--Secadora-Mademsa-9DBZG-PRO-Mademsa-Principal---2000px--1-.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193883-800-800/03.--Secadora-Mademsa-9DBZG-PRO-Mademsa-Principal-Sellos--2000px.jpg",
@@ -1531,7 +1587,7 @@
     "nombre": "Secadora de Ropa Mademsa 9kg Carga Frontal Secado Automático y Panel Digital 9D MZG PRO Gris",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193058-800-800/9DMZG_2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193059-800-800/03.--Secadora-Mademsa-9DBZG-PRO-Mademsa-Principal-Sellos--2331x3150px.jpg",
@@ -1831,6 +1887,20 @@
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198463-800-800/03.--Refrigerador-Mademsa-Principal-Sellos-A1250IN-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198464-800-800/04.--Refrigerador-Mademsa-Dimensiones-A1250IN-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198465-800-800/05.--Refrigerador-Mademsa-Abierto-A1250IN-1500px.jpg"
+    ]
+  },
+  {
+    "id": "856904420",
+    "ref": "900277016",
+    "nombre": "Refrigerador Mademsa 242L No Frost Top Freezer Inverter Altus 1250IS Silver",
+    "marca": "Mademsa",
+    "categoria": "Refrigeración",
+    "disponible": true,
+    "imagenes": [
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198440-800-800/01.--Refrigerador-Mademsa-Principal--A1250IS-1500px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198441-800-800/03.--Refrigerador-Mademsa-Principal-Sellos-A1250IS-1500px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198442-800-800/04.--Refrigerador-Mademsa-Dimensiones-A1250IS-1500px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/198443-800-800/05.--Refrigerador-Mademsa-Abierto-A1250IS-1500px.jpg"
     ]
   },
   {
