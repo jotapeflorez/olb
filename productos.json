@@ -257,7 +257,7 @@
     "nombre": "Cocina a Gas 4 Platos Electrolux Doble Horno, Parrillas Hierro Fundido y PerfectCook F4EDB Negra",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198808-800-800/01.--Cocina-4-platos-Electrolux-F4EDB-Principal--1200px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198809-800-800/03.--Cocina-4-platos-Electrolux-F4EDB-Principal-Sellos-1200px.jpg",
