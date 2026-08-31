@@ -5,7 +5,7 @@
     "nombre": "Centrífuga Mademsa 5Kg Carga Superior con Boquilla Antiderrame Primma 5N Blanca",
     "marca": "Mademsa",
     "categoria": "Centrifugas",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/186438-800-800/01---Centrifuga-Mademsa-Frontal-PRIMMA-5N-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/186439-800-800/02---Centrifuga-Mademsa-Hero-Image-PRIMMA-5N-1500px-jpg.png",
@@ -173,7 +173,7 @@
     "nombre": "Campana de Cocina Extractora Electrolux 60cm Alto Poder de Succión y Touch Panel DE6TB Negra",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193850-800-800/01.--Campana-Electrolux-Principal--DE6TB-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193851-800-800/03.--Campana-Electrolux-Principal-Sellos-DE6TB-2000px.jpg",
@@ -285,7 +285,7 @@
     "nombre": "Cocina a Gas 4 Platos Mademsa Horno a Vapor y Grill FM4FSC Inox",
     "marca": "Mademsa",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197181-800-800/Cooker_FM4FSC_Front_Mademsa_Spanish_2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197183-800-800/03.--Cocina-a-Gas-4-Platos-Mademsa-FM4FSC--Principal-Sellos-2000px.jpg",
@@ -383,7 +383,7 @@
     "nombre": "Cocina a Gas 5 Platos Electrolux Doble Horno, Parrillas Hierro Fundido y PerfectCook F5EDB Negra",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/199037-800-800/01.--Cocina-5-platos-Electrolux-F5EDB-Principal--1200px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/199038-800-800/03.--Cocina-5-platos-Electrolux-F5EDB-Principal-Sellos-1200px.jpg",
@@ -1237,7 +1237,7 @@
     "nombre": "Lavadora Automática Mademsa 12Kg Carga Superior Fuzzy Automático 12 SZG Gris",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187670-800-800/04.--Lavadora-carga-superior-Mademsa-Superior-12SZG-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187671-800-800/03.--Lavadora-carga-superior-Mademsa-Medidas-12SZG-1500px.jpg",
@@ -1391,7 +1391,7 @@
     "nombre": "Lavadora Automática Mademsa 21Kg Carga Superior Dispensador Easy&Clean MDWMT21O Ónix",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196430-800-800/06.--Lavadora-Mademsa-MDWMT21O-Electrolux-Superior--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196431-800-800/03.--Lavadora-Mademsa-MDWMT21O-Electrolux-Principal-Sellos-2000px.jpg",
@@ -1545,7 +1545,7 @@
     "nombre": "Lavadora Semi Automática Mademsa 9Kg Carga Superior Doble Tina MWMSAT9W Blanca",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198288-800-800/01-Lavadora-Semi-Automatica-9kg-Carga-Superior-MWMSAT9W-Blanca-Mademsa-Principal-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198289-800-800/03-Lavadora-Semi-Automatica-9kg-Carga-Superior-MWMSAT9W-Blanca-Mademsa-Principal-Sellos-2000px.jpg",
@@ -1839,7 +1839,7 @@
     "nombre": "Refrigerador Electrolux 590L No Frost 3 Puertas Inverter AutoSense LessWaste IM8B Negro",
     "marca": "Electrolux",
     "categoria": "Refrigeración",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187609-800-800/01.--Refrigerador-Electrolux-Principal--IM8B-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187610-800-800/03.--Refrigerador-Electrolux-Principal-Sellos-IM8B-1500px.jpg",
