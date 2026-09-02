@@ -355,7 +355,7 @@
     "nombre": "Cocina a Gas 5 Platos Electrolux Efficient VaporBake, Triple Llama y Grill FE5SXC Inox",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196638-800-800/01.--Cocina-a-Gas-5-Platos-Electrolux-Efficient-FE5SXC-Inox-Principal--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196639-800-800/03.--Cocina-a-Gas-5-Platos-Electrolux-Efficient-FE5SXC-Inox-Sellos-2000px.jpg",
@@ -369,7 +369,7 @@
     "nombre": "Cocina a Gas 5 Platos Electrolux Parrillas Hierro Fundido y PerfectCook F5EPB Negra",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198797-800-800/01.--Cocina-5-platos-Electrolux-F5EPB-Principal--1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198798-800-800/03.--Cocina-5-platos-Electrolux-F5EPB-Principal-Sellos-1500px.jpg",
@@ -403,20 +403,6 @@
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196609-800-800/03.--Cocina-a-gas-5-platos-Mademsa-FM5SSC--Principal-Sellos-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196610-800-800/04.--Cocina-a-gas-5-platos-Mademsa-FM5SSC--Dimensiones-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196611-800-800/06.--Cocina-a-gas-5-platos-Mademsa-FM5SSC--Abierto-2000px.jpg"
-    ]
-  },
-  {
-    "id": "856904811",
-    "ref": "900276669",
-    "nombre": "Cocina a Gas 6 Platos Mademsa Horno a Vapor y Parrillas Alambrón FM6LSC Inox",
-    "marca": "Mademsa",
-    "categoria": "Cocina",
-    "disponible": false,
-    "imagenes": [
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/197572-800-800/01.--Cocina-a-gas-6-platos-Mademsa-FM6LSC--Principal--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/197573-800-800/03.--Cocina-a-gas-6-platos-Mademsa-FM6LSC--Principal-Sellos-2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/197574-800-800/04.--Cocina-a-gas-6-platos-Mademsa-FM6LSC--Dimensiones-2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/197575-800-800/06.--Cocina-a-gas-6-platos-Mademsa-FM6LSC--Abierto-2000px.jpg"
     ]
   },
   {
@@ -789,7 +775,7 @@
     "nombre": "Kit Cafetera Eléctrica Mademsa 1,5L Proglamable 900W MCM30 Acero Inoxidable + Licuadora Portátil Mademsa con 2 velocidades y botellas 300W MBL30 Acero",
     "marca": "Mademsa",
     "categoria": "Electrohogar",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/190771-800-800/Novo-Projeto--6-.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/190772-800-800/03.--Cafetera-Mademsa-Principal-Sellos-MCM30-2000px.jpg",
@@ -1559,7 +1545,7 @@
     "nombre": "Secadora de Ropa Mademsa 7Kg Carga Frontal Secado Automático 7D BZG PRO Blanca",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193047-800-800/7DBZG_2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193048-800-800/03.--Secadora-Mademsa-7DBZG-PRO-Mademsa-Principal-Sellos--2000px.jpg",

@@ -1,5 +1,40 @@
 [
   {
+    "id": "856901421",
+    "ref": "240084418GE1",
+    "nombre": "Garantia Extendida  F 6000 T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901499",
+    "ref": "240084418GE2",
+    "nombre": "Garantia Extendida  F 6000 T 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901406",
+    "ref": "CA0002031GE1",
+    "nombre": "Garantia Extendida  FX U6160 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901483",
+    "ref": "CA0002031GE2",
+    "nombre": "Garantia Extendida  FX U6160 2 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905145",
+    "ref": "900277015GE1",
+    "nombre": "Garantia Extendida A1200IS 1 año",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856905136",
     "ref": "900277017GE1",
     "nombre": "Garantia Extendida A1250IN 1 año",
@@ -59,6 +94,13 @@
     "id": "856905139",
     "ref": "900276852GE1",
     "nombre": "Garantia Extendida ECM70 1 año",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905172",
+    "ref": "900276851GE1",
+    "nombre": "Garantia Extendida ECM90 1 año",
     "marca": "Electrolux",
     "categoria": "Garantía"
   },
@@ -126,9 +168,471 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856901444",
+    "ref": "240084440GE1",
+    "nombre": "Garantia Extendida F 1060N A 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901523",
+    "ref": "240084440GE2",
+    "nombre": "Garantia Extendida F 1060N A 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901445",
+    "ref": "240084441GE1",
+    "nombre": "Garantia Extendida F 1060R A 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901524",
+    "ref": "240084441GE2",
+    "nombre": "Garantia Extendida F 1060R A 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901416",
+    "ref": "240084411GE1",
+    "nombre": "Garantia Extendida F 2608 T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901494",
+    "ref": "240084411GE2",
+    "nombre": "Garantia Extendida F 2608 T 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901417",
+    "ref": "240087878GE1",
+    "nombre": "Garantia Extendida F 2808 T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901495",
+    "ref": "240087878GE2",
+    "nombre": "Garantia Extendida F 2808 T 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901419",
+    "ref": "240084415GE1",
+    "nombre": "Garantia Extendida F 3000 BT 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901497",
+    "ref": "240084415GE2",
+    "nombre": "Garantia Extendida F 3000 BT 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901420",
+    "ref": "240084416GE1",
+    "nombre": "Garantia Extendida F 3000 RT 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901498",
+    "ref": "240084416GE2",
+    "nombre": "Garantia Extendida F 3000 RT 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901422",
+    "ref": "240084419GE1",
+    "nombre": "Garantia Extendida F 6500 T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901500",
+    "ref": "240084419GE2",
+    "nombre": "Garantia Extendida F 6500 T 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901424",
+    "ref": "240085425GE1",
+    "nombre": "Garantia Extendida F GC60V A 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901502",
+    "ref": "240085425GE2",
+    "nombre": "Garantia Extendida F GC60V A 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901425",
+    "ref": "240085426GE1",
+    "nombre": "Garantia Extendida F GC75V A 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901503",
+    "ref": "240085426GE2",
+    "nombre": "Garantia Extendida F GC75V A 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901426",
+    "ref": "240084434GE1",
+    "nombre": "Garantia Extendida FCE 4.3HF T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901504",
+    "ref": "240084434GE2",
+    "nombre": "Garantia Extendida FCE 4.3HF T 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901427",
+    "ref": "240084435GE1",
+    "nombre": "Garantia Extendida FCE 4HF T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901505",
+    "ref": "240084435GE2",
+    "nombre": "Garantia Extendida FCE 4HF T 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901418",
+    "ref": "240087876GE1",
+    "nombre": "Garantia Extendida FCR 91+ T 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901496",
+    "ref": "240087876GE2",
+    "nombre": "Garantia Extendida FCR 91+ T 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901423",
+    "ref": "240077896GE1",
+    "nombre": "Garantia Extendida FEV 2T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901501",
+    "ref": "240077896GE2",
+    "nombre": "Garantia Extendida FEV 2T 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901428",
+    "ref": "240068085GE1",
+    "nombre": "Garantia Extendida FEV 3T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901506",
+    "ref": "240068085GE2",
+    "nombre": "Garantia Extendida FEV 3T 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901429",
+    "ref": "240068087GE1",
+    "nombre": "Garantia Extendida FEV 4T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901507",
+    "ref": "240068087GE2",
+    "nombre": "Garantia Extendida FEV 4T 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901409",
+    "ref": "240085617GE1",
+    "nombre": "Garantia Extendida FG 7770 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901486",
+    "ref": "240085617GE2",
+    "nombre": "Garantia Extendida FG 7770 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901446",
+    "ref": "240081069GE1",
+    "nombre": "Garantia Extendida FHE-1130M 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901525",
+    "ref": "240081069GE2",
+    "nombre": "Garantia Extendida FHE-1130M 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901447",
+    "ref": "240081068GE1",
+    "nombre": "Garantia Extendida FHE-1190T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901526",
+    "ref": "240081068GE2",
+    "nombre": "Garantia Extendida FHE-1190T 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901438",
+    "ref": "240081741GE1",
+    "nombre": "Garantia Extendida FHK 1050 ECO 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901516",
+    "ref": "240081741GE2",
+    "nombre": "Garantia Extendida FHK 1050 ECO 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901405",
+    "ref": "240078307GE1",
+    "nombre": "Garantia Extendida FX 6270 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901482",
+    "ref": "240078307GE2",
+    "nombre": "Garantia Extendida FX 6270 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901407",
+    "ref": "CA0002032GE1",
+    "nombre": "Garantia Extendida FX U6190 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901484",
+    "ref": "CA0002032GE2",
+    "nombre": "Garantia Extendida FX U6190 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901410",
+    "ref": "240081070GE1",
+    "nombre": "Garantia Extendida FX-5200 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901487",
+    "ref": "240081070GE2",
+    "nombre": "Garantia Extendida FX-5200 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901408",
+    "ref": "240087728GE1",
+    "nombre": "Garantia Extendida FXD 6465 L 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901485",
+    "ref": "240087728GE2",
+    "nombre": "Garantia Extendida FXD 6465 L 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856903577",
     "ref": "240091800GE1",
     "nombre": "Garantia Extendida GEXT1 DQ79SU 240091800GE1",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902001",
+    "ref": "S135000710GE1",
+    "nombre": "Garantia Extendida GEXT1 ERGO 21 1 ano",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902124",
+    "ref": "240086651GE1",
+    "nombre": "Garantia Extendida GEXT1 EXPERIENCE CARE 14 SZ 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856903482",
+    "ref": "240093807GE1",
+    "nombre": "Garantia Extendida GEXT1 F 5300 T 240093807GE1",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901565",
+    "ref": "240084444GE1",
+    "nombre": "Garantia Extendida GEXT1 FCE 2HF GL T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902133",
+    "ref": "240087091GE1",
+    "nombre": "Garantia Extendida GEXT1 FTI4S 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901573",
+    "ref": "240087163GE1",
+    "nombre": "Garantia Extendida GEXT1 HOR Z100D 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901574",
+    "ref": "240087164GE1",
+    "nombre": "Garantia Extendida GEXT1 HOR Z150D 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901575",
+    "ref": "240087165GE1",
+    "nombre": "Garantia Extendida GEXT1 HOR Z200D 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901576",
+    "ref": "240087166GE1",
+    "nombre": "Garantia Extendida GEXT1 HOR Z250D 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901577",
+    "ref": "240087167GE1",
+    "nombre": "Garantia Extendida GEXT1 HOR Z300D 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901578",
+    "ref": "240087168GE1",
+    "nombre": "Garantia Extendida GEXT1 HOR Z400D 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902131",
+    "ref": "240087916GE1",
+    "nombre": "Garantia Extendida GEXT1 IB45S 1 ano",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902132",
+    "ref": "240087917GE1",
+    "nombre": "Garantia Extendida GEXT1 IB55S 1 año",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902128",
+    "ref": "240088523GE1",
+    "nombre": "Garantia Extendida GEXT1 IE6LP 1 ano",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902121",
+    "ref": "240085598GE1",
+    "nombre": "Garantia Extendida GEXT1 IF32W 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856903443",
+    "ref": "240089495GE1",
+    "nombre": "Garantia Extendida GEXT1 IF43B 240089495GE1",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902135",
+    "ref": "240086647GE1",
+    "nombre": "Garantia Extendida GEXT1 MADEMSA 14C BZG 1 ano",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902137",
+    "ref": "240089403GE1",
+    "nombre": "Garantia Extendida GEXT1 MMB 91 BLK 1 ano",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902003",
+    "ref": "S135000724GE1",
+    "nombre": "Garantia Extendida GEXT1 MYSTIQUE 1 ano",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901567",
+    "ref": "240086037GE1",
+    "nombre": "Garantia Extendida GEXT1 PREMIUM CARE 12 SZ 1 año",
     "marca": "Fensa",
     "categoria": "Garantía"
   },
@@ -147,10 +651,80 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856901599",
+    "ref": "240086036GE1",
+    "nombre": "Garantia Extendida GEXT1 PREMIUM CARE 95 SZ 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902122",
+    "ref": "240086684GE1",
+    "nombre": "Garantia Extendida GEXT1 PREMIUM CARE PRO 18 BLACK 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902123",
+    "ref": "240086685GE1",
+    "nombre": "Garantia Extendida GEXT1 PREMIUM CARE PRO 21 BLACK 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901568",
+    "ref": "240086483GE1",
+    "nombre": "Garantia Extendida GEXT1 PREMIUM CARE PRO 9D 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902000",
+    "ref": "S135000779GE1",
+    "nombre": "Garantia Extendida GEXT1 PT10 1 ano",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902129",
+    "ref": "240089855GE1",
+    "nombre": "Garantia Extendida GEXT1 Perfect Care 21X 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902130",
+    "ref": "240087092GE1",
+    "nombre": "Garantia Extendida GEXT1 RTI4S 1 ano",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902127",
+    "ref": "240087727GE1",
+    "nombre": "Garantia Extendida GEXT1 SFX440B 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856902125",
     "ref": "240087725GE1",
     "nombre": "Garantia Extendida GEXT1 SFX530 1 año",
     "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902126",
+    "ref": "240087726GE1",
+    "nombre": "Garantia Extendida GEXT1 SFX530B 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902119",
+    "ref": "S135000785GE1",
+    "nombre": "Garantia Extendida GEXT1 STK15 1 ano",
+    "marca": "Electrolux",
     "categoria": "Garantía"
   },
   {
@@ -161,9 +735,142 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856902007",
+    "ref": "S135000710GE2",
+    "nombre": "Garantia Extendida GEXT2 ERGO 21 2 anos",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902146",
+    "ref": "240086651GE2",
+    "nombre": "Garantia Extendida GEXT2 EXPERIENCE CARE 14 SZ 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856903518",
     "ref": "240093807GE2",
     "nombre": "Garantia Extendida GEXT2 F 5300 T 240093807GE2",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901582",
+    "ref": "240084444GE2",
+    "nombre": "Garantia Extendida GEXT2 FCE 2HF GL T 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902155",
+    "ref": "240087091GE2",
+    "nombre": "Garantia Extendida GEXT2 FTI4S 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901590",
+    "ref": "240087163GE2",
+    "nombre": "Garantia Extendida GEXT2 HOR Z100D 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901591",
+    "ref": "240087164GE2",
+    "nombre": "Garantia Extendida GEXT2 HOR Z150D 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901592",
+    "ref": "240087165GE2",
+    "nombre": "Garantia Extendida GEXT2 HOR Z200D 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901593",
+    "ref": "240087166GE2",
+    "nombre": "Garantia Extendida GEXT2 HOR Z250D 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901594",
+    "ref": "240087167GE2",
+    "nombre": "Garantia Extendida GEXT2 HOR Z300D 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901595",
+    "ref": "240087168GE2",
+    "nombre": "Garantia Extendida GEXT2 HOR Z400D 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902153",
+    "ref": "240087916GE2",
+    "nombre": "Garantia Extendida GEXT2 IB45S 2 anos",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902154",
+    "ref": "240087917GE2",
+    "nombre": "Garantia Extendida GEXT2 IB55S 2 años",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902150",
+    "ref": "240088523GE2",
+    "nombre": "Garantia Extendida GEXT2 IE6LP 2 anos",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902143",
+    "ref": "240085598GE2",
+    "nombre": "Garantia Extendida GEXT2 IF32W 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856903454",
+    "ref": "240089495GE2",
+    "nombre": "Garantia Extendida GEXT2 IF43B 240089495GE2",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902156",
+    "ref": "240086647GE2",
+    "nombre": "Garantia Extendida GEXT2 MADEMSA 14C BZG 2 anos",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902158",
+    "ref": "240089403GE2",
+    "nombre": "Garantia Extendida GEXT2 MMB 91 BLK 2 anos",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902009",
+    "ref": "S135000724GE2",
+    "nombre": "Garantia Extendida GEXT2 MYSTIQUE 2 anos",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901584",
+    "ref": "240086037GE2",
+    "nombre": "Garantia Extendida GEXT2 PREMIUM CARE 12 SZ 2 años",
     "marca": "Fensa",
     "categoria": "Garantía"
   },
@@ -182,9 +889,205 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856901600",
+    "ref": "240086036GE2",
+    "nombre": "Garantia Extendida GEXT2 PREMIUM CARE 95 SZ 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902144",
+    "ref": "240086684GE2",
+    "nombre": "Garantia Extendida GEXT2 PREMIUM CARE PRO 18 BLACK 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902145",
+    "ref": "240086685GE2",
+    "nombre": "Garantia Extendida GEXT2 PREMIUM CARE PRO 21 BLACK 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901585",
+    "ref": "240086483GE2",
+    "nombre": "Garantia Extendida GEXT2 PREMIUM CARE PRO 9D 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902006",
+    "ref": "S135000779GE2",
+    "nombre": "Garantia Extendida GEXT2 PT10 2 anos",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902151",
+    "ref": "240089855GE2",
+    "nombre": "Garantia Extendida GEXT2 Perfect Care 21X 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902152",
+    "ref": "240087092GE2",
+    "nombre": "Garantia Extendida GEXT2 RTI4S 2 anos",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902149",
+    "ref": "240087727GE2",
+    "nombre": "Garantia Extendida GEXT2 SFX440B 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902147",
+    "ref": "240087725GE2",
+    "nombre": "Garantia Extendida GEXT2 SFX530 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902148",
+    "ref": "240087726GE2",
+    "nombre": "Garantia Extendida GEXT2 SFX530B 2 años",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856902141",
+    "ref": "S135000785GE2",
+    "nombre": "Garantia Extendida GEXT2 STK15 2 anos",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901448",
+    "ref": "240080848GE1",
+    "nombre": "Garantia Extendida LAV EUROPE 9W 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901527",
+    "ref": "240080848GE2",
+    "nombre": "Garantia Extendida LAV EUROPE 9W 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901449",
+    "ref": "240081596GE1",
+    "nombre": "Garantia Extendida LAV PREM 11W 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901528",
+    "ref": "240081596GE2",
+    "nombre": "Garantia Extendida LAV PREM 11W 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901450",
+    "ref": "240084175GE1",
+    "nombre": "Garantia Extendida LAV PREM CARE 14 SZ 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901529",
+    "ref": "240084175GE2",
+    "nombre": "Garantia Extendida LAV PREM CARE 14 SZ 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901451",
+    "ref": "240084176GE1",
+    "nombre": "Garantia Extendida LAV PREM CARE 16 SZ 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901530",
+    "ref": "240084176GE2",
+    "nombre": "Garantia Extendida LAV PREM CARE 16 SZ 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901452",
+    "ref": "240084177GE1",
+    "nombre": "Garantia Extendida LAV PREM CARE 18 SZ 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901531",
+    "ref": "240084177GE2",
+    "nombre": "Garantia Extendida LAV PREM CARE 18 SZ 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901453",
+    "ref": "240084178GE1",
+    "nombre": "Garantia Extendida LAV PREM CARE 20 SZ 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856901532",
     "ref": "240084178GE2",
     "nombre": "Garantia Extendida LAV PREM CARE 20 SZ 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901454",
+    "ref": "240084172GE1",
+    "nombre": "Garantia Extendida LAV PREM CARE PRO 16 X 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901533",
+    "ref": "240084172GE2",
+    "nombre": "Garantia Extendida LAV PREM CARE PRO 16 X 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901455",
+    "ref": "240084173GE1",
+    "nombre": "Garantia Extendida LAV PREM CARE PRO 18 X 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901534",
+    "ref": "240084173GE2",
+    "nombre": "Garantia Extendida LAV PREM CARE PRO 18 X 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901456",
+    "ref": "240084174GE1",
+    "nombre": "Garantia Extendida LAV PREM CARE PRO 21 X 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901535",
+    "ref": "240084174GE2",
+    "nombre": "Garantia Extendida LAV PREM CARE PRO 21 X 2 años",
     "marca": "Fensa",
     "categoria": "Garantía"
   },
@@ -196,9 +1099,114 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856901537",
+    "ref": "240081598GE2",
+    "nombre": "Garantia Extendida LAVA-SECA PERFECT 11WD 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856901457",
     "ref": "240081597GE1",
     "nombre": "Garantia Extendida LAVA-SECA PERFECT 8WD 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901536",
+    "ref": "240081597GE2",
+    "nombre": "Garantia Extendida LAVA-SECA PERFECT 8WD 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901459",
+    "ref": "240085001GE1",
+    "nombre": "Garantia Extendida LAVA-SECA ULTIMATE 11WD 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901538",
+    "ref": "240085001GE2",
+    "nombre": "Garantia Extendida LAVA-SECA ULTIMATE 11WD 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901460",
+    "ref": "240079492GE1",
+    "nombre": "Garantia Extendida LVAJILLAS EUROPE 9770 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901539",
+    "ref": "240079492GE2",
+    "nombre": "Garantia Extendida LVAJILLAS EUROPE 9770 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901461",
+    "ref": "240083019GE1",
+    "nombre": "Garantia Extendida ME3EP 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901540",
+    "ref": "240083019GE2",
+    "nombre": "Garantia Extendida ME3EP 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905138",
+    "ref": "900277052GE1",
+    "nombre": "Garantia Extendida MTS60 1 año",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905156",
+    "ref": "900276923GE1",
+    "nombre": "Garantia Extendida MWMSAT6W 1 año",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905137",
+    "ref": "900277050GE1",
+    "nombre": "Garantia Extendida MWMSAT9W 1 año",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901462",
+    "ref": "240078822GE1",
+    "nombre": "Garantia Extendida NMDO25S5GCRG 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901541",
+    "ref": "240078822GE2",
+    "nombre": "Garantia Extendida NMDO25S5GCRG 2  años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901463",
+    "ref": "240078823GE1",
+    "nombre": "Garantia Extendida NMDO30S5GCRG 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901542",
+    "ref": "240078823GE2",
+    "nombre": "Garantia Extendida NMDO30S5GCRG 2 anos",
     "marca": "Fensa",
     "categoria": "Garantía"
   },
@@ -217,9 +1225,142 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856901467",
+    "ref": "240076894GE1",
+    "nombre": "Garantia Extendida REF 3100 PLUS 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901546",
+    "ref": "240076894GE2",
+    "nombre": "Garantia Extendida REF 3100 PLUS 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901465",
+    "ref": "240079997GE1",
+    "nombre": "Garantia Extendida REF ADVAN PLUS 7790 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901544",
+    "ref": "240079997GE2",
+    "nombre": "Garantia Extendida REF ADVAN PLUS 7790 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901466",
+    "ref": "240083911GE1",
+    "nombre": "Garantia Extendida REF DB60S 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856901545",
     "ref": "240083911GE2",
     "nombre": "Garantia Extendida REF DB60S 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901469",
+    "ref": "240081714GE1",
+    "nombre": "Garantia Extendida REF DF56S 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901548",
+    "ref": "240081714GE2",
+    "nombre": "Garantia Extendida REF DF56S 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901470",
+    "ref": "240082465GE1",
+    "nombre": "Garantia Extendida REF DM64S 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901549",
+    "ref": "240082465GE2",
+    "nombre": "Garantia Extendida REF DM64S 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901471",
+    "ref": "240081628GE1",
+    "nombre": "Garantia Extendida REF DQ79S 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901550",
+    "ref": "240081628GE2",
+    "nombre": "Garantia Extendida REF DQ79S 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901476",
+    "ref": "240085599GE1",
+    "nombre": "Garantia Extendida REF IF35E 1 ano",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901555",
+    "ref": "240085599GE2",
+    "nombre": "Garantia Extendida REF IF35E 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901481",
+    "ref": "240081600GE1",
+    "nombre": "Garantia Extendida SECADORA PREMIUM 9D 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901560",
+    "ref": "240081600GE2",
+    "nombre": "Garantia Extendida SECADORA PREMIUM 9D 2 anos",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901924",
+    "ref": "240087724GE1",
+    "nombre": "Garantia Extendida SFX440 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901925",
+    "ref": "240087724GE2",
+    "nombre": "Garantia Extendida SFX440 2 años",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901478",
+    "ref": "240076909GE1",
+    "nombre": "Garantia Extendida SIDE BY SIDE SFX550 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901557",
+    "ref": "240076909GE2",
+    "nombre": "Garantia Extendida SIDE BY SIDE SFX550 2 años",
     "marca": "Fensa",
     "categoria": "Garantía"
   },
@@ -301,9 +1442,30 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856901054",
+    "ref": "240085495GE1",
+    "nombre": "Garantía Extendida (10 ECO GL) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901170",
+    "ref": "240085495GE2",
+    "nombre": "Garantía Extendida (10 ECO GL) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856901052",
     "ref": "240086764GE1",
     "nombre": "Garantía Extendida (12 BZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901168",
+    "ref": "240086764GE2",
+    "nombre": "Garantía Extendida (12 BZG) 2 años",
     "marca": "Mademsa",
     "categoria": "Garantía"
   },
@@ -315,9 +1477,1367 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856901167",
+    "ref": "240086035GE2",
+    "nombre": "Garantía Extendida (12 SZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901053",
+    "ref": "240085494GE1",
+    "nombre": "Garantía Extendida (13 ECO GL) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901169",
+    "ref": "240085494GE2",
+    "nombre": "Garantía Extendida (13 ECO GL) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900834",
+    "ref": "240083897GE1",
+    "nombre": "Garantía Extendida (1350W) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900835",
+    "ref": "240083897GE2",
+    "nombre": "Garantía Extendida (1350W) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900945",
+    "ref": "240076893GE1",
+    "nombre": "Garantía Extendida (415 Plus) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901061",
+    "ref": "240076893GE2",
+    "nombre": "Garantía Extendida (415 Plus) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900946",
+    "ref": "240076147GE1",
+    "nombre": "Garantía Extendida (480 Plus) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901062",
+    "ref": "240076147GE2",
+    "nombre": "Garantía Extendida (480 Plus) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901046",
+    "ref": "240086430GE1",
+    "nombre": "Garantía Extendida (7D BZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901162",
+    "ref": "240086430GE2",
+    "nombre": "Garantía Extendida (7D BZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901050",
+    "ref": "240086033GE1",
+    "nombre": "Garantía Extendida (9.5 BZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856901166",
     "ref": "240086033GE2",
     "nombre": "Garantía Extendida (9.5 BZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901049",
+    "ref": "240086034GE1",
+    "nombre": "Garantía Extendida (9.5 SZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901165",
+    "ref": "240086034GE2",
+    "nombre": "Garantía Extendida (9.5 SZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901047",
+    "ref": "240086481GE1",
+    "nombre": "Garantía Extendida (9D BZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901163",
+    "ref": "240086481GE2",
+    "nombre": "Garantía Extendida (9D BZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901048",
+    "ref": "240086482GE1",
+    "nombre": "Garantía Extendida (9D SZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901164",
+    "ref": "240086482GE2",
+    "nombre": "Garantía Extendida (9D SZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901012",
+    "ref": "240083898GE1",
+    "nombre": "Garantía Extendida (ALTUS 1430) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901128",
+    "ref": "240083898GE2",
+    "nombre": "Garantía Extendida (ALTUS 1430) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900979",
+    "ref": "240079875GE1",
+    "nombre": "Garantía Extendida (Acquarelle 940) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901095",
+    "ref": "240079875GE2",
+    "nombre": "Garantía Extendida (Acquarelle 940) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900992",
+    "ref": "240078514GE1",
+    "nombre": "Garantía Extendida (Altus 1200) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901108",
+    "ref": "240078514GE2",
+    "nombre": "Garantía Extendida (Altus 1200) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900993",
+    "ref": "240078515GE1",
+    "nombre": "Garantía Extendida (Altus 1250) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901109",
+    "ref": "240078515GE2",
+    "nombre": "Garantía Extendida (Altus 1250) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901037",
+    "ref": "240085611GE1",
+    "nombre": "Garantía Extendida (Altus 1250W) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901153",
+    "ref": "240085611GE2",
+    "nombre": "Garantía Extendida (Altus 1250W) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901016",
+    "ref": "240083899GE1",
+    "nombre": "Garantía Extendida (Altus 1430W) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901132",
+    "ref": "240083899GE2",
+    "nombre": "Garantía Extendida (Altus 1430W) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901030",
+    "ref": "240081734GE1",
+    "nombre": "Garantía Extendida (Balanced Eco GL 13 Litros) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901014",
+    "ref": "240081736GE1",
+    "nombre": "Garantía Extendida (Balanced Eco) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901130",
+    "ref": "240081736GE2",
+    "nombre": "Garantía Extendida (Balanced Eco) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900960",
+    "ref": "240058978GE1",
+    "nombre": "Garantía Extendida (DIVA 920) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900997",
+    "ref": "240078880GE1",
+    "nombre": "Garantía Extendida (Efficace 12SZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901113",
+    "ref": "240078880GE2",
+    "nombre": "Garantía Extendida (Efficace 12SZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900981",
+    "ref": "240077053GE1",
+    "nombre": "Garantía Extendida (Efficace BZG 11,5 Kg) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901097",
+    "ref": "240077053GE2",
+    "nombre": "Garantía Extendida (Efficace BZG 11,5 Kg) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901029",
+    "ref": "240081723GE1",
+    "nombre": "Garantía Extendida (Essential Eco 10 Litros) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901145",
+    "ref": "240081723GE2",
+    "nombre": "Garantía Extendida (Essential Eco 10 Litros) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901007",
+    "ref": "240081727GE1",
+    "nombre": "Garantía Extendida (Essential Eco 11 Litros) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901123",
+    "ref": "240081727GE2",
+    "nombre": "Garantía Extendida (Essential Eco 11 Litros) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901013",
+    "ref": "240081729GE1",
+    "nombre": "Garantía Extendida (Essential Eco 13 Litros) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901129",
+    "ref": "240081729GE2",
+    "nombre": "Garantía Extendida (Essential Eco 13 Litros) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901008",
+    "ref": "240081719GE1",
+    "nombre": "Garantía Extendida (Essential Eco 5 Litros) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901124",
+    "ref": "240081719GE2",
+    "nombre": "Garantía Extendida (Essential Eco 5 Litros) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901006",
+    "ref": "240081720GE1",
+    "nombre": "Garantía Extendida (Essential Eco 7 Litros) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901122",
+    "ref": "240081720GE2",
+    "nombre": "Garantía Extendida (Essential Eco 7 Litros) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901009",
+    "ref": "240081721GE1",
+    "nombre": "Garantía Extendida (Essential Eco 8 Litros) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901125",
+    "ref": "240081721GE2",
+    "nombre": "Garantía Extendida (Essential Eco 8 Litros) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900932",
+    "ref": "240081722GE1",
+    "nombre": "Garantía Extendida (Essential Eco) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900933",
+    "ref": "240081722GE2",
+    "nombre": "Garantía Extendida (Essential Eco) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900969",
+    "ref": "240076757GE1",
+    "nombre": "Garantía Extendida (Fiamma Pro) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901085",
+    "ref": "240076757GE2",
+    "nombre": "Garantía Extendida (Fiamma Pro) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900967",
+    "ref": "240076758GE1",
+    "nombre": "Garantía Extendida (Foguita Pro) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901083",
+    "ref": "240076758GE2",
+    "nombre": "Garantía Extendida (Foguita Pro) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901027",
+    "ref": "240081730GE1",
+    "nombre": "Garantía Extendida (Forced Eco GL 10 Litros) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901143",
+    "ref": "240081730GE2",
+    "nombre": "Garantía Extendida (Forced Eco GL 10 Litros) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901028",
+    "ref": "240081732GE1",
+    "nombre": "Garantía Extendida (Forced Eco GL 13 Litros) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901144",
+    "ref": "240081732GE2",
+    "nombre": "Garantía Extendida (Forced Eco GL 13 Litros) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901031",
+    "ref": "240081733GE1",
+    "nombre": "Garantía Extendida (Forced Eco GN 13 Litros) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901147",
+    "ref": "240081733GE2",
+    "nombre": "Garantía Extendida (Forced Eco GN 13 Litros) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901032",
+    "ref": "240081731GE1",
+    "nombre": "Garantía Extendida (Forced Eco GN) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901148",
+    "ref": "240081731GE2",
+    "nombre": "Garantía Extendida (Forced Eco GN) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900948",
+    "ref": "240072810GE1",
+    "nombre": "Garantía Extendida (Forza TFM Eco GL) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901064",
+    "ref": "240072810GE2",
+    "nombre": "Garantía Extendida (Forza TFM Eco GL) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900949",
+    "ref": "240072811GE1",
+    "nombre": "Garantía Extendida (Forza TFM) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901065",
+    "ref": "240072811GE2",
+    "nombre": "Garantía Extendida (Forza TFM) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901020",
+    "ref": "240084428GE1",
+    "nombre": "Garantía Extendida (M 755 BT) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901136",
+    "ref": "240084428GE2",
+    "nombre": "Garantía Extendida (M 755 BT) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901021",
+    "ref": "240084429GE1",
+    "nombre": "Garantía Extendida (M 755 ST) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901137",
+    "ref": "240084429GE2",
+    "nombre": "Garantía Extendida (M 755 ST) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901038",
+    "ref": "240087881GE1",
+    "nombre": "Garantía Extendida (M 775 BT) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901154",
+    "ref": "240087881GE2",
+    "nombre": "Garantía Extendida (M 775 BT) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901019",
+    "ref": "240084426GE1",
+    "nombre": "Garantía Extendida (M 775 ST) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901135",
+    "ref": "240084426GE2",
+    "nombre": "Garantía Extendida (M 775 ST) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901040",
+    "ref": "240087884GE1",
+    "nombre": "Garantía Extendida (M 795 T) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901156",
+    "ref": "240087884GE2",
+    "nombre": "Garantía Extendida (M 795 T) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901023",
+    "ref": "240084432GE1",
+    "nombre": "Garantía Extendida (M 820 T) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901139",
+    "ref": "240084432GE2",
+    "nombre": "Garantía Extendida (M 820 T) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901041",
+    "ref": "240087886GE1",
+    "nombre": "Garantía Extendida (M 840 T) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901157",
+    "ref": "240087886GE2",
+    "nombre": "Garantía Extendida (M 840 T) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901022",
+    "ref": "240084430GE1",
+    "nombre": "Garantía Extendida (M 920 T) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901138",
+    "ref": "240084430GE2",
+    "nombre": "Garantía Extendida (M 920 T) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901042",
+    "ref": "240087888GE1",
+    "nombre": "Garantía Extendida (M 940 T) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901158",
+    "ref": "240087888GE2",
+    "nombre": "Garantía Extendida (M 940 T) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901034",
+    "ref": "240085454GE1",
+    "nombre": "Garantía Extendida (M EE48ED A) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901150",
+    "ref": "240085454GE2",
+    "nombre": "Garantía Extendida (M EE48ED A) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901036",
+    "ref": "240085456GE1",
+    "nombre": "Garantía Extendida (M EE48EI A) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901152",
+    "ref": "240085456GE2",
+    "nombre": "Garantía Extendida (M EE48EI A) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901361",
+    "ref": "240087159GE1",
+    "nombre": "Garantía Extendida (M100D) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901373",
+    "ref": "240087159GE2",
+    "nombre": "Garantía Extendida (M100D) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901362",
+    "ref": "240087160GE1",
+    "nombre": "Garantía Extendida (M150D) 1 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901374",
+    "ref": "240087160GE2",
+    "nombre": "Garantía Extendida (M150D) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901364",
+    "ref": "240087162GE1",
+    "nombre": "Garantía Extendida (M300D) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901376",
+    "ref": "240087162GE2",
+    "nombre": "Garantía Extendida (M300D) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900959",
+    "ref": "CA0008091GE1",
+    "nombre": "Garantía Extendida (M60 Inox) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901075",
+    "ref": "CA0008091GE2",
+    "nombre": "Garantía Extendida (M60 Inox) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901039",
+    "ref": "240087883GE1",
+    "nombre": "Garantía Extendida (M785T) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901155",
+    "ref": "240087883GE2",
+    "nombre": "Garantía Extendida (M785T) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901024",
+    "ref": "240084436GE1",
+    "nombre": "Garantía Extendida (MCE 435E T) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901140",
+    "ref": "240084436GE2",
+    "nombre": "Garantía Extendida (MCE 435E T) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901045",
+    "ref": "240086556GE1",
+    "nombre": "Garantía Extendida (MED165) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901161",
+    "ref": "240086556GE2",
+    "nombre": "Garantía Extendida (MED165) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901360",
+    "ref": "240086814GE1",
+    "nombre": "Garantía Extendida (MED165B) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901372",
+    "ref": "240086814GE2",
+    "nombre": "Garantía Extendida (MED165B) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900970",
+    "ref": "CA0004830GE1",
+    "nombre": "Garantía Extendida (MFHK 540) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901086",
+    "ref": "CA0004830GE2",
+    "nombre": "Garantía Extendida (MFHK 540) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901000",
+    "ref": "240081743GE1",
+    "nombre": "Garantía Extendida (MFHK 550 Plus) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901116",
+    "ref": "240081743GE2",
+    "nombre": "Garantía Extendida (MFHK 550 Plus) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900972",
+    "ref": "CA0005794GE1",
+    "nombre": "Garantía Extendida (MFHK 550) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901088",
+    "ref": "CA0005794GE2",
+    "nombre": "Garantía Extendida (MFHK 550) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901001",
+    "ref": "240081744GE1",
+    "nombre": "Garantía Extendida (MFHK 590 PLUS) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901117",
+    "ref": "240081744GE2",
+    "nombre": "Garantía Extendida (MFHK 590 PLUS) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900974",
+    "ref": "CA0007057GE1",
+    "nombre": "Garantía Extendida (MFHK 590) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901090",
+    "ref": "CA0007057GE2",
+    "nombre": "Garantía Extendida (MFHK 590) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901015",
+    "ref": "240081742GE1",
+    "nombre": "Garantía Extendida (MHHK 540 Plus) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901131",
+    "ref": "240081742GE2",
+    "nombre": "Garantía Extendida (MHHK 540 Plus) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901611",
+    "ref": "240085584GE1",
+    "nombre": "Garantía Extendida (MM20FBH) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901612",
+    "ref": "240085584GE2",
+    "nombre": "Garantía Extendida (MM20FBH) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901609",
+    "ref": "240085582GE1",
+    "nombre": "Garantía Extendida (MM20FBM) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901610",
+    "ref": "240085582GE2",
+    "nombre": "Garantía Extendida (MM20FBM) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901613",
+    "ref": "240085585GE1",
+    "nombre": "Garantía Extendida (MM28FB) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901614",
+    "ref": "240085585GE2",
+    "nombre": "Garantía Extendida (MM28FB) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901615",
+    "ref": "240085586GE1",
+    "nombre": "Garantía Extendida (MM31FB) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901616",
+    "ref": "240085586GE2",
+    "nombre": "Garantía Extendida (MM31FB) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900943",
+    "ref": "240068564GE1",
+    "nombre": "Garantía Extendida (MMB 71) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901059",
+    "ref": "240068564GE2",
+    "nombre": "Garantía Extendida (MMB 71) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901003",
+    "ref": "240081716GE1",
+    "nombre": "Garantía Extendida (MMB 91 S) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901119",
+    "ref": "240081716GE2",
+    "nombre": "Garantía Extendida (MMB 91 S) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900944",
+    "ref": "CA0008142GE1",
+    "nombre": "Garantía Extendida (MR 50) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901060",
+    "ref": "CA0008142GE2",
+    "nombre": "Garantía Extendida (MR 50) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901043",
+    "ref": "240087890GE1",
+    "nombre": "Garantía Extendida (MV 120 T) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901159",
+    "ref": "240087890GE2",
+    "nombre": "Garantía Extendida (MV 120 T) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901018",
+    "ref": "240084422GE1",
+    "nombre": "Garantía Extendida (MV 210 T) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901134",
+    "ref": "240084422GE2",
+    "nombre": "Garantía Extendida (MV 210 T) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901044",
+    "ref": "240087892GE1",
+    "nombre": "Garantía Extendida (MV 220 T) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901160",
+    "ref": "240087892GE2",
+    "nombre": "Garantía Extendida (MV 220 T) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901010",
+    "ref": "240082089GE1",
+    "nombre": "Garantía Extendida (MX 6270) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901126",
+    "ref": "240082089GE2",
+    "nombre": "Garantía Extendida (MX 6270) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900956",
+    "ref": "CA0004569GE1",
+    "nombre": "Garantía Extendida (MX U160S) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901072",
+    "ref": "CA0004569GE2",
+    "nombre": "Garantía Extendida (MX U160S) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900958",
+    "ref": "CA0004570GE1",
+    "nombre": "Garantía Extendida (MX U190) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901074",
+    "ref": "CA0004570GE2",
+    "nombre": "Garantía Extendida (MX U190) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901354",
+    "ref": "240085859GE1",
+    "nombre": "Garantía Extendida (Mademsa 14BZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901366",
+    "ref": "240085859GE2",
+    "nombre": "Garantía Extendida (Mademsa 14BZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901355",
+    "ref": "240085860GE1",
+    "nombre": "Garantía Extendida (Mademsa 16BZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901367",
+    "ref": "240085860GE2",
+    "nombre": "Garantía Extendida (Mademsa 16BZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901356",
+    "ref": "240085911GE1",
+    "nombre": "Garantía Extendida (Mademsa 16SZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901368",
+    "ref": "240085911GE2",
+    "nombre": "Garantía Extendida (Mademsa 16SZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901369",
+    "ref": "240085912GE2",
+    "nombre": "Garantía Extendida (Mademsa 18BZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901358",
+    "ref": "240085913GE1",
+    "nombre": "Garantía Extendida (Mademsa 18SZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901370",
+    "ref": "240085913GE2",
+    "nombre": "Garantía Extendida (Mademsa 18SZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901359",
+    "ref": "240085915GE1",
+    "nombre": "Garantía Extendida (Mademsa 20SZG) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901371",
+    "ref": "240085915GE2",
+    "nombre": "Garantía Extendida (Mademsa 20SZG) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900987",
+    "ref": "240079834GE1",
+    "nombre": "Garantía Extendida (Nordik 2200) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901103",
+    "ref": "240079834GE2",
+    "nombre": "Garantía Extendida (Nordik 2200) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900988",
+    "ref": "240079837GE1",
+    "nombre": "Garantía Extendida (Nordik 2500) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901104",
+    "ref": "240079837GE2",
+    "nombre": "Garantía Extendida (Nordik 2500) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900989",
+    "ref": "240079836GE1",
+    "nombre": "Garantía Extendida (Nordik 3900) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901105",
+    "ref": "240079836GE2",
+    "nombre": "Garantía Extendida (Nordik 3900) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900848",
+    "ref": "240060973GE1",
+    "nombre": "Garantía Extendida (ONDE 20) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900849",
+    "ref": "240060973GE2",
+    "nombre": "Garantía Extendida (ONDE 20) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901093",
+    "ref": "240060974GE2",
+    "nombre": "Garantía Extendida (ONDE 25) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900978",
+    "ref": "240060975GE1",
+    "nombre": "Garantía Extendida (ONDE 31) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901094",
+    "ref": "240060975GE2",
+    "nombre": "Garantía Extendida (ONDE 31) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900973",
+    "ref": "240054766GE1",
+    "nombre": "Garantía Extendida (Potenza) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901089",
+    "ref": "240054766GE2",
+    "nombre": "Garantía Extendida (Potenza) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900947",
+    "ref": "240064989GE1",
+    "nombre": "Garantía Extendida (Primma 5B) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901063",
+    "ref": "240064989GE2",
+    "nombre": "Garantía Extendida (Primma 5B) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900975",
+    "ref": "CA0001706GE1",
+    "nombre": "Garantía Extendida (SPAZIO 140) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901091",
+    "ref": "CA0001706GE2",
+    "nombre": "Garantía Extendida (SPAZIO 140) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901025",
+    "ref": "240084442GE1",
+    "nombre": "Garantía Extendida (Spazio 110A) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901141",
+    "ref": "240084442GE2",
+    "nombre": "Garantía Extendida (Spazio 110A) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901026",
+    "ref": "240084443GE1",
+    "nombre": "Garantía Extendida (Spazio 140A) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901142",
+    "ref": "240084443GE2",
+    "nombre": "Garantía Extendida (Spazio 140A) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900951",
+    "ref": "240055682GE1",
+    "nombre": "Garantía Extendida (Term 100) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901067",
+    "ref": "240055682GE2",
+    "nombre": "Garantía Extendida (Term 100) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900955",
+    "ref": "240064852GE1",
+    "nombre": "Garantía Extendida (Term 120) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901071",
+    "ref": "240064852GE2",
+    "nombre": "Garantía Extendida (Term 120) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900954",
+    "ref": "240064853GE1",
+    "nombre": "Garantía Extendida (Term 150) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901070",
+    "ref": "240064853GE2",
+    "nombre": "Garantía Extendida (Term 150) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900953",
+    "ref": "240055681GE1",
+    "nombre": "Garantía Extendida (Term 80) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901069",
+    "ref": "240055681GE2",
+    "nombre": "Garantía Extendida (Term 80) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900998",
+    "ref": "240081621GE1",
+    "nombre": "Garantía Extendida (Twister 5100) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901114",
+    "ref": "240081621GE2",
+    "nombre": "Garantía Extendida (Twister 5100) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900999",
+    "ref": "240081622GE1",
+    "nombre": "Garantía Extendida (Twister 5300) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901115",
+    "ref": "240081622GE2",
+    "nombre": "Garantía Extendida (Twister 5300) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900966",
+    "ref": "240054769GE1",
+    "nombre": "Garantía Extendida (Vittale 40) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901082",
+    "ref": "240054769GE2",
+    "nombre": "Garantía Extendida (Vittale 40) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900971",
+    "ref": "240054781GE1",
+    "nombre": "Garantía Extendida (Vittale 41) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901087",
+    "ref": "240054781GE2",
+    "nombre": "Garantía Extendida (Vittale 41) 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856900968",
+    "ref": "240054767GE1",
+    "nombre": "Garantía Extendida (Vittale 8) 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901084",
+    "ref": "240054767GE2",
+    "nombre": "Garantía Extendida (Vittale 8) 2 años",
     "marca": "Mademsa",
     "categoria": "Garantía"
   },
@@ -448,6 +2968,13 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856905153",
+    "ref": "900277015GE2",
+    "nombre": "Garantía Extendida A1200IS 2 años",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856905152",
     "ref": "900277017GE2",
     "nombre": "Garantía Extendida A1250IN 2 años",
@@ -458,6 +2985,13 @@
     "id": "856905135",
     "ref": "900277016GE2",
     "nombre": "Garantía Extendida A1250IS 2 años",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905133",
+    "ref": "900277018GE2",
+    "nombre": "Garantía Extendida A1300INW 2 años",
     "marca": "Electrolux",
     "categoria": "Garantía"
   },
@@ -522,6 +3056,13 @@
     "ref": "900921770GE2",
     "nombre": "Garantía Extendida Aspiradora PTEC100 2 años",
     "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901146",
+    "ref": "240081734GE2",
+    "nombre": "Garantía Extendida Balanced 13 Eco GL 2 años",
+    "marca": "Mademsa",
     "categoria": "Garantía"
   },
   {
@@ -661,6 +3202,13 @@
     "id": "856905163",
     "ref": "900276852GE2",
     "nombre": "Garantía Extendida ECM70 2 años",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905132",
+    "ref": "900276851GE2",
+    "nombre": "Garantía Extendida ECM90 2 años",
     "marca": "Electrolux",
     "categoria": "Garantía"
   },
@@ -826,10 +3374,31 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856900794",
+    "ref": "240081728GE1",
+    "nombre": "Garantía Extendida Essential 13 Eco GL 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856904057",
     "ref": "240081728GE2",
     "nombre": "Garantía Extendida Essential 13 Eco GL 2 años",
     "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901403",
+    "ref": "240087879GE1",
+    "nombre": "Garantía Extendida F 5500 T 1 año",
+    "marca": "Fensa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901492",
+    "ref": "240087879GE2",
+    "nombre": "Garantía Extendida F 5500 T 2 años",
+    "marca": "Fensa",
     "categoria": "Garantía"
   },
   {
@@ -1225,6 +3794,13 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856904923",
+    "ref": "240094833GE2",
+    "nombre": "Garantía Extendida KE4HP 2 Años",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856904924",
     "ref": "240094832GE1",
     "nombre": "Garantía Extendida KE4XC 1 Año",
@@ -1281,6 +3857,20 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856905018",
+    "ref": "900276747GE1",
+    "nombre": "Garantía Extendida KM4CX 1 Año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905019",
+    "ref": "900276747GE2",
+    "nombre": "Garantía Extendida KM4CX 2 Años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856905016",
     "ref": "900276746GE1",
     "nombre": "Garantía Extendida KM4GX 1 Año",
@@ -1291,6 +3881,20 @@
     "id": "856905017",
     "ref": "900276746GE2",
     "nombre": "Garantía Extendida KM4GX 2 Años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905022",
+    "ref": "900276754GE1",
+    "nombre": "Garantía Extendida KM4NX 1 Año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905023",
+    "ref": "900276754GE2",
+    "nombre": "Garantía Extendida KM4NX 2 Años",
     "marca": "Mademsa",
     "categoria": "Garantía"
   },
@@ -1337,9 +3941,37 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856902136",
+    "ref": "240086649GE1",
+    "nombre": "Garantía Extendida Lavavajilla 14C SZG 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901363",
+    "ref": "240087161GE1",
+    "nombre": "Garantía Extendida M200D 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901375",
+    "ref": "240087161GE2",
+    "nombre": "Garantía Extendida M200D 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856901607",
     "ref": "240087172GE1",
     "nombre": "Garantía Extendida M265V 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901608",
+    "ref": "240087172GE2",
+    "nombre": "Garantía Extendida M265V 2 años",
     "marca": "Mademsa",
     "categoria": "Garantía"
   },
@@ -1470,6 +4102,20 @@
     "categoria": "Garantía"
   },
   {
+    "id": "856901605",
+    "ref": "240087171GE1",
+    "nombre": "Garantía Extendida MFV645B 1 año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856901606",
+    "ref": "240087171GE2",
+    "nombre": "Garantía Extendida MFV645B 2 años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
     "id": "856904918",
     "ref": "240095676GE1",
     "nombre": "Garantía Extendida MMB 50 BLK 1 Año",
@@ -1480,6 +4126,13 @@
     "id": "856904919",
     "ref": "240095676GE2",
     "nombre": "Garantía Extendida MMB 50 BLK 2 Años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856904916",
+    "ref": "240095659GE1",
+    "nombre": "Garantía Extendida MMB 90 S 1 Año",
     "marca": "Mademsa",
     "categoria": "Garantía"
   },
@@ -1502,6 +4155,27 @@
     "ref": "240095945GE2",
     "nombre": "Garantía Extendida MMB80S 2 Años",
     "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905171",
+    "ref": "900277052GE2",
+    "nombre": "Garantía Extendida MTS60 2 años",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905157",
+    "ref": "900276923GE2",
+    "nombre": "Garantía Extendida MWMSAT6W 2 años",
+    "marca": "Electrolux",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905146",
+    "ref": "900277050GE2",
+    "nombre": "Garantía Extendida MWMSAT9W 2 años",
+    "marca": "Electrolux",
     "categoria": "Garantía"
   },
   {
@@ -1690,6 +4364,20 @@
     "id": "856905007",
     "ref": "900276699GE2",
     "nombre": "Garantía Extendida VM2TR 2 Años",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905008",
+    "ref": "900276700GE1",
+    "nombre": "Garantía Extendida VM3TR 1 Año",
+    "marca": "Mademsa",
+    "categoria": "Garantía"
+  },
+  {
+    "id": "856905009",
+    "ref": "900276700GE2",
+    "nombre": "Garantía Extendida VM3TR 2 Años",
     "marca": "Mademsa",
     "categoria": "Garantía"
   },
