@@ -775,7 +775,7 @@
     "nombre": "Kit Cafetera Eléctrica Mademsa 1,5L Proglamable 900W MCM30 Acero Inoxidable + Licuadora Portátil Mademsa con 2 velocidades y botellas 300W MBL30 Acero",
     "marca": "Mademsa",
     "categoria": "Electrohogar",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/190771-800-800/Novo-Projeto--6-.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/190772-800-800/03.--Cafetera-Mademsa-Principal-Sellos-MCM30-2000px.jpg",
@@ -943,7 +943,7 @@
     "nombre": "Plancha a Vapor Vertical Electrolux 2,5L 1800W con Tabla de Planchar EGS20 Azul",
     "marca": "Electrolux",
     "categoria": "Electrohogar",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198139-800-800/01.--Steamer-Electrolux-Principal-1-EGS20-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198140-800-800/04.--Steamer-Electrolux-Principal-Sellos-EGS20-2000px.jpg",
@@ -1265,7 +1265,7 @@
     "nombre": "Lavadora Automática Mademsa 16Kg Carga Superior Dispensador Easy&Clean MDWMT16S Silver",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196378-800-800/06.--Lavadora-Mademsa-MDWMT16S-Electrolux-Superior--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196379-800-800/03.--Lavadora-Mademsa-MDWMT16S-Electrolux-Principal-Sellos--2000px.jpg",
@@ -1349,7 +1349,7 @@
     "nombre": "Lavadora Automática Mademsa 20Kg Carga Superior Dispensador Easy&Clean MDWMT20O Ónix",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196456-800-800/06.--Lavadora-Mademsa-MDWMT20O-Electrolux-Superior--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196457-800-800/03.--Lavadora-Mademsa-MDWMT20O-Electrolux-Principal-Sellos--2000px.jpg",
@@ -1377,7 +1377,7 @@
     "nombre": "Lavadora Automática Mademsa 21Kg Carga Superior Dispensador Easy&Clean MDWMT21O Ónix",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196430-800-800/06.--Lavadora-Mademsa-MDWMT21O-Electrolux-Superior--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196431-800-800/03.--Lavadora-Mademsa-MDWMT21O-Electrolux-Principal-Sellos-2000px.jpg",
