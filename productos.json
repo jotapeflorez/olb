@@ -5,7 +5,7 @@
     "nombre": "Centrífuga Mademsa 5Kg Carga Superior con Boquilla Antiderrame Primma 5N Blanca",
     "marca": "Mademsa",
     "categoria": "Centrifugas",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/186438-800-800/01---Centrifuga-Mademsa-Frontal-PRIMMA-5N-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/186439-800-800/02---Centrifuga-Mademsa-Hero-Image-PRIMMA-5N-1500px-jpg.png",
@@ -187,7 +187,7 @@
     "nombre": "Campana de Cocina Extractora Electrolux 90cm Alto Poder de Succión y Touch Panel DE9TB Negra",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193862-800-800/01.--Campana-Electrolux-Principal--DE9TB-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193863-800-800/03.--Campana-Electrolux-Principal-Sellos-DE9TB-2000px.jpg",
@@ -229,7 +229,7 @@
     "nombre": "Campana de Cocina Extractora Electrolux Retráctil 90cm Efficient Luz LED DE9RI Negra",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/189803-800-800/01.--Campana-Electrolux-Principal--DE9RI-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/189804-800-800/03--CA~1.jpg",
@@ -425,7 +425,7 @@
     "nombre": "Cocina a Gas 4 Platos Electrolux Parrillas Hierro Fundido y PerfectCook F4EPB Negra",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198824-800-800/01.--Cocina-4-platos-Electrolux-F4EPB-Principal--1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198825-800-800/03.--Cocina-4-platos-Electrolux-F4EPB-Principal-Sellos-1500px.jpg",
@@ -943,7 +943,7 @@
     "nombre": "Plancha a Vapor Vertical Electrolux 2,5L 1800W con Tabla de Planchar EGS20 Azul",
     "marca": "Electrolux",
     "categoria": "Electrohogar",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198139-800-800/01.--Steamer-Electrolux-Principal-1-EGS20-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198140-800-800/04.--Steamer-Electrolux-Principal-Sellos-EGS20-2000px.jpg",
@@ -1363,7 +1363,7 @@
     "nombre": "Lavadora Automática Mademsa 20Kg Carga Superior Dispensador Easy&Clean MDWMT20S Silver",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196417-800-800/06.--Lavadora-Mademsa-MDWMT20S-Electrolux-Superior--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196418-800-800/03.--Lavadora-Mademsa-MDWMT20S-Electrolux-Principal-Sellos--2000px.jpg",
@@ -1545,7 +1545,7 @@
     "nombre": "Secadora de Ropa Mademsa 7Kg Carga Frontal Secado Automático 7D BZG PRO Blanca",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193047-800-800/7DBZG_2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193048-800-800/03.--Secadora-Mademsa-7DBZG-PRO-Mademsa-Principal-Sellos--2000px.jpg",
