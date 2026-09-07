@@ -1321,7 +1321,7 @@
     "nombre": "Lavadora Automática Mademsa 18Kg Carga Superior Dispensador Disolución Máxima 18 SZG Gris",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/184657-800-800/04.--Lavadora-carga-superior-Mademsa-Superior-abierta-18SZG-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/184658-800-800/03.--Lavadora-carga-superior-Mademsa-Medidas-18SZG-1500px.jpg",
@@ -1377,7 +1377,7 @@
     "nombre": "Lavadora Automática Mademsa 20Kg Carga Superior Dispensador Easy&Clean MDWMT20O Ónix",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196456-800-800/06.--Lavadora-Mademsa-MDWMT20O-Electrolux-Superior--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196457-800-800/03.--Lavadora-Mademsa-MDWMT20O-Electrolux-Principal-Sellos--2000px.jpg",
