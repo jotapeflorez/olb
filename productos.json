@@ -257,7 +257,7 @@
     "nombre": "Cocina a Gas 4 Platos Electrolux Efficient VaporBake, Triple Llama y Grill FE4SXC Inox",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196957-800-800/01.--Cocina-a-Gas-4-Platos-Electrolux-Efficient-FE4SXC-Inox-Principal--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196958-800-800/03.--Cocina-a-Gas-4-Platos-Electrolux-Efficient-FE4SXC-Inox-Principal-Sellos-2000px.jpg",
@@ -803,7 +803,7 @@
     "nombre": "Kit Cafetera Eléctrica Mademsa 1,5L Proglamable 900W MCM30 Acero Inoxidable + Licuadora Portátil Mademsa con 2 velocidades y botellas 300W MBL30 Acero",
     "marca": "Mademsa",
     "categoria": "Electrohogar",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/190771-800-800/Novo-Projeto--6-.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/190772-800-800/03.--Cafetera-Mademsa-Principal-Sellos-MCM30-2000px.jpg",
@@ -887,7 +887,7 @@
     "nombre": "Microondas Electrolux 31 Litros Digital Descongelamiento Asistido ME31N Negro",
     "marca": "Electrolux",
     "categoria": "Electrohogar",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187252-800-800/01.--MWO--Electrolux-Principal-ME31N-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187253-800-800/03.--MWO--Electrolux-Principal-Sellos-ME25N-1500px.jpg",
@@ -1111,7 +1111,7 @@
     "nombre": "Lavadora Automática Electrolux  20kg Carga Superior Inverter Disolución Máxima Jet&Clean EMTL20IO Ónix",
     "marca": "Electrolux",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197909-800-800/01.--Lavadora-carga-superior-EMTL20IO-Principal--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197910-800-800/02.--Lavadora-carga-superior-EMTL20IO-Principal-Sellos-2000px.jpg",
@@ -1288,20 +1288,6 @@
     ]
   },
   {
-    "id": "856904819",
-    "ref": "900081625",
-    "nombre": "Lavadora Automática Mademsa 16Kg Carga Superior Dispensador Easy&Clean MDWMT16S Silver",
-    "marca": "Mademsa",
-    "categoria": "Lavado",
-    "disponible": false,
-    "imagenes": [
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196378-800-800/06.--Lavadora-Mademsa-MDWMT16S-Electrolux-Superior--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196379-800-800/03.--Lavadora-Mademsa-MDWMT16S-Electrolux-Principal-Sellos--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196380-800-800/04.--Lavadora-Mademsa-MDWMT16S-Electrolux-Dimensiones--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196381-800-800/01.--Lavadora-Mademsa-MDWMT16S-Electrolux-Principal---2000px.jpg"
-    ]
-  },
-  {
     "id": "856904806",
     "ref": "900081624",
     "nombre": "Lavadora Automática Mademsa 16Kg Carga Superior Dispensador Easy&Clean MDWMT16W Blanca",
@@ -1321,7 +1307,7 @@
     "nombre": "Lavadora Automática Mademsa 18Kg Carga Superior Dispensador Disolución Máxima 18 SZG Gris",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/184657-800-800/04.--Lavadora-carga-superior-Mademsa-Superior-abierta-18SZG-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/184658-800-800/03.--Lavadora-carga-superior-Mademsa-Medidas-18SZG-1500px.jpg",
@@ -1358,45 +1344,17 @@
     ]
   },
   {
-    "id": "856900938",
-    "ref": "240085915",
-    "nombre": "Lavadora Automática Mademsa 20Kg Carga Superior Dispensador Disolución Máxima 20 SZG Gris",
+    "id": "856904801",
+    "ref": "900081629",
+    "nombre": "Lavadora Automática Mademsa 21Kg Carga Superior Dispensador Easy&Clean MDWMT21O Ónix",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/184665-800-800/04.--Lavadora-carga-superior-Mademsa-Superior-abierta-20SZG-1500px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/184666-800-800/03.--Lavadora-carga-superior-Mademsa-Medidas-20SZG-1500px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/184667-800-800/06.--Lavadora-carga-superior-Mademsa-Ambientada-20SZG-1500px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/184668-800-800/02.--Lavadora-carga-superior-Mademsa-Perspectiva-20SZG-1500px.jpg"
-    ]
-  },
-  {
-    "id": "856904802",
-    "ref": "900081631",
-    "nombre": "Lavadora Automática Mademsa 20Kg Carga Superior Dispensador Easy&Clean MDWMT20O Ónix",
-    "marca": "Mademsa",
-    "categoria": "Lavado",
-    "disponible": false,
-    "imagenes": [
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196456-800-800/06.--Lavadora-Mademsa-MDWMT20O-Electrolux-Superior--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196457-800-800/03.--Lavadora-Mademsa-MDWMT20O-Electrolux-Principal-Sellos--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196458-800-800/04.--Lavadora-Mademsa-MDWMT20O-Electrolux-Dimensiones--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196459-800-800/01.--Lavadora-Mademsa-MDWMT20O-Electrolux-Principal---2000px.jpg"
-    ]
-  },
-  {
-    "id": "856904805",
-    "ref": "900081628",
-    "nombre": "Lavadora Automática Mademsa 20Kg Carga Superior Dispensador Easy&Clean MDWMT20S Silver",
-    "marca": "Mademsa",
-    "categoria": "Lavado",
-    "disponible": false,
-    "imagenes": [
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196417-800-800/06.--Lavadora-Mademsa-MDWMT20S-Electrolux-Superior--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196418-800-800/03.--Lavadora-Mademsa-MDWMT20S-Electrolux-Principal-Sellos--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196419-800-800/04.--Lavadora-Mademsa-MDWMT20S-Electrolux-Dimensiones--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196420-800-800/01.--Lavadora-Mademsa-MDWMT20S-Electrolux-Principal---2000px.jpg"
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196430-800-800/06.--Lavadora-Mademsa-MDWMT21O-Electrolux-Superior--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196431-800-800/03.--Lavadora-Mademsa-MDWMT21O-Electrolux-Principal-Sellos-2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196432-800-800/04.--Lavadora-Mademsa-MDWMT21O-Electrolux-Dimensiones--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196433-800-800/01.--Lavadora-Mademsa-MDWMT21O-Electrolux-Principal---2000px.jpg"
     ]
   },
   {
@@ -1545,7 +1503,7 @@
     "nombre": "Lavadora Semi Automática Mademsa 9Kg Carga Superior Doble Tina MWMSAT9W Blanca",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198288-800-800/01-Lavadora-Semi-Automatica-9kg-Carga-Superior-MWMSAT9W-Blanca-Mademsa-Principal-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198289-800-800/03-Lavadora-Semi-Automatica-9kg-Carga-Superior-MWMSAT9W-Blanca-Mademsa-Principal-Sellos-2000px.jpg",
