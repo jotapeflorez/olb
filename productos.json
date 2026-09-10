@@ -336,20 +336,6 @@
     ]
   },
   {
-    "id": "856904813",
-    "ref": "900276668",
-    "nombre": "Cocina a Gas 4 Platos Mademsa Horno a Vapor y Triple Llama FM4SSC Inox",
-    "marca": "Mademsa",
-    "categoria": "Cocina",
-    "disponible": false,
-    "imagenes": [
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/198934-800-800/01.--Cocina-a-gas-4-platos-Mademsa-FM4SSC-Principal--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/198935-800-800/03.--Cocina-a-gas-4-platos-Mademsa-FM4SSC-Principal-Sellos-2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/198936-800-800/04.--Cocina-a-gas-4-platos-Mademsa-FM4SSC-Dimensiones-2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/198937-800-800/06.--Cocina-a-gas-4-platos-Mademsa-FM4SSC-Abierto-2000px.jpg"
-    ]
-  },
-  {
     "id": "856904809",
     "ref": "900276666",
     "nombre": "Cocina a Gas 4 platos Mademsa Horno a Vapor y Temporizador FM4TSC Silver",
@@ -420,31 +406,31 @@
     ]
   },
   {
+    "id": "856904810",
+    "ref": "900276671",
+    "nombre": "Cocina a Gas 5 Platos Mademsa Horno a Vapor y Triple Llama FM5SSC Inox",
+    "marca": "Mademsa",
+    "categoria": "Cocina",
+    "disponible": true,
+    "imagenes": [
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196608-800-800/01.--Cocina-a-gas-5-platos-Mademsa-FM5SSC--Principal--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196609-800-800/03.--Cocina-a-gas-5-platos-Mademsa-FM5SSC--Principal-Sellos-2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196610-800-800/04.--Cocina-a-gas-5-platos-Mademsa-FM5SSC--Dimensiones-2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196611-800-800/06.--Cocina-a-gas-5-platos-Mademsa-FM5SSC--Abierto-2000px.jpg"
+    ]
+  },
+  {
     "id": "856904811",
     "ref": "900276669",
     "nombre": "Cocina a Gas 6 Platos Mademsa Horno a Vapor y Parrillas Alambrón FM6LSC Inox",
     "marca": "Mademsa",
     "categoria": "Cocina",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197572-800-800/01.--Cocina-a-gas-6-platos-Mademsa-FM6LSC--Principal--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197573-800-800/03.--Cocina-a-gas-6-platos-Mademsa-FM6LSC--Principal-Sellos-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197574-800-800/04.--Cocina-a-gas-6-platos-Mademsa-FM6LSC--Dimensiones-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197575-800-800/06.--Cocina-a-gas-6-platos-Mademsa-FM6LSC--Abierto-2000px.jpg"
-    ]
-  },
-  {
-    "id": "856904812",
-    "ref": "900276670",
-    "nombre": "Cocina a Gas 6 Platos Mademsa Horno a Vapor y Parrillas Pletina FM6SPC Negra",
-    "marca": "Mademsa",
-    "categoria": "Cocina",
-    "disponible": true,
-    "imagenes": [
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196594-800-800/01.--Cocina-a-gas-6-platos-Mademsa-FM6SPC--Principal--2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196595-800-800/03.--Cocina-a-gas-6-platos-Mademsa-FM6SPC--Principal-Sellos-2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196596-800-800/04.-B-Cocina-a-gas-6-platos-Mademsa-FM6SPC--Dimensiones-2000px.jpg",
-      "https://electroluxcl.vteximg.com.br/arquivos/ids/196597-800-800/05.--Cocina-a-gas-6-platos-Mademsa-FM6SPC--Perspectiva-2000px.jpg"
     ]
   },
   {
@@ -1111,7 +1097,7 @@
     "nombre": "Lavadora Automática Electrolux  20kg Carga Superior Inverter Disolución Máxima Jet&Clean EMTL20IO Ónix",
     "marca": "Electrolux",
     "categoria": "Lavado",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197909-800-800/01.--Lavadora-carga-superior-EMTL20IO-Principal--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197910-800-800/02.--Lavadora-carga-superior-EMTL20IO-Principal-Sellos-2000px.jpg",
@@ -1125,7 +1111,7 @@
     "nombre": "Lavadora Automática Electrolux 14Kg Carga Frontal Inverter EFLWM12O Ónix",
     "marca": "Electrolux",
     "categoria": "Lavado",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193946-800-800/01.--Lavadora-Carga-Frontal-EFLWM12O-Electrolux-Principal---2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193947-800-800/03.--Lavadora-Carga-Frontal-EFLWM12O-Electrolux-Principal-Sellos--2000px.jpg",
@@ -1285,6 +1271,20 @@
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196444-800-800/03.--Lavadora-Mademsa-MDWMT15W-Electrolux-Principal-Sellos--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196445-800-800/04.--Lavadora-Mademsa-MDWMT15W-Electrolux-Dimensiones--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196446-800-800/01.--Lavadora-Mademsa-MDWMT15W-Electrolux-Principal---2000px.jpg"
+    ]
+  },
+  {
+    "id": "856904819",
+    "ref": "900081625",
+    "nombre": "Lavadora Automática Mademsa 16Kg Carga Superior Dispensador Easy&Clean MDWMT16S Silver",
+    "marca": "Mademsa",
+    "categoria": "Lavado",
+    "disponible": true,
+    "imagenes": [
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196378-800-800/06.--Lavadora-Mademsa-MDWMT16S-Electrolux-Superior--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196379-800-800/03.--Lavadora-Mademsa-MDWMT16S-Electrolux-Principal-Sellos--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196380-800-800/04.--Lavadora-Mademsa-MDWMT16S-Electrolux-Dimensiones--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196381-800-800/01.--Lavadora-Mademsa-MDWMT16S-Electrolux-Principal---2000px.jpg"
     ]
   },
   {
@@ -1741,7 +1741,7 @@
     "nombre": "Refrigerador Electrolux 525L No Frost Side by Side Inverter Efficient AutoSense ES5GB Vidrio Negro",
     "marca": "Electrolux",
     "categoria": "Refrigeración",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/189398-800-800/01--RE~1.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/189399-800-800/02--RE~1.jpg",
