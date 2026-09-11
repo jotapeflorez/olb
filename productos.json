@@ -411,7 +411,7 @@
     "nombre": "Cocina a Gas 5 Platos Mademsa Horno a Vapor y Triple Llama FM5SSC Inox",
     "marca": "Mademsa",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196608-800-800/01.--Cocina-a-gas-5-platos-Mademsa-FM5SSC--Principal--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/196609-800-800/03.--Cocina-a-gas-5-platos-Mademsa-FM5SSC--Principal-Sellos-2000px.jpg",
@@ -1237,7 +1237,7 @@
     "nombre": "Lavadora Automática Mademsa 12Kg Carga Superior Fuzzy Automático 12 SZG Gris",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187670-800-800/04.--Lavadora-carga-superior-Mademsa-Superior-12SZG-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187671-800-800/03.--Lavadora-carga-superior-Mademsa-Medidas-12SZG-1500px.jpg",
@@ -1377,7 +1377,7 @@
     "nombre": "Lavadora Automática Mademsa 9,5Kg Carga Superior Fuzzy Automático 9,5 SZG Gris",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/192793-800-800/04.--Lavadora-carga-superior-Mademsa-Superior-9.5SZG-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/192794-800-800/03.--Lavadora-carga-superior-Mademsa-Medidas-9.5SZG-1500px.png",
@@ -1671,7 +1671,7 @@
     "nombre": "Refrigerador Electrolux 323L No Frost Bottom Freezer Efficient AutoSense DB60GE Negro Glass",
     "marca": "Electrolux",
     "categoria": "Refrigeración",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/192180-800-800/01---Refrigerador-Electrolux-Principal--DB60GE-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/192181-800-800/03--RE~1.jpg",
@@ -1741,7 +1741,7 @@
     "nombre": "Refrigerador Electrolux 525L No Frost Side by Side Inverter Efficient AutoSense ES5GB Vidrio Negro",
     "marca": "Electrolux",
     "categoria": "Refrigeración",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/189398-800-800/01--RE~1.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/189399-800-800/02--RE~1.jpg",
