@@ -1344,6 +1344,20 @@
     ]
   },
   {
+    "id": "856904805",
+    "ref": "900081628",
+    "nombre": "Lavadora Automática Mademsa 20Kg Carga Superior Dispensador Easy&Clean MDWMT20S Silver",
+    "marca": "Mademsa",
+    "categoria": "Lavado",
+    "disponible": true,
+    "imagenes": [
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196417-800-800/06.--Lavadora-Mademsa-MDWMT20S-Electrolux-Superior--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196418-800-800/03.--Lavadora-Mademsa-MDWMT20S-Electrolux-Principal-Sellos--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196419-800-800/04.--Lavadora-Mademsa-MDWMT20S-Electrolux-Dimensiones--2000px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/196420-800-800/01.--Lavadora-Mademsa-MDWMT20S-Electrolux-Principal---2000px.jpg"
+    ]
+  },
+  {
     "id": "856904801",
     "ref": "900081629",
     "nombre": "Lavadora Automática Mademsa 21Kg Carga Superior Dispensador Easy&Clean MDWMT21O Ónix",
@@ -1859,6 +1873,20 @@
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198441-800-800/03.--Refrigerador-Mademsa-Principal-Sellos-A1250IS-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198442-800-800/04.--Refrigerador-Mademsa-Dimensiones-A1250IS-1500px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198443-800-800/05.--Refrigerador-Mademsa-Abierto-A1250IS-1500px.jpg"
+    ]
+  },
+  {
+    "id": "856904421",
+    "ref": "900277018",
+    "nombre": "Refrigerador Mademsa 291L No Frost Top Freezer Inverter Dispensador de Agua Altus 1300INW Negro",
+    "marca": "Mademsa",
+    "categoria": "Refrigeración",
+    "disponible": true,
+    "imagenes": [
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/199060-800-800/01.--Refrigerador-Mademsa-Principal--A1300INW-1500px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/199061-800-800/03.--Refrigerador-Mademsa-Principal-Sellos-A1300INW-1500px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/199062-800-800/04.--Refrigerador-Mademsa-Dimensiones-A1300INW-1500px.jpg",
+      "https://electroluxcl.vteximg.com.br/arquivos/ids/199063-800-800/05.--Refrigerador-Mademsa-Abierto-A1300INW-1500px.jpg"
     ]
   },
   {
