@@ -467,7 +467,7 @@
     "nombre": "Encimera Eléctrica 3 Platos Electrolux Efficient Cubierta Vitrocerámica y Panel Touch VE6DT",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187864-800-800/01---Encimera-Electrolux-Principal--VE6DT-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/187865-800-800/03---Encimera-Electrolux-Principal-Sellos-VE6DT-2000px.jpg",
@@ -663,7 +663,7 @@
     "nombre": "Horno Empotrable Eléctrico Electrolux 80L Efficient con PerfectCook OE8EL",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/188563-800-800/01.--Horno-Empotrable-OE8EL---Electrolux-Principal---2000px-2000x2000.raw.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/188565-800-800/03.--Horno-Empotrable-OE8EL---Electrolux-Principal-Sellos--2000px-2000x2000.raw.jpg",
@@ -1069,7 +1069,7 @@
     "nombre": "Kit Hidrolavadora QWS1650 + Aspiradora GT20I Electrolux",
     "marca": "Electrolux",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197754-800-800/IMAGENES_KIT_DIA_DEL_PADREKIT_2_2.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197755-800-800/IMAGENES_KIT_DIA_DEL_PADREKIT_2.jpg",
@@ -1517,7 +1517,7 @@
     "nombre": "Lavadora Semi Automática Mademsa 9Kg Carga Superior Doble Tina MWMSAT9W Blanca",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198288-800-800/01-Lavadora-Semi-Automatica-9kg-Carga-Superior-MWMSAT9W-Blanca-Mademsa-Principal-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198289-800-800/03-Lavadora-Semi-Automatica-9kg-Carga-Superior-MWMSAT9W-Blanca-Mademsa-Principal-Sellos-2000px.jpg",
