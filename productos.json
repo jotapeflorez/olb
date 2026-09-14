@@ -201,7 +201,7 @@
     "nombre": "Campana de Cocina Extractora Electrolux 90cm Alto Poder de Succión y Touch Panel DE9TB Negra",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193862-800-800/01.--Campana-Electrolux-Principal--DE9TB-2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193863-800-800/03.--Campana-Electrolux-Principal-Sellos-DE9TB-2000px.jpg",
@@ -341,7 +341,7 @@
     "nombre": "Cocina a Gas 4 platos Mademsa Horno a Vapor y Temporizador FM4TSC Silver",
     "marca": "Mademsa",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198911-800-800/01.--Cocina-a-gas-4-platos-Mademsa-FM4TSC-Principal--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/198912-800-800/03.--Cocina-a-gas-4-platos-Mademsa-FM4TSC-Principal-Sellos-2000px.jpg",
@@ -425,7 +425,7 @@
     "nombre": "Cocina a Gas 6 Platos Mademsa Horno a Vapor y Parrillas Alambrón FM6LSC Inox",
     "marca": "Mademsa",
     "categoria": "Cocina",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197572-800-800/01.--Cocina-a-gas-6-platos-Mademsa-FM6LSC--Principal--2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/197573-800-800/03.--Cocina-a-gas-6-platos-Mademsa-FM6LSC--Principal-Sellos-2000px.jpg",
@@ -663,7 +663,7 @@
     "nombre": "Horno Empotrable Eléctrico Electrolux 80L Efficient con PerfectCook OE8EL",
     "marca": "Electrolux",
     "categoria": "Cocina",
-    "disponible": false,
+    "disponible": true,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/188563-800-800/01.--Horno-Empotrable-OE8EL---Electrolux-Principal---2000px-2000x2000.raw.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/188565-800-800/03.--Horno-Empotrable-OE8EL---Electrolux-Principal-Sellos--2000px-2000x2000.raw.jpg",
@@ -1111,7 +1111,7 @@
     "nombre": "Lavadora Automática Electrolux 14Kg Carga Frontal Inverter EFLWM12O Ónix",
     "marca": "Electrolux",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193946-800-800/01.--Lavadora-Carga-Frontal-EFLWM12O-Electrolux-Principal---2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193947-800-800/03.--Lavadora-Carga-Frontal-EFLWM12O-Electrolux-Principal-Sellos--2000px.jpg",
@@ -1531,7 +1531,7 @@
     "nombre": "Secadora de Ropa Mademsa 7Kg Carga Frontal Secado Automático 7D BZG PRO Blanca",
     "marca": "Mademsa",
     "categoria": "Lavado",
-    "disponible": true,
+    "disponible": false,
     "imagenes": [
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193047-800-800/7DBZG_2000px.jpg",
       "https://electroluxcl.vteximg.com.br/arquivos/ids/193048-800-800/03.--Secadora-Mademsa-7DBZG-PRO-Mademsa-Principal-Sellos--2000px.jpg",
