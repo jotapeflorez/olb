@@ -1,6 +1,6 @@
 {
-  "generado_utc": "2026-09-14T22:19:40Z",
-  "entrada_productos": 631,
+  "generado_utc": "2026-09-15T03:10:29Z",
+  "entrada_productos": 630,
   "salida_productos": 500,
   "excluidos": {
     "pendiente": 11,
@@ -30,6 +30,10 @@
     },
     {
       "sku": "240072691",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240087869",
       "origen": "revision_manual"
     },
     {
