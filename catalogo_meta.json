@@ -1,0 +1,13 @@
+{
+  "actualizado_utc": "2026-09-14T14:56:58Z",
+  "fuente_disponibilidad": "https://www.totem.shopclub.cl",
+  "productos": 631,
+  "disponibles_despacho": 476,
+  "cantidad_productos": 400,
+  "cantidad_accesorios_repuestos": 231,
+  "vigentes_excel": 377,
+  "vigentes_encontrados_totem": 274,
+  "vigentes_con_respaldo_minimo": 103,
+  "incluidos_solo_por_stock": 254,
+  "regla_publicacion": "vigente_interno_o_stock_totem"
+}

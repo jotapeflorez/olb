@@ -1,0 +1,101 @@
+{
+  "generado_utc": "2026-09-14T22:19:40Z",
+  "entrada_productos": 631,
+  "salida_productos": 500,
+  "excluidos": {
+    "pendiente": 11,
+    "ocultar": 0,
+    "sin_decision_publicable": 134
+  },
+  "fichas_reconstruidas_desde_control": [
+    {
+      "sku": "240084203",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240084211",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "900081605",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "900081615",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "900081622",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240072691",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240088441",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "A21392801",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240087504",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240087921",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240087923",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240093825",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240093903",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240093824",
+      "origen": "revision_manual"
+    }
+  ],
+  "fichas_reconstruidas_sin_imagen": [],
+  "excluidos_por_regla_dura": [
+    {
+      "sku": "S135000750",
+      "origen": "manual",
+      "razon": "kit_combo_pack_no_aire"
+    },
+    {
+      "sku": "S135000751",
+      "origen": "manual",
+      "razon": "kit_combo_pack_no_aire"
+    },
+    {
+      "sku": "240084207",
+      "origen": "manual",
+      "razon": "kit_combo_pack_no_aire"
+    },
+    {
+      "sku": "240087052",
+      "origen": "manual",
+      "razon": "kit_combo_pack_no_aire"
+    },
+    {
+      "sku": "S130018387",
+      "origen": "automatico",
+      "razon": "kit_combo_pack_no_aire"
+    },
+    {
+      "sku": "240084200",
+      "origen": "automatico",
+      "razon": "kit_combo_pack_no_aire"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
    -------------------------------------------------------------------
    Recorre TODO el catálogo de la tienda, se queda con las marcas que
    te interesan, y por cada producto extrae: nombre, marca, categoría,
-   disponibilidad y los LINKS DE IMÁGENES (ya al tamaño correcto).
+   dimensiones, disponibilidad para despacho y los LINKS DE IMÁGENES.
    Escribe todo en productos.json, que es el archivo que lee tu
    catálogo (index.html).
 
@@ -24,6 +24,7 @@ const PAUSA_MS = 250;      // pausa entre consultas, para no saturar
 
 const dormir = ms => new Promise(r => setTimeout(r, ms));
 const marcasOK = MARCAS.map(m => m.toLowerCase());
+const RE_NO_CATALOGO = /garant|extendid|servicio t|instalaci|conexi[oó]n|visita|p[oó]liza|cobertura|plan de protecc/i;
 
 /* ---- fetch con reintentos ---- */
 async function getJSON(url, reintentos = 3) {
@@ -38,23 +39,53 @@ async function getJSON(url, reintentos = 3) {
   return null;
 }
 
-/* ---- baja el árbol de categorías y devuelve solo las hojas ---- */
-async function categoriasHoja() {
+/* ---- baja el árbol y devuelve todas las categorías, incluidos sus padres ---- */
+async function categoriasTienda() {
   const arbol = await getJSON(`${TIENDA}/api/catalog_system/pub/category/tree/50`) || [];
-  const hojas = [];
+  const categorias = [];
   const recorrer = nodos => {
     for (const n of nodos) {
-      if (n.hasChildren && n.children?.length) recorrer(n.children);
-      else hojas.push({ id: n.id, name: n.name });
+      categorias.push({ id: n.id, name: n.name });
+      recorrer(n.children || []);
     }
   };
   recorrer(arbol);
-  return hojas;
+  if (!categorias.length) throw new Error("Tótem no devolvió categorías; se conserva el último catálogo válido.");
+  return [...new Map(categorias.map(c => [c.id, c])).values()];
 }
 
 /* ---- transforma la URL de imagen VTEX al tamaño deseado ---- */
 function redimensiona(url) {
   return url.replace(/\/arquivos\/ids\/(\d+)(?:-\d+-\d+)?\//, `/arquivos/ids/$1-${IMG}/`);
+}
+
+function valorEspecificacion(p, ...nombres) {
+  for (const nombre of nombres) {
+    let valor = p[nombre];
+    if (Array.isArray(valor)) valor = valor.find(v => String(v).trim());
+    if (valor != null && String(valor).trim()) return String(valor).trim();
+  }
+  return "";
+}
+
+function dimensionesDe(p) {
+  const dimensiones = {
+    alto: valorEspecificacion(p, "Altura (Centímetros)", "Alto producto", "Altura producto", "Alto"),
+    ancho: valorEspecificacion(p, "Ancho (Centímetros)", "Ancho producto", "Ancho"),
+    profundidad: valorEspecificacion(p, "Profundidad (Centímetros)", "Profundidad producto", "Profundidad"),
+  };
+  return Object.fromEntries(Object.entries(dimensiones).filter(([, valor]) => valor));
+}
+
+function esServicioOculto(p) {
+  return RE_NO_CATALOGO.test(`${p.productName || ""} ${(p.categories || []).join(" ")}`);
+}
+
+function tipoCatalogoDe(p) {
+  const categorias = (p.categories || []).join(" ").toLowerCase();
+  return categorias.includes("/accesorios/") || categorias.includes("/repuestos/")
+    ? "accesorios"
+    : "productos";
 }
 
 /* ---- convierte un producto de VTEX al formato del catálogo ---- */
@@ -64,8 +95,13 @@ function aFormatoCatalogo(p) {
     .slice(0, MAX_IMAGENES)
     .map(img => redimensiona(img.imageUrl));
 
-  const disponible = (item.sellers || []).some(
-    s => s.commertialOffer && s.commertialOffer.AvailableQuantity > 0
+  const despachoDisponible = (p.items || []).some(itemVtex =>
+    (itemVtex.sellers || []).some(s => s.commertialOffer && s.commertialOffer.AvailableQuantity > 0)
+  );
+  const precios = (p.items || []).flatMap(itemVtex =>
+    (itemVtex.sellers || [])
+      .map(seller => Number(seller.commertialOffer && seller.commertialOffer.Price))
+      .filter(precio => Number.isFinite(precio) && precio > 0)
   );
 
   const ruta = (p.categories && p.categories[0]) || "";
@@ -79,7 +115,10 @@ function aFormatoCatalogo(p) {
     nombre: p.productName,
     marca: p.brand,
     categoria,
-    disponible,
+    tipo_catalogo: tipoCatalogoDe(p),
+    despacho_disponible: despachoDisponible,
+    precio: precios.length ? Math.min(...precios) : null,
+    dimensiones: dimensionesDe(p),
     imagenes,
   };
 }
@@ -102,16 +141,22 @@ async function productosDeCategoria(catId) {
 }
 
 async function main() {
+  const fs = await import("node:fs/promises");
   console.log("Leyendo categorías…");
-  const hojas = await categoriasHoja();
-  console.log(`  ${hojas.length} categorías encontradas`);
+  const categorias = await categoriasTienda();
+  console.log(`  ${categorias.length} categorías encontradas`);
 
   const porId = new Map();  // dedup por productId (un producto vive en varias categorías)
+  const serviciosOmitidos = new Set();
 
-  for (const cat of hojas) {
+  for (const cat of categorias) {
     const productos = await productosDeCategoria(cat.id);
     for (const p of productos) {
       if (marcasOK.length && !marcasOK.includes((p.brand || "").toLowerCase())) continue;
+      if (esServicioOculto(p)) {
+        serviciosOmitidos.add(String(p.productId || p.productReference || p.productName));
+        continue;
+      }
       if (!porId.has(p.productId)) porId.set(p.productId, aFormatoCatalogo(p));
     }
     console.log(`  ${cat.name}: ${productos.length} productos (acumulado ${porId.size})`);
@@ -120,11 +165,30 @@ async function main() {
 
   const salida = [...porId.values()]
     .filter(p => p.imagenes.length)                 // descarta los que no traen imagen
-    .sort((a, b) => a.nombre.localeCompare(b.nombre));
+    .sort((a, b) => a.tipo_catalogo.localeCompare(b.tipo_catalogo) || a.categoria.localeCompare(b.categoria) || a.nombre.localeCompare(b.nombre));
 
-  const fs = await import("node:fs/promises");
+  if (!salida.length) throw new Error("Tótem no devolvió productos válidos; se conserva el último catálogo válido.");
+
   await fs.writeFile("productos.json", JSON.stringify(salida, null, 2), "utf8");
+  const meta = {
+    actualizado_utc: new Date().toISOString(),
+    fuente_disponibilidad: TIENDA,
+    productos: salida.length,
+    disponibles_despacho: salida.filter(p => p.despacho_disponible).length,
+    cantidad_productos: salida.filter(p => p.tipo_catalogo === "productos").length,
+    cantidad_accesorios_repuestos: salida.filter(p => p.tipo_catalogo === "accesorios").length,
+  };
+  await fs.writeFile("catalogo_meta.json", JSON.stringify(meta, null, 2), "utf8");
+  await fs.writeFile(
+    "datos_catalogo.js",
+    `window.OLB_PRODUCTOS = ${JSON.stringify(salida)};\nwindow.OLB_CATALOGO_META = ${JSON.stringify(meta)};\n`,
+    "utf8"
+  );
   console.log(`\n✓ Listo: ${salida.length} productos escritos en productos.json`);
+  console.log(`✓ Disponibilidad para despacho: ${meta.disponibles_despacho}`);
+  console.log(`✓ Productos: ${meta.cantidad_productos}`);
+  console.log(`✓ Accesorios y repuestos: ${meta.cantidad_accesorios_repuestos}`);
+  console.log(`✓ Garantías/servicios omitidos del catálogo: ${serviciosOmitidos.size}`);
 }
 
 main().catch(e => { console.error("Error:", e); process.exit(1); });

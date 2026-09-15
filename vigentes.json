@@ -1,0 +1,2655 @@
+[
+  {
+    "sku": "240089945",
+    "descripcion": "AIRE ACONDICIONADO EAIE12G5MABXW",
+    "unidad_negocio": "MDA",
+    "categoria": "AIRE ACONDICIONADO",
+    "subcategoria": "AIR CONDITIONER"
+  },
+  {
+    "sku": "240089946",
+    "descripcion": "AIRE ACONDICIONADO EAIS18G5MABXW",
+    "unidad_negocio": "MDA",
+    "categoria": "AIRE ACONDICIONADO",
+    "subcategoria": "AIR CONDITIONER",
+    "modelo": "EAIS18G5MABXW",
+    "marca": "Electrolux",
+    "imagenes": [
+      "https://electroluxcl.vtexassets.com/arquivos/ids/191288-640-640?v=639026290750930000&width=640&height=640&aspect=true&format=auto"
+    ],
+    "url": "https://www.electrolux.cl/aire-acondicionado-efficient-inverter-18000-btu---electrolux/p",
+    "fuente_oficial": "Ficha oficial Electrolux"
+  },
+  {
+    "sku": "240089947",
+    "descripcion": "AIRE ACONDICIONADO EAIE18G5MABXW",
+    "unidad_negocio": "MDA",
+    "categoria": "AIRE ACONDICIONADO",
+    "subcategoria": "AIR CONDITIONER",
+    "modelo": "EAIE18G5MABXW",
+    "marca": "Electrolux",
+    "imagenes": [
+      "https://electroluxcl.vtexassets.com/arquivos/ids/191291-1200-1200?v=639026290751730000&width=1200&height=1200&aspect=true&format=auto"
+    ],
+    "url": "https://www.electrolux.cl/aire-acondicionado-efficient-inverter-18000-btu---electrolux/p",
+    "fuente_oficial": "Ficha oficial Electrolux"
+  },
+  {
+    "sku": "240089951",
+    "descripcion": "AIRE ACONDICIONADO EAIS09G5MABXW",
+    "unidad_negocio": "MDA",
+    "categoria": "AIRE ACONDICIONADO",
+    "subcategoria": "AIR CONDITIONER"
+  },
+  {
+    "sku": "240089952",
+    "descripcion": "AIRE ACONDICIONADO EAIE09G5MABXW",
+    "unidad_negocio": "MDA",
+    "categoria": "AIRE ACONDICIONADO",
+    "subcategoria": "AIR CONDITIONER"
+  },
+  {
+    "sku": "240089953",
+    "descripcion": "AIRE ACONDICIONADO EAIS12G5MABXW",
+    "unidad_negocio": "MDA",
+    "categoria": "AIRE ACONDICIONADO",
+    "subcategoria": "AIR CONDITIONER"
+  },
+  {
+    "sku": "240077934",
+    "descripcion": "EAP12B5TSCRW ( Potira 12 )",
+    "unidad_negocio": "MDA",
+    "categoria": "AIRE ACONDICIONADO PORTATIL",
+    "subcategoria": "PORTABLE"
+  },
+  {
+    "sku": "240081722",
+    "descripcion": "CALEFON ESSENTIAL 10 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 10 - 11 LT"
+  },
+  {
+    "sku": "240081723",
+    "descripcion": "CALEFON ESSENTIAL 10 ECO GN",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 10 - 11 LT"
+  },
+  {
+    "sku": "240081727",
+    "descripcion": "CALEFON ESSENTIAL 11 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 10 - 11 LT"
+  },
+  {
+    "sku": "240081730",
+    "descripcion": "CALEFON FORCED 10 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 10 - 11 LT"
+  },
+  {
+    "sku": "240081731",
+    "descripcion": "CALEFON FORCED 10 ECO GN",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 10 - 11 LT"
+  },
+  {
+    "sku": "240085495",
+    "descripcion": "CALEFON SAFETY SENSOR 10 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 10 - 11 LT"
+  },
+  {
+    "sku": "240081728",
+    "descripcion": "CALEFON ESSENTIAL 13 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 12 - 14 LT"
+  },
+  {
+    "sku": "240081729",
+    "descripcion": "CALEFON ESSENTIAL 13 ECO GN",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 12 - 14 LT"
+  },
+  {
+    "sku": "240081732",
+    "descripcion": "CALEFON FORCED 13 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 12 - 14 LT"
+  },
+  {
+    "sku": "240081733",
+    "descripcion": "CALEFON FORCED 13 ECO GN",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 12 - 14 LT"
+  },
+  {
+    "sku": "240081734",
+    "descripcion": "CALEFON BALANCED 13 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 12 - 14 LT"
+  },
+  {
+    "sku": "240085494",
+    "descripcion": "CALEFON SAFETY SENSOR 13 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 12 - 14 LT"
+  },
+  {
+    "sku": "240081736",
+    "descripcion": "CALEFON BALANCED 16 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 16 - MAS LT"
+  },
+  {
+    "sku": "240081719",
+    "descripcion": "CALEFON ESSENTIAL 5 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 5 - 6 LT"
+  },
+  {
+    "sku": "240081720",
+    "descripcion": "CALEFON ESSENTIAL 7 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 7 - 9 LT"
+  },
+  {
+    "sku": "240081721",
+    "descripcion": "CALEFON ESSENTIAL 8 ECO GL",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 7 - 9 LT"
+  },
+  {
+    "sku": "240095616",
+    "descripcion": "CALEFONT MADEMSA TIRO NATURAL 8L GRIS",
+    "unidad_negocio": "MDA",
+    "categoria": "CALEFONT",
+    "subcategoria": "C 7 - 9 LT"
+  },
+  {
+    "sku": "240081070",
+    "descripcion": "CAMPANA FX-5200",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240087728",
+    "descripcion": "CAMPANA FXD 6465 L",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240091824",
+    "descripcion": "CAMPANA CE6TF",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240091826",
+    "descripcion": "CAMPANA CE9IF",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240091827",
+    "descripcion": "CAMPANA CE9TF",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240094791",
+    "descripcion": "CAMPANA CE9IX",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240094792",
+    "descripcion": "CAMPANA CE9VX",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240094793",
+    "descripcion": "CAMPANA CE6VX",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240095015",
+    "descripcion": "CAMPANA DE9RI",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240095016",
+    "descripcion": "CAMPANA DE6RI",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240095017",
+    "descripcion": "Campana DE6RS",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "DECORATIVAS"
+  },
+  {
+    "sku": "240078307",
+    "descripcion": "CAMPANA COCINA FX 6270",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "240082089",
+    "descripcion": "CAMPANA COCINA MX 6270",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "240085617",
+    "descripcion": "CAMPANA FG 7770",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "946522176",
+    "descripcion": "CAMPANA DM6SB",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "946522180",
+    "descripcion": "CAMPANA DM8SB",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "946522186",
+    "descripcion": "CAMPANA DM6SS",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "946522192",
+    "descripcion": "CAMPANA DM8SS",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "946522213",
+    "descripcion": "CAMPANA DE6TB",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "946522219",
+    "descripcion": "CAMPANA DE9TB",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "CA0002031",
+    "descripcion": "CAMPANA FX U6160",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "CA0002032",
+    "descripcion": "CAMPANA FX U6190",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "CA0004569",
+    "descripcion": "CAMP MX-U160S",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "CA0004570",
+    "descripcion": "CAMP MX-U190S",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "CA0008091",
+    "descripcion": "CAMPANA SLIM M60 INOX",
+    "unidad_negocio": "MDA",
+    "categoria": "CAMPANAS",
+    "subcategoria": "STANDARD"
+  },
+  {
+    "sku": "240092078",
+    "descripcion": "CENTRIFUGA MADEMSA PRIMMA 5N",
+    "unidad_negocio": "MDA",
+    "categoria": "CENTRIFUGAS",
+    "subcategoria": "CENTRIFUGA"
+  },
+  {
+    "sku": "240084422",
+    "descripcion": "COCINA MV 210 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Entry"
+  },
+  {
+    "sku": "240087890",
+    "descripcion": "COCINA MV 120 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Entry"
+  },
+  {
+    "sku": "240087892",
+    "descripcion": "COCINA MV 220 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Entry"
+  },
+  {
+    "sku": "240094551",
+    "descripcion": "COCINA FM4LP",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Entry"
+  },
+  {
+    "sku": "240094552",
+    "descripcion": "COCINA FM4LS",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Entry"
+  },
+  {
+    "sku": "240094553",
+    "descripcion": "COCINA FM4IP",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Entry"
+  },
+  {
+    "sku": "240087878",
+    "descripcion": "COCINA F 2808 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas High"
+  },
+  {
+    "sku": "240087883",
+    "descripcion": "COCINA M 785 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas High"
+  },
+  {
+    "sku": "240087884",
+    "descripcion": "COCINA M 795 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas High"
+  },
+  {
+    "sku": "240093806",
+    "descripcion": "COCINA F 2606 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas High"
+  },
+  {
+    "sku": "900276664",
+    "descripcion": "COCINA FM4FSC",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas High"
+  },
+  {
+    "sku": "900276667",
+    "descripcion": "COCINA FM4PSC",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas High"
+  },
+  {
+    "sku": "900276668",
+    "descripcion": "COCINA FM4SSC",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas High"
+  },
+  {
+    "sku": "900276672",
+    "descripcion": "COCINA FE4SXC",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas High"
+  },
+  {
+    "sku": "240084426",
+    "descripcion": "COCINA M 775 ST",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Mid"
+  },
+  {
+    "sku": "240087881",
+    "descripcion": "COCINA M 775 BT",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Mid"
+  },
+  {
+    "sku": "240093788",
+    "descripcion": "COCINA M 520 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Mid"
+  },
+  {
+    "sku": "240094099",
+    "descripcion": "COCINA FM4ES",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Mid"
+  },
+  {
+    "sku": "900276665",
+    "descripcion": "COCINA FM4TPC",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Mid"
+  },
+  {
+    "sku": "900276666",
+    "descripcion": "COCINA FM4TSC",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Mid"
+  },
+  {
+    "sku": "240084415",
+    "descripcion": "COCINA F 3000 BT",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Premium"
+  },
+  {
+    "sku": "240084416",
+    "descripcion": "COCINA F 3000 RT",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Premium"
+  },
+  {
+    "sku": "240089370",
+    "descripcion": "COCINA 56DXA",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Premium"
+  },
+  {
+    "sku": "926565423",
+    "descripcion": "COCINA F4EDB",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Premium"
+  },
+  {
+    "sku": "926565425",
+    "descripcion": "COCINA F4EPB",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Premium"
+  },
+  {
+    "sku": "926565429",
+    "descripcion": "COCINA F4EAD",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "4 Zonas Premium"
+  },
+  {
+    "sku": "240084432",
+    "descripcion": "COCINA M 820 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Entry"
+  },
+  {
+    "sku": "240093805",
+    "descripcion": "COCINA M 810 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Entry"
+  },
+  {
+    "sku": "900276669",
+    "descripcion": "COCINA FM6LSC",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Entry"
+  },
+  {
+    "sku": "240084430",
+    "descripcion": "COCINA M 920 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Mid-High"
+  },
+  {
+    "sku": "240087879",
+    "descripcion": "COCINA F 5500 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Mid-High"
+  },
+  {
+    "sku": "240087888",
+    "descripcion": "COCINA M 940 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Mid-High"
+  },
+  {
+    "sku": "240093807",
+    "descripcion": "COCINA F 5300 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Mid-High"
+  },
+  {
+    "sku": "900276670",
+    "descripcion": "COCINA FM6SPC",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Mid-High"
+  },
+  {
+    "sku": "900276671",
+    "descripcion": "COCINA FM5SSC",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Mid-High"
+  },
+  {
+    "sku": "900276673",
+    "descripcion": "COCINA FE5SXC",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Mid-High"
+  },
+  {
+    "sku": "240084418",
+    "descripcion": "COCINA F 6000 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Premium"
+  },
+  {
+    "sku": "240084419",
+    "descripcion": "COCINA F 6500 T",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Premium"
+  },
+  {
+    "sku": "240089371",
+    "descripcion": "COCINA 76DBA",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Premium"
+  },
+  {
+    "sku": "240089372",
+    "descripcion": "COCINA 76DXA",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Premium"
+  },
+  {
+    "sku": "926565424",
+    "descripcion": "COCINA F5EDB",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Premium"
+  },
+  {
+    "sku": "926565426",
+    "descripcion": "COCINA F5EPB",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Premium"
+  },
+  {
+    "sku": "926565427",
+    "descripcion": "COCINA F5EPG",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Premium"
+  },
+  {
+    "sku": "926565428",
+    "descripcion": "COCINA F5EAD",
+    "unidad_negocio": "MDA",
+    "categoria": "COCINAS",
+    "subcategoria": "5 Zonas Premium"
+  },
+  {
+    "sku": "240085454",
+    "descripcion": "ENCIMERA M EE48ED A",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "ELECTRICAS"
+  },
+  {
+    "sku": "240084434",
+    "descripcion": "ENCIMERA FCE 4.3HF T",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240084435",
+    "descripcion": "ENCIMERA FCE 4HF T",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240084436",
+    "descripcion": "ENCIMERA MCE 435E T",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240084444",
+    "descripcion": "ENCIMERA FCE 2HF GL T",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240085425",
+    "descripcion": "ENCIMERA F GC60V A",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240085426",
+    "descripcion": "ENCIMERA F GC75V A",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240094831",
+    "descripcion": "ENCIMERA KE5GC",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240094832",
+    "descripcion": "ENCIMERA KE4XC",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240094833",
+    "descripcion": "ENCIMERA KE4HP",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240094834",
+    "descripcion": "ENCIMERA KE4GC",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240094835",
+    "descripcion": "ENCIMERA KE5XC",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240094836",
+    "descripcion": "ENCIMERA KE5HP",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "900276746",
+    "descripcion": "ENCIMERA KM4GX",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "900276747",
+    "descripcion": "ENCIMERA KM4CX",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "900276748",
+    "descripcion": "ENCIMERA KM4TX",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "900276754",
+    "descripcion": "ENCIMERA KM4NX",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "GAS"
+  },
+  {
+    "sku": "240093254",
+    "descripcion": "ENCIMERA IE6LP",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "INDUCCION"
+  },
+  {
+    "sku": "900276687",
+    "descripcion": "ENCIMERA IE2TP",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "INDUCCION"
+  },
+  {
+    "sku": "900276692",
+    "descripcion": "ENCIMERA IE4TW",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "INDUCCION"
+  },
+  {
+    "sku": "240068085",
+    "descripcion": "VITRO-CERAMICA FEV 3T",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "VITROCERAMICA"
+  },
+  {
+    "sku": "240068087",
+    "descripcion": "VITRO-CERAMICA FEV 4T",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "VITROCERAMICA"
+  },
+  {
+    "sku": "240077896",
+    "descripcion": "ENCIMERA FEV 2T",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "VITROCERAMICA"
+  },
+  {
+    "sku": "240093784",
+    "descripcion": "ENCIMERA VE7DT",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "VITROCERAMICA"
+  },
+  {
+    "sku": "240093785",
+    "descripcion": "ENCIMERA VE3ST",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "VITROCERAMICA"
+  },
+  {
+    "sku": "240093786",
+    "descripcion": "ENCIMERA VE6DT",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "VITROCERAMICA"
+  },
+  {
+    "sku": "900276699",
+    "descripcion": "ENCIMERA VM2TR",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "VITROCERAMICA"
+  },
+  {
+    "sku": "900276700",
+    "descripcion": "ENCIMERA VM3TR",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "VITROCERAMICA"
+  },
+  {
+    "sku": "900276701",
+    "descripcion": "ENCIMERA VM4TR",
+    "unidad_negocio": "MDA",
+    "categoria": "ENCIMERAS",
+    "subcategoria": "VITROCERAMICA"
+  },
+  {
+    "sku": "900081521",
+    "descripcion": "ESTUFA 15KG GLP ONIX HG15B",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS A GAS",
+    "subcategoria": "E 11 - 15 KG"
+  },
+  {
+    "sku": "900081522",
+    "descripcion": "ESTUFA 15KG GLP BRONZE HG15G",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS A GAS",
+    "subcategoria": "E 11 - 15 KG"
+  },
+  {
+    "sku": "900081523",
+    "descripcion": "ESTUFA 15KG HIBRIDA GLP HH15B",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS A GAS",
+    "subcategoria": "E 11 - 15 KG"
+  },
+  {
+    "sku": "900081524",
+    "descripcion": "ESTUFA 5KG GLP HG05B",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS A GAS",
+    "subcategoria": "E 5 KG"
+  },
+  {
+    "sku": "240054766",
+    "descripcion": "ESTUFA POTENZA",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "CIRCULARES"
+  },
+  {
+    "sku": "240076757",
+    "descripcion": "ESTUFA FIAMMA PRO",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "ECONOMICAS"
+  },
+  {
+    "sku": "240076758",
+    "descripcion": "ESTUFA FOGUITA PRO",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "ECONOMICAS"
+  },
+  {
+    "sku": "240076831",
+    "descripcion": "ESTUFA F 720 +",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "ECONOMICAS"
+  },
+  {
+    "sku": "240076832",
+    "descripcion": "ESTUFA F 1120 +",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "ECONOMICAS"
+  },
+  {
+    "sku": "240081739",
+    "descripcion": "ESTUFA FHK 950 ECO",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "FH"
+  },
+  {
+    "sku": "240081740",
+    "descripcion": "ESTUFA FHK 990 ECO",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "FH"
+  },
+  {
+    "sku": "240081741",
+    "descripcion": "ESTUFA FHK 1050 ECO",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "FH"
+  },
+  {
+    "sku": "240081742",
+    "descripcion": "ESTUFA MFHK 540 PLUS",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "FH"
+  },
+  {
+    "sku": "240081743",
+    "descripcion": "ESTUFA MFHK 550 PLUS",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "FH"
+  },
+  {
+    "sku": "240081744",
+    "descripcion": "ESTUFA MFHK 590 PLUS",
+    "unidad_negocio": "MDA",
+    "categoria": "ESTUFAS KEROSENE",
+    "subcategoria": "FH"
+  },
+  {
+    "sku": "240087159",
+    "descripcion": "CONGELADOR HORIZONTAL M100D",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240087160",
+    "descripcion": "CONGELADOR HORIZONTAL M150D",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240087161",
+    "descripcion": "CONGELADOR HORIZONTAL M200D",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240087162",
+    "descripcion": "CONGELADOR HORIZONTAL M300D",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240095931",
+    "descripcion": "CONGELADOR HORIZONTAL M150DI",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240095932",
+    "descripcion": "CONGELADOR HORIZONTAL M300DI",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240095933",
+    "descripcion": "CONGELADOR HORIZONTAL M400DI",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240095941",
+    "descripcion": "CONGELADOR HORIZONTAL M200DI",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240095942",
+    "descripcion": "CONGELADOR HORIZONTAL M100DI",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240096074",
+    "descripcion": "CONGELADOR HORIZONTAL H100B",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240096075",
+    "descripcion": "CONGELADOR HORIZONTAL H100",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "HORIZONTALES"
+  },
+  {
+    "sku": "240087171",
+    "descripcion": "FREEZER VERTICAL MFV 645 B",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "VERTICALES"
+  },
+  {
+    "sku": "240087172",
+    "descripcion": "FREEZER VERTICAL M-265V",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "VERTICALES"
+  },
+  {
+    "sku": "240095946",
+    "descripcion": "FREEZER VERTICAL M-191V",
+    "unidad_negocio": "MDA",
+    "categoria": "FREEZERS",
+    "subcategoria": "VERTICALES"
+  },
+  {
+    "sku": "240085627",
+    "descripcion": "PURIFICADOR PE12BFCL",
+    "unidad_negocio": "MDA",
+    "categoria": "HOME COMFORT",
+    "subcategoria": "PURIFICADORES"
+  },
+  {
+    "sku": "240085631",
+    "descripcion": "PURIFICADOR PA31GFCL",
+    "unidad_negocio": "MDA",
+    "categoria": "HOME COMFORT",
+    "subcategoria": "PURIFICADORES"
+  },
+  {
+    "sku": "240087926",
+    "descripcion": "AIR PURIFIER WELL 7 WA71-304GY",
+    "unidad_negocio": "MDA",
+    "categoria": "HOME COMFORT",
+    "subcategoria": "PURIFICADORES"
+  },
+  {
+    "sku": "240081068",
+    "descripcion": "HORNO EMPOTRABLE FHE-1190T",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Con conveccion"
+  },
+  {
+    "sku": "240091980",
+    "descripcion": "HORNO EMPOTRABLE OE8EH",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Con conveccion"
+  },
+  {
+    "sku": "240092041",
+    "descripcion": "HORNO EMPOTRABLE OE8EF",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Con conveccion"
+  },
+  {
+    "sku": "240093917",
+    "descripcion": "HORNO EMPOTRABLE OE9XS",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Con conveccion"
+  },
+  {
+    "sku": "240094986",
+    "descripcion": "HORNO EMPOTRABLE OE8EA",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Con conveccion"
+  },
+  {
+    "sku": "240094988",
+    "descripcion": "HORNO EMPOTRABLE OE5EA",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Con conveccion"
+  },
+  {
+    "sku": "900276731",
+    "descripcion": "HORNO EMPOTRABLE OM6CB",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Con conveccion"
+  },
+  {
+    "sku": "900276732",
+    "descripcion": "HORNO EMPOTRABLE OM6CX",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Con conveccion"
+  },
+  {
+    "sku": "240081069",
+    "descripcion": "HORNO EMPOTRABLE FHE-1130M",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Sin conveccion"
+  },
+  {
+    "sku": "240084440",
+    "descripcion": "HORNO EMPOTRABLE F 1060N A",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Sin conveccion"
+  },
+  {
+    "sku": "240084441",
+    "descripcion": "HORNO EMPOTRABLE F 1060R A",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Sin conveccion"
+  },
+  {
+    "sku": "240084442",
+    "descripcion": "HORNO EMPOTRABLE M SPAZIO110 A",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Sin conveccion"
+  },
+  {
+    "sku": "240084443",
+    "descripcion": "HORNO EMPOTRABLE M SPAZIO140 A",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Sin conveccion"
+  },
+  {
+    "sku": "240094987",
+    "descripcion": "HORNO EMPOTRABLE OE8EL",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Sin conveccion"
+  },
+  {
+    "sku": "900276730",
+    "descripcion": "HORNO EMPOTRABLE OM6TB",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Sin conveccion"
+  },
+  {
+    "sku": "900276733",
+    "descripcion": "HORNO EMPOTRABLE OM6TX",
+    "unidad_negocio": "MDA",
+    "categoria": "HORNO EMPOTRAR",
+    "subcategoria": "Sin conveccion"
+  },
+  {
+    "sku": "240081597",
+    "descripcion": "LAVADORA-SECADORA PERFECT 8WD",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Front < = 9.9 Kg"
+  },
+  {
+    "sku": "240081596",
+    "descripcion": "LAVADORA PREMIUM 11W",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Front > [10 - 14.9] kg"
+  },
+  {
+    "sku": "240081598",
+    "descripcion": "LAVADORA-SECADORA PERFECT 11WD",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Front > [10 - 14.9] kg"
+  },
+  {
+    "sku": "240085001",
+    "descripcion": "LAVADORA-SECADORA ULTIMATE 11WD",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Front > [10 - 14.9] kg"
+  },
+  {
+    "sku": "900276797",
+    "descripcion": "LAVADORA ELECTROLUX 14WM ONIX",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Front > [10 - 14.9] kg"
+  },
+  {
+    "sku": "900276799",
+    "descripcion": "LAVADORA-SECADORA ELECTROLUX 14WD WHITE",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Front > [10 - 14.9] kg"
+  },
+  {
+    "sku": "900276800",
+    "descripcion": "LAVADORA-SECADORA ELECTROLUX 14WD ONIX",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Front > [10 - 14.9] kg"
+  },
+  {
+    "sku": "900276801",
+    "descripcion": "LAVADORA-SECADORA ELECTROLUX 14WD AUTO",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Front > [10 - 14.9] kg"
+  },
+  {
+    "sku": "240084175",
+    "descripcion": "LAVADORA PREMIUM CARE 14 SZ",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [10-14.9]"
+  },
+  {
+    "sku": "240085859",
+    "descripcion": "LAVADORA MADEMSA 14 BZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [10-14.9]"
+  },
+  {
+    "sku": "240086035",
+    "descripcion": "LAVADORA MADEMSA 12 SZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [10-14.9]"
+  },
+  {
+    "sku": "240086037",
+    "descripcion": "LAVADORA PREMIUM CARE 12 SZ",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [10-14.9]"
+  },
+  {
+    "sku": "240086764",
+    "descripcion": "LAVADORA MADEMSA 12 BZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [10-14.9]"
+  },
+  {
+    "sku": "900081623",
+    "descripcion": "LAVADORA MADEMSA MDWMT14W",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [10-14.9]"
+  },
+  {
+    "sku": "900081633",
+    "descripcion": "LAVADORA ELECTROLUX EMTL13IB",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [10-14.9]"
+  },
+  {
+    "sku": "240084176",
+    "descripcion": "LAVADORA PREMIUM CARE 16 SZ",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [15.0 – 16.9] Kg"
+  },
+  {
+    "sku": "240085860",
+    "descripcion": "LAVADORA MADEMSA 16 BZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [15.0 – 16.9] Kg"
+  },
+  {
+    "sku": "240085911",
+    "descripcion": "LAVADORA MADEMSA 16 SZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [15.0 – 16.9] Kg"
+  },
+  {
+    "sku": "240093853",
+    "descripcion": "LAVADORA PREMIUM CARE 16 ONIX",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [15.0 – 16.9] Kg"
+  },
+  {
+    "sku": "900081624",
+    "descripcion": "LAVADORA MADEMSA MDWMT16W",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [15.0 – 16.9] Kg"
+  },
+  {
+    "sku": "900081625",
+    "descripcion": "LAVADORA MADEMSA MDWMT16S",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [15.0 – 16.9] Kg"
+  },
+  {
+    "sku": "900081630",
+    "descripcion": "LAVADORA MADEMSA MDWMT15W",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [15.0 – 16.9] Kg"
+  },
+  {
+    "sku": "900081636",
+    "descripcion": "LAVADORA ELECTROLUX EMTL16IO",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [15.0 – 16.9] Kg"
+  },
+  {
+    "sku": "240084177",
+    "descripcion": "LAVADORA PREMIUM CARE 18 SZ",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [17.0 – 18.9] Kg"
+  },
+  {
+    "sku": "240085912",
+    "descripcion": "LAVADORA MADEMSA 18 BZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [17.0 – 18.9] Kg"
+  },
+  {
+    "sku": "240085913",
+    "descripcion": "LAVADORA MADEMSA 18 SZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [17.0 – 18.9] Kg"
+  },
+  {
+    "sku": "240093818",
+    "descripcion": "LAVADORA PREMIUM CARE 18 BLACK",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [17.0 – 18.9] Kg"
+  },
+  {
+    "sku": "240093854",
+    "descripcion": "LAVADORA PREMIUM CARE 18 ONIX",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [17.0 – 18.9] Kg"
+  },
+  {
+    "sku": "900081626",
+    "descripcion": "LAVADORA MADEMSA MDWMT18W",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [17.0 – 18.9] Kg"
+  },
+  {
+    "sku": "900081627",
+    "descripcion": "LAVADORA MADEMSA MDWMT18S",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [17.0 – 18.9] Kg"
+  },
+  {
+    "sku": "900081638",
+    "descripcion": "LAVADORA ELECTROLUX EMTL18IO",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [17.0 – 18.9] Kg"
+  },
+  {
+    "sku": "900081639",
+    "descripcion": "LAVADORA ELECTROLUX EMTL18IB",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top [17.0 – 18.9] Kg"
+  },
+  {
+    "sku": "240086033",
+    "descripcion": "LAVADORA MADEMSA 9.5 BZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top < = 9.9 Kg"
+  },
+  {
+    "sku": "240086034",
+    "descripcion": "LAVADORA MADEMSA 9.5 SZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top < = 9.9 Kg"
+  },
+  {
+    "sku": "240086036",
+    "descripcion": "LAVADORA PREMIUM CARE 9.5 SZ",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top < = 9.9 Kg"
+  },
+  {
+    "sku": "240084178",
+    "descripcion": "LAVADORA PREMIUM CARE 20 SZ",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "240085915",
+    "descripcion": "LAVADORA MADEMSA 20 SZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "240093819",
+    "descripcion": "LAVADORA PREMIUM CARE 21 BLACK",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "240093856",
+    "descripcion": "LAVADORA PREMIUM CARE 21 ONIX",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "240093857",
+    "descripcion": "LAVADORA MADEMSA 21 ONIX",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "240095923",
+    "descripcion": "LAVADORA ELECTROLUX LS22Y",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "240095924",
+    "descripcion": "LAVADORA ELECTROLUX LEB21",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "900081628",
+    "descripcion": "LAVADORA MADEMSA MDWMT20S",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "900081629",
+    "descripcion": "LAVADORA MADEMSA MDWMT21O",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "900081631",
+    "descripcion": "LAVADORA MADEMSA MDWMT20O",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "900081640",
+    "descripcion": "LAVADORA ELECTROLUX EMTL20IO",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "900081641",
+    "descripcion": "LAVADORA ELECTROLUX EMTL21IO",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "900081642",
+    "descripcion": "LAVADORA ELECTROLUX EMTL21IB",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS AUTOMATICAS",
+    "subcategoria": "Top >= 19 Kg"
+  },
+  {
+    "sku": "240081621",
+    "descripcion": "LAVADORA TWISTER 5100-BLUE-M",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS SEMI-AUTOMATICAS",
+    "subcategoria": "L 0 - 9 KG"
+  },
+  {
+    "sku": "240081622",
+    "descripcion": "LAVADORA TWISTER 5300-BLUE-M",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS SEMI-AUTOMATICAS",
+    "subcategoria": "L 0 - 9 KG"
+  },
+  {
+    "sku": "900276923",
+    "descripcion": "LAVADORA MADEMSA TWINTUB MWMSAT6W 6KG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS SEMI-AUTOMATICAS",
+    "subcategoria": "L 0 - 9 KG"
+  },
+  {
+    "sku": "900277050",
+    "descripcion": "LAVADORA MADEMSA TWINTUB MWMSAT9W 9KG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVADORAS SEMI-AUTOMATICAS",
+    "subcategoria": "L 0 - 9 KG"
+  },
+  {
+    "sku": "240091569",
+    "descripcion": "LAVAVAJILLAS EXPERIENCE CARE 9 SZ",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVAVAJILLAS",
+    "subcategoria": "09 CUBIERTOS"
+  },
+  {
+    "sku": "240086647",
+    "descripcion": "LAVAVAJILLAS MADEMSA 14C BZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVAVAJILLAS",
+    "subcategoria": "12 CUBIERTOS"
+  },
+  {
+    "sku": "240086649",
+    "descripcion": "LAVAVAJILLAS MADEMSA 14C SZG",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVAVAJILLAS",
+    "subcategoria": "12 CUBIERTOS"
+  },
+  {
+    "sku": "240093665",
+    "descripcion": "LAVAVAJILLAS EUROPE 9880",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVAVAJILLAS",
+    "subcategoria": "13 CUBIERTOS"
+  },
+  {
+    "sku": "240086651",
+    "descripcion": "EXPERIENCE CARE 14 SZ",
+    "unidad_negocio": "MDA",
+    "categoria": "LAVAVAJILLAS",
+    "subcategoria": "14 CUBIERTOS"
+  },
+  {
+    "sku": "240083019",
+    "descripcion": "Microondas Empotrable ME3EP",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "BI"
+  },
+  {
+    "sku": "240092087",
+    "descripcion": "MICROONDAS EMPOTRABLE ME3BP",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "BI"
+  },
+  {
+    "sku": "240092379",
+    "descripcion": "MICROONDAS EMPOTRABLE MM2EN",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "BI"
+  },
+  {
+    "sku": "240078823",
+    "descripcion": "Microondas NMDO30S5GCRG",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "FS > =29L"
+  },
+  {
+    "sku": "240085586",
+    "descripcion": "MICROONDAS MM31FB",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "FS > =29L"
+  },
+  {
+    "sku": "240092723",
+    "descripcion": "MICROONDAS ME31N",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "FS > =29L"
+  },
+  {
+    "sku": "240085584",
+    "descripcion": "MICROONDAS MM20FBH",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "FS 20-23L Electronic"
+  },
+  {
+    "sku": "240085582",
+    "descripcion": "MICROONDAS MM20FBM",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "FS 20-23L Mechanic"
+  },
+  {
+    "sku": "900276675",
+    "descripcion": "MICROONDAS MM20AB",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "FS 20-23L Mechanic"
+  },
+  {
+    "sku": "240078822",
+    "descripcion": "Microondas NMDO25S5GCRG",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "FS 24-28L"
+  },
+  {
+    "sku": "240085585",
+    "descripcion": "MICROONDAS MM28FB",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "FS 24-28L"
+  },
+  {
+    "sku": "240092722",
+    "descripcion": "MICROONDAS ME25N",
+    "unidad_negocio": "MDA",
+    "categoria": "MICROONDAS",
+    "subcategoria": "FS 24-28L"
+  },
+  {
+    "sku": "240086556",
+    "descripcion": "REFRIGERADOR MED165",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM"
+  },
+  {
+    "sku": "240086814",
+    "descripcion": "REFRIGERADOR MED165B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM"
+  },
+  {
+    "sku": "240088494",
+    "descripcion": "REFRIGERADOR MED165S",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM"
+  },
+  {
+    "sku": "240094164",
+    "descripcion": "REFRIGERADOR MED250B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM"
+  },
+  {
+    "sku": "240094165",
+    "descripcion": "REFRIGERADOR MED270",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM"
+  },
+  {
+    "sku": "240094166",
+    "descripcion": "REFRIGERADOR MED270B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM"
+  },
+  {
+    "sku": "240094191",
+    "descripcion": "REFRIGERADOR MED250",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM"
+  },
+  {
+    "sku": "240083911",
+    "descripcion": "REFRIGERADOR COMBI NO FROST DB60S",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM NF"
+  },
+  {
+    "sku": "240087840",
+    "descripcion": "REFRIGERADOR COMBI NO FROST MI60B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM NF"
+  },
+  {
+    "sku": "240087841",
+    "descripcion": "REFRIGERADOR COMBI NO FROST MI60S",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM NF"
+  },
+  {
+    "sku": "240094326",
+    "descripcion": "REFRIGERADOR COMBI NO FROST DB60GE",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS BTM NF"
+  },
+  {
+    "sku": "240093782",
+    "descripcion": "REFRIGERADOR ALTUS 1200I",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS NO FROST"
+  },
+  {
+    "sku": "240093783",
+    "descripcion": "REFRIGERADOR ALTUS 1250I",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS NO FROST"
+  },
+  {
+    "sku": "240093906",
+    "descripcion": "REFRIGERADOR ALTUS 1250I B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS NO FROST"
+  },
+  {
+    "sku": "900277015",
+    "descripcion": "REFRIGERADOR ALTUS 1200IS",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS NO FROST"
+  },
+  {
+    "sku": "900277016",
+    "descripcion": "REFRIGERADOR ALTUS 1250IS",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS NO FROST"
+  },
+  {
+    "sku": "900277017",
+    "descripcion": "REFRIGERADOR ALTUS 1250IN",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS NO FROST"
+  },
+  {
+    "sku": "900277018",
+    "descripcion": "REFRIGERADOR ALTUS 1300INW",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS NO FROST"
+  },
+  {
+    "sku": "900277019",
+    "descripcion": "REFRIGERADOR ALTUS 1300IS",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "2 DOORS NO FROST"
+  },
+  {
+    "sku": "240089403",
+    "descripcion": "REFRIGERADOR MINIBAR MMB 91 BLK",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "COMPACT UP TO 130"
+  },
+  {
+    "sku": "240095659",
+    "descripcion": "REFRIGERADOR MINIBAR MMB 90 S",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "COMPACT UP TO 130"
+  },
+  {
+    "sku": "240095669",
+    "descripcion": "REFRIGERADOR MINIBAR MMB 120 B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "COMPACT UP TO 130"
+  },
+  {
+    "sku": "240095676",
+    "descripcion": "REFRIGERADOR MINIBAR MMB 50 BLK",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "COMPACT UP TO 130"
+  },
+  {
+    "sku": "240095945",
+    "descripcion": "REFRIGERADOR DOS PUERTAS MMB 80 S",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "COMPACT UP TO 130"
+  },
+  {
+    "sku": "240082465",
+    "descripcion": "REFRIGERADOR DM64S",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "MULTI DOOR"
+  },
+  {
+    "sku": "240091800",
+    "descripcion": "REFRIGERADOR DQ79SU",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "MULTI DOOR"
+  },
+  {
+    "sku": "240094217",
+    "descripcion": "REFRIGERADOR ELECTROLUX IM8B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "MULTI DOOR"
+  },
+  {
+    "sku": "240096571",
+    "descripcion": "REFRIGERADOR ELECTROLUX DQ79SU",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "MULTI DOOR"
+  },
+  {
+    "sku": "240087724",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE FENSA SFX440",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240087725",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE FENSA SFX530",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240087726",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE FENSA SFX530B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240087727",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE FENSA SFX440B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240093524",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE ELUX ES60S",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240093525",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE ELUX ES5GB",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240094096",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE MAS430B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240094097",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE MAS430",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240095128",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE ELUX ES4WS",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240095686",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE ELUX ES50B",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240095687",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE ELUX ES40WB",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240095688",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE ELUX ES50S",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240095689",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE ELUX ES40S",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240095690",
+    "descripcion": "REFRIGERADOR SIDE BY SIDE ELUX ES50WB",
+    "unidad_negocio": "MDA",
+    "categoria": "REFRIGERADORES",
+    "subcategoria": "SIDE BY SIDE"
+  },
+  {
+    "sku": "240086430",
+    "descripcion": "SECADORA MADEMSA 7D BZG",
+    "unidad_negocio": "MDA",
+    "categoria": "SECADORAS",
+    "subcategoria": "FRONTALES"
+  },
+  {
+    "sku": "240086481",
+    "descripcion": "SECADORA MADEMSA 9D BZG",
+    "unidad_negocio": "MDA",
+    "categoria": "SECADORAS",
+    "subcategoria": "FRONTALES"
+  },
+  {
+    "sku": "240086482",
+    "descripcion": "SECADORA MADEMSA 9D SZG",
+    "unidad_negocio": "MDA",
+    "categoria": "SECADORAS",
+    "subcategoria": "FRONTALES"
+  },
+  {
+    "sku": "240096076",
+    "descripcion": "SECADORA MADEMSA PRO 7D BZG",
+    "unidad_negocio": "MDA",
+    "categoria": "SECADORAS",
+    "subcategoria": "FRONTALES"
+  },
+  {
+    "sku": "240096077",
+    "descripcion": "SECADORA MADEMSA PRO 9D BZG",
+    "unidad_negocio": "MDA",
+    "categoria": "SECADORAS",
+    "subcategoria": "FRONTALES"
+  },
+  {
+    "sku": "240096078",
+    "descripcion": "SECADORA MADEMSA PRO 9D MZG",
+    "unidad_negocio": "MDA",
+    "categoria": "SECADORAS",
+    "subcategoria": "FRONTALES"
+  },
+  {
+    "sku": "240096079",
+    "descripcion": "SECADORA MADEMSA PRO 9D SZG",
+    "unidad_negocio": "MDA",
+    "categoria": "SECADORAS",
+    "subcategoria": "FRONTALES"
+  },
+  {
+    "sku": "900276798",
+    "descripcion": "SECADORA ELECTROLUX HP 8 SZ",
+    "unidad_negocio": "MDA",
+    "categoria": "SECADORAS",
+    "subcategoria": "FRONTALES"
+  },
+  {
+    "sku": "240055681",
+    "descripcion": "TERMO ELECTRICO TERM 80",
+    "unidad_negocio": "MDA",
+    "categoria": "TERMO",
+    "subcategoria": "ELECTRICAS"
+  },
+  {
+    "sku": "240055682",
+    "descripcion": "TERMO ELECTRICO TERM 100",
+    "unidad_negocio": "MDA",
+    "categoria": "TERMO",
+    "subcategoria": "ELECTRICAS"
+  },
+  {
+    "sku": "240064852",
+    "descripcion": "TERMO ELECTRICO TERM 120 LT",
+    "unidad_negocio": "MDA",
+    "categoria": "TERMO",
+    "subcategoria": "ELECTRICAS"
+  },
+  {
+    "sku": "240064853",
+    "descripcion": "TERMO ELECTRICO TERM 150 LT",
+    "unidad_negocio": "MDA",
+    "categoria": "TERMO",
+    "subcategoria": "ELECTRICAS"
+  },
+  {
+    "sku": "900081565",
+    "descripcion": "AIRE ACONDICIONADO PORTATIL SP12FC",
+    "unidad_negocio": "SDA",
+    "categoria": "AIRE ACONDICIONADO PORTATIL",
+    "subcategoria": "PORTABLE"
+  },
+  {
+    "sku": "900276838",
+    "descripcion": "BATIDORA PLANETARIA KMP70",
+    "unidad_negocio": "SDA",
+    "categoria": "BATIDORAS",
+    "subcategoria": "BATIDORAS"
+  },
+  {
+    "sku": "900276842",
+    "descripcion": "CAFETÉRA CMP70",
+    "unidad_negocio": "SDA",
+    "categoria": "CAFETERAS",
+    "subcategoria": "CAFETERAS"
+  },
+  {
+    "sku": "900276851",
+    "descripcion": "CAFETERA ESPRESSO ECM90",
+    "unidad_negocio": "SDA",
+    "categoria": "CAFETERAS",
+    "subcategoria": "CAFETERAS"
+  },
+  {
+    "sku": "900276852",
+    "descripcion": "CAFETERA ESPRESSO ECM70",
+    "unidad_negocio": "SDA",
+    "categoria": "CAFETERAS",
+    "subcategoria": "CAFETERAS"
+  },
+  {
+    "sku": "955117811",
+    "descripcion": "CAFETERA MCM10",
+    "unidad_negocio": "SDA",
+    "categoria": "CAFETERAS",
+    "subcategoria": "CAFETERAS"
+  },
+  {
+    "sku": "955117821",
+    "descripcion": "CAFETERA MCM30",
+    "unidad_negocio": "SDA",
+    "categoria": "CAFETERAS",
+    "subcategoria": "CAFETERAS"
+  },
+  {
+    "sku": "946521898",
+    "descripcion": "CALEFACTOR INFRARED INF10",
+    "unidad_negocio": "SDA",
+    "categoria": "CALEFACCION",
+    "subcategoria": "OTHERS HEATERS"
+  },
+  {
+    "sku": "946521897",
+    "descripcion": "ESTUFA PTC EH100",
+    "unidad_negocio": "SDA",
+    "categoria": "CALEFACCION",
+    "subcategoria": "PTC"
+  },
+  {
+    "sku": "946521893",
+    "descripcion": "TERMOVENTILADOR TV300",
+    "unidad_negocio": "SDA",
+    "categoria": "CALEFACCION",
+    "subcategoria": "TERMOVENTILADORES"
+  },
+  {
+    "sku": "946521894",
+    "descripcion": "TERMOVENTILADOR TV500",
+    "unidad_negocio": "SDA",
+    "categoria": "CALEFACCION",
+    "subcategoria": "TERMOVENTILADORES"
+  },
+  {
+    "sku": "946521895",
+    "descripcion": "TERMOVENTILADOR TV550",
+    "unidad_negocio": "SDA",
+    "categoria": "CALEFACCION",
+    "subcategoria": "TERMOVENTILADORES"
+  },
+  {
+    "sku": "946521896",
+    "descripcion": "TERMOVENTILADOR TV1000",
+    "unidad_negocio": "SDA",
+    "categoria": "CALEFACCION",
+    "subcategoria": "TERMOVENTILADORES"
+  },
+  {
+    "sku": "900081595",
+    "descripcion": "ASPIRADORA ELECTROLUX ABS05",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. SIN BOLSA"
+  },
+  {
+    "sku": "900921745",
+    "descripcion": "ASPIRADORA ELECTROLUX EASYBOX BGL40",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. SIN BOLSA"
+  },
+  {
+    "sku": "900921825",
+    "descripcion": "ASPIRADORA ELECTROLUX EASYBOX BGL41",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. SIN BOLSA"
+  },
+  {
+    "sku": "S135000724",
+    "descripcion": "Aspiradora s/bolsa MYSTIQUE",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. SIN BOLSA"
+  },
+  {
+    "sku": "900921832",
+    "descripcion": "ASPIRADORA VERTICAL STK12",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. VERTICALES ALAMBRICAS"
+  },
+  {
+    "sku": "900921833",
+    "descripcion": "ASPIRADORA VERTICAL ERG018",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. VERTICALES ALAMBRICAS"
+  },
+  {
+    "sku": "S135000779",
+    "descripcion": "PTE10",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. VERTICALES ALAMBRICAS"
+  },
+  {
+    "sku": "S135000784",
+    "descripcion": "Aspiradora vertical STK14",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. VERTICALES ALAMBRICAS"
+  },
+  {
+    "sku": "S135000785",
+    "descripcion": "Aspiradora vertical STK15",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. VERTICALES ALAMBRICAS"
+  },
+  {
+    "sku": "900921749",
+    "descripcion": "ASPIRADORA VERTICAL INALAMBRICA ERG019",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. VERTICALES INALAMBRICAS"
+  },
+  {
+    "sku": "900921759",
+    "descripcion": "LAVASPIRADORA VERTICAL EMC2500",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. VERTICALES INALAMBRICAS"
+  },
+  {
+    "sku": "900921770",
+    "descripcion": "ASPIRADORA VERTICAL INALAMBRICA PTEC100",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. VERTICALES INALAMBRICAS"
+  },
+  {
+    "sku": "S135000710",
+    "descripcion": "ErgoRapido 21",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. VERTICALES INALAMBRICAS"
+  },
+  {
+    "sku": "S135000777",
+    "descripcion": "Aspiradora Ergorapido ERG25N (New)",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ASP. VERTICALES INALAMBRICAS"
+  },
+  {
+    "sku": "900921742",
+    "descripcion": "ASPIRADORA ELECTROLUX SONIC BGG10",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "CANISTERS BAGGED"
+  },
+  {
+    "sku": "900921743",
+    "descripcion": "ASPIRADORA ELECTROLUX SONIC BGG11",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "CANISTERS BAGGED"
+  },
+  {
+    "sku": "900921744",
+    "descripcion": "ASPIRADORA ELECTROLUX SONIC PRO BGG30",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "CANISTERS BAGGED"
+  },
+  {
+    "sku": "900921809",
+    "descripcion": "HIDROLAVADORA UNIVERSAL UWS2250",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "HIDROLAVADORAS"
+  },
+  {
+    "sku": "900921810",
+    "descripcion": "HIDROLAVORA UNIVERSAL QWS1600",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "HIDROLAVADORAS"
+  },
+  {
+    "sku": "900921821",
+    "descripcion": "HIDROLAVADORA UNIVERSAL QWS1650",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "HIDROLAVADORAS"
+  },
+  {
+    "sku": "900921793",
+    "descripcion": "ASPIRADORA ROBOT ERB62",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ROBOT"
+  },
+  {
+    "sku": "900921797",
+    "descripcion": "ASPIRADORA ROBOT ERB80",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ROBOT"
+  },
+  {
+    "sku": "S135000781",
+    "descripcion": "ERB30",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ROBOT"
+  },
+  {
+    "sku": "S135000782",
+    "descripcion": "ERB40",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "ROBOT"
+  },
+  {
+    "sku": "900081509",
+    "descripcion": "ASPIRADORA DE BARRIL GT12I",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "W&D"
+  },
+  {
+    "sku": "900081510",
+    "descripcion": "ASPIRADORA DE BARRIL GT20I",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "W&D"
+  },
+  {
+    "sku": "900276952",
+    "descripcion": "SPOT CLEANER ESC10",
+    "unidad_negocio": "SDA",
+    "categoria": "FLOOR CARE",
+    "subcategoria": "W&D"
+  },
+  {
+    "sku": "900081518",
+    "descripcion": "FREIDORA DE AIRE MAF70",
+    "unidad_negocio": "SDA",
+    "categoria": "FREIDORAS",
+    "subcategoria": "FREIDORAS"
+  },
+  {
+    "sku": "900276843",
+    "descripcion": "FREIDORA DE AIRE EAF170",
+    "unidad_negocio": "SDA",
+    "categoria": "FREIDORAS",
+    "subcategoria": "FREIDORAS"
+  },
+  {
+    "sku": "900276845",
+    "descripcion": "FREIDORA DE AIRE EAF190",
+    "unidad_negocio": "SDA",
+    "categoria": "FREIDORAS",
+    "subcategoria": "FREIDORAS"
+  },
+  {
+    "sku": "955117815",
+    "descripcion": "FREIDORA DE AIRE MAF15",
+    "unidad_negocio": "SDA",
+    "categoria": "FREIDORAS",
+    "subcategoria": "FREIDORAS"
+  },
+  {
+    "sku": "955117840",
+    "descripcion": "FREIDORA DE AIRE MAF50",
+    "unidad_negocio": "SDA",
+    "categoria": "FREIDORAS",
+    "subcategoria": "FREIDORAS"
+  },
+  {
+    "sku": "955117841",
+    "descripcion": "FREIDORA DE AIRE MAF90",
+    "unidad_negocio": "SDA",
+    "categoria": "FREIDORAS",
+    "subcategoria": "FREIDORAS"
+  },
+  {
+    "sku": "955117889",
+    "descripcion": "FREIDORA DE AIRE MAF45",
+    "unidad_negocio": "SDA",
+    "categoria": "FREIDORAS",
+    "subcategoria": "FREIDORAS"
+  },
+  {
+    "sku": "900276847",
+    "descripcion": "HERVIDOR ELÉCTRICO EKP70",
+    "unidad_negocio": "SDA",
+    "categoria": "HERVIDORES",
+    "subcategoria": "HERVIDORES"
+  },
+  {
+    "sku": "900277051",
+    "descripcion": "HERVIDOR ELÉCTRICO MEK60",
+    "unidad_negocio": "SDA",
+    "categoria": "HERVIDORES",
+    "subcategoria": "HERVIDORES"
+  },
+  {
+    "sku": "955117810",
+    "descripcion": "HERVIDOR ELÉCTRICO MEK10",
+    "unidad_negocio": "SDA",
+    "categoria": "HERVIDORES",
+    "subcategoria": "HERVIDORES"
+  },
+  {
+    "sku": "955117817",
+    "descripcion": "HERVIDOR ELÉCTRICO MEK25",
+    "unidad_negocio": "SDA",
+    "categoria": "HERVIDORES",
+    "subcategoria": "HERVIDORES"
+  },
+  {
+    "sku": "955117876",
+    "descripcion": "HERVIDOR ELÉCTRICO MEK40",
+    "unidad_negocio": "SDA",
+    "categoria": "HERVIDORES",
+    "subcategoria": "HERVIDORES"
+  },
+  {
+    "sku": "955117877",
+    "descripcion": "HERVIDOR ELÉCTRICO MEK50",
+    "unidad_negocio": "SDA",
+    "categoria": "HERVIDORES",
+    "subcategoria": "HERVIDORES"
+  },
+  {
+    "sku": "900276849",
+    "descripcion": "LICUADORA BLP70",
+    "unidad_negocio": "SDA",
+    "categoria": "LICUADORAS",
+    "subcategoria": "LICUADORAS"
+  },
+  {
+    "sku": "955117806",
+    "descripcion": "LICUADORA MBL20",
+    "unidad_negocio": "SDA",
+    "categoria": "LICUADORAS",
+    "subcategoria": "LICUADORAS"
+  },
+  {
+    "sku": "955117807",
+    "descripcion": "LICUADORA PERSONAL MBL30",
+    "unidad_negocio": "SDA",
+    "categoria": "LICUADORAS",
+    "subcategoria": "LICUADORAS"
+  },
+  {
+    "sku": "955117808",
+    "descripcion": "LICUADORA MBL40",
+    "unidad_negocio": "SDA",
+    "categoria": "LICUADORAS",
+    "subcategoria": "LICUADORAS"
+  },
+  {
+    "sku": "955117809",
+    "descripcion": "LICUADORA MBL50",
+    "unidad_negocio": "SDA",
+    "categoria": "LICUADORAS",
+    "subcategoria": "LICUADORAS"
+  },
+  {
+    "sku": "955117816",
+    "descripcion": "EXPRIMIDOR DE CITRICOS MADEMSA MJP10",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "EXPRIMIDORES"
+  },
+  {
+    "sku": "900276850",
+    "descripcion": "LICUADORA DE MANO IBP70",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "LICUADORAS DE MANO"
+  },
+  {
+    "sku": "900276846",
+    "descripcion": "ESPUMADOR DE LECHE EMF10",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "OTROS ELECTRODOMÉSTICOS"
+  },
+  {
+    "sku": "900277053",
+    "descripcion": "LICUADORA DE MANO MIB60",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "OTROS ELECTRODOMÉSTICOS"
+  },
+  {
+    "sku": "955117805",
+    "descripcion": "OLLA ELÉCTRICA MANUAL MPC10",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "OTROS ELECTRODOMÉSTICOS"
+  },
+  {
+    "sku": "955117813",
+    "descripcion": "OLLA ELÉCTRICA DIGITAL MPC20",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "OTROS ELECTRODOMÉSTICOS"
+  },
+  {
+    "sku": "955117814",
+    "descripcion": "LICUADORA DE MANO MIB20",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "OTROS ELECTRODOMÉSTICOS"
+  },
+  {
+    "sku": "955117829",
+    "descripcion": "PROCESADOR DE ALIMENTOS MADEMSA MFP500",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "OTROS ELECTRODOMÉSTICOS"
+  },
+  {
+    "sku": "955117820",
+    "descripcion": "SANDWICHERA MADEMSA MSG20",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "SANDWICHERAS"
+  },
+  {
+    "sku": "900276848",
+    "descripcion": "TOSTADOR ELÉCTRICO TOP70",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "TOSTADORES"
+  },
+  {
+    "sku": "900277052",
+    "descripcion": "TOSTADOR ELÉCTRICO MTS60",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "TOSTADORES"
+  },
+  {
+    "sku": "955117812",
+    "descripcion": "TOSTADOR ELÉCTRICO MTS10",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "TOSTADORES"
+  },
+  {
+    "sku": "955117819",
+    "descripcion": "TOSTADOR ELÉCTRICO MTS25",
+    "unidad_negocio": "SDA",
+    "categoria": "OTROS ELECTRODOMESTICOS",
+    "subcategoria": "TOSTADORES"
+  },
+  {
+    "sku": "900276839",
+    "descripcion": "PLANCHA PORTÁTIL DE VAPOR EPS10",
+    "unidad_negocio": "SDA",
+    "categoria": "PLANCHAS",
+    "subcategoria": "PLANCHAS"
+  },
+  {
+    "sku": "900276840",
+    "descripcion": "VAPORIZADOR DE PRENDAS EGS20",
+    "unidad_negocio": "SDA",
+    "categoria": "PLANCHAS",
+    "subcategoria": "PLANCHAS"
+  },
+  {
+    "sku": "955117835",
+    "descripcion": "PLANCHA A VAPOR MIR10",
+    "unidad_negocio": "SDA",
+    "categoria": "PLANCHAS",
+    "subcategoria": "PLANCHAS"
+  },
+  {
+    "sku": "955117836",
+    "descripcion": "PLANCHA A VAPOR MIR20",
+    "unidad_negocio": "SDA",
+    "categoria": "PLANCHAS",
+    "subcategoria": "PLANCHAS"
+  },
+  {
+    "sku": "955117837",
+    "descripcion": "PLANCHA A VAPOR MIR30",
+    "unidad_negocio": "SDA",
+    "categoria": "PLANCHAS",
+    "subcategoria": "PLANCHAS"
+  },
+  {
+    "sku": "955117838",
+    "descripcion": "PLANCHA A VAPOR MIR40",
+    "unidad_negocio": "SDA",
+    "categoria": "PLANCHAS",
+    "subcategoria": "PLANCHAS"
+  },
+  {
+    "sku": "946521891",
+    "descripcion": "ENFRIADOR DE AIRE TFM10",
+    "unidad_negocio": "SDA",
+    "categoria": "VENTILACION",
+    "subcategoria": "AIR COOLER"
+  },
+  {
+    "sku": "946521886",
+    "descripcion": "VENTILADOR DFM12",
+    "unidad_negocio": "SDA",
+    "categoria": "VENTILACION",
+    "subcategoria": "VENTILADOR DE MESA"
+  },
+  {
+    "sku": "946521887",
+    "descripcion": "VENTILADOR DFM16",
+    "unidad_negocio": "SDA",
+    "categoria": "VENTILACION",
+    "subcategoria": "VENTILADOR DE MESA"
+  },
+  {
+    "sku": "946521888",
+    "descripcion": "VENTILADOR SF160",
+    "unidad_negocio": "SDA",
+    "categoria": "VENTILACION",
+    "subcategoria": "VENTILADOR DE PEDESTAL"
+  },
+  {
+    "sku": "946521889",
+    "descripcion": "VENTILADOR SFM21",
+    "unidad_negocio": "SDA",
+    "categoria": "VENTILACION",
+    "subcategoria": "VENTILADOR DE PEDESTAL"
+  },
+  {
+    "sku": "946521890",
+    "descripcion": "VENTILADOR SFM2",
+    "unidad_negocio": "SDA",
+    "categoria": "VENTILACION",
+    "subcategoria": "VENTILADOR DE PEDESTAL"
+  }
+]
