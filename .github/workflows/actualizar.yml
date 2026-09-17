@@ -24,6 +24,9 @@ jobs:
       - name: Generar feed público controlado
         run: python generar_feed_publico.py
 
+      - name: Generar feed operativo OLB OS
+        run: python generar_feed_olb_os.py
+
       - name: Verificar feed antes de publicarlo
         run: python verificar_feed_publico.py
 
