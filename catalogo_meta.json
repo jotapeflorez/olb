@@ -1,13 +1,13 @@
 {
-  "actualizado_utc": "2026-09-16T03:10:45Z",
+  "actualizado_utc": "2026-09-17T03:10:41Z",
   "fuente_disponibilidad": "https://www.totem.shopclub.cl",
-  "productos": 628,
-  "disponibles_despacho": 468,
+  "productos": 630,
+  "disponibles_despacho": 474,
   "cantidad_productos": 399,
-  "cantidad_accesorios_repuestos": 229,
+  "cantidad_accesorios_repuestos": 231,
   "vigentes_excel": 377,
-  "vigentes_encontrados_totem": 276,
-  "vigentes_con_respaldo_minimo": 101,
-  "incluidos_solo_por_stock": 251,
+  "vigentes_encontrados_totem": 274,
+  "vigentes_con_respaldo_minimo": 103,
+  "incluidos_solo_por_stock": 253,
   "regla_publicacion": "vigente_interno_o_stock_totem"
 }
