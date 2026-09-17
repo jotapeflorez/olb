@@ -4,9 +4,6 @@ on:
   workflow_dispatch: # Permite ejecutarlo manualmente desde la pestaña Actions
   schedule:
     - cron: '0 3 * * *' # Se ejecuta automáticamente todos los días a las 3:00 AM UTC
-  push:
-    paths:
-      - '.run-catalogo'
 
 jobs:
   build:
