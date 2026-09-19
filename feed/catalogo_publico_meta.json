@@ -1,9 +1,9 @@
 {
-  "actualizado_utc": "2026-09-18T03:10:37Z",
+  "actualizado_utc": "2026-09-19T03:10:20Z",
   "fuente_control": "https://docs.google.com/spreadsheets/d/1wNOJG4V8vm0O07iBgJJwZ94Ml8EOuqzqdEya84pzsHU/edit",
   "regla_publicacion": "publicar_automatico_mas_aprobacion_manual",
   "productos": 500,
-  "disponibles_despacho": 460,
+  "disponibles_despacho": 458,
   "cantidad_productos": 271,
   "cantidad_accesorios_repuestos": 229,
   "publicados_por_regla_automatica": 367,
