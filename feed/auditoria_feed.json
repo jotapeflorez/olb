@@ -1,6 +1,6 @@
 {
-  "generado_utc": "2026-09-19T03:10:20Z",
-  "entrada_productos": 629,
+  "generado_utc": "2026-09-20T03:11:04Z",
+  "entrada_productos": 626,
   "salida_productos": 500,
   "excluidos": {
     "pendiente": 11,
@@ -37,6 +37,14 @@
       "origen": "revision_manual"
     },
     {
+      "sku": "240077774",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240078349",
+      "origen": "revision_manual"
+    },
+    {
       "sku": "240088441",
       "origen": "revision_manual"
     },
@@ -70,6 +78,10 @@
     },
     {
       "sku": "240091584",
+      "origen": "regla_automatica"
+    },
+    {
+      "sku": "240088763",
       "origen": "regla_automatica"
     },
     {
