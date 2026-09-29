@@ -58,6 +58,14 @@ def detalle(publico, raw, oficial):
         texto = limpiar(frase, 250)
         if texto and texto not in caracteristicas:
             caracteristicas.append(texto)
+    niveles = next((valor for clave, valor in specs.items() if "niveles de temperatura" in clave.casefold()), "")
+    explicacion = ""
+    if all(palabra in niveles.casefold() for palabra in ("refrigerar", "conservar", "congelar")):
+        cantidad = re.match(r"\d+", niveles)
+        explicacion = (
+            "Permite elegir entre refrigerar, conservar o congelar"
+            + (f" con {cantidad.group()} niveles de temperatura." if cantidad else ".")
+        )
     return {
         "ref": publico["ref"],
         "nombre": publico["nombre"],
@@ -70,6 +78,7 @@ def detalle(publico, raw, oficial):
         "imagenes": imagenes_de(raw, oficial, publico),
         "descripcion": limpiar(raw.get("descripcion") or oficial.get("descripcion"), 1200),
         "caracteristicas": caracteristicas[:6],
+        **({"explicacion": explicacion} if explicacion else {}),
         "especificaciones": specs,
         "fuentes": (["Catálogo Tótem por SKU"] if raw and not str(raw.get("id") or "").startswith("vigente-") else [])
                    + ([f"Catálogo oficial {limpiar(oficial.get('marca'), 40)} por SKU"] if oficial and specs_oficial else []),
@@ -90,6 +99,7 @@ def ficha_html(p):
     if not especificaciones:
         especificaciones = '<p class="empty-spec">Aún no contamos con especificaciones verificadas para este código.</p>'
     caracteristicas = "".join(f'<li>{e(x)}</li>' for x in p["caracteristicas"])
+    explicacion = f'\n<aside class="entender"><strong>¿Qué significa 3 en 1?</strong><p>{e(p["explicacion"])}</p></aside>' if p.get("explicacion") else ""
     description = f'<p>{e(p["descripcion"])}</p>' if p["descripcion"] else '<p>Esta ficha reúne los datos comprobados para el código indicado. Confirma las características faltantes con la tienda.</p>'
     fuentes = ", ".join(p["fuentes"]) or "Listado vigente OLB y control de publicación"
     imagen_social = f'<meta name="twitter:card" content="summary_large_image"><meta property="og:image" content="{e(imagenes[0])}">' if imagenes else ""
@@ -103,7 +113,7 @@ def ficha_html(p):
 <main><nav class="migas" aria-label="Ruta"><a href="../index.html">Catálogo</a><span>›</span><span>{e(p['categoria'])}</span><span>›</span><span>{e(p['modelo'] or ref)}</span></nav>
 <section class="producto"><div class="galeria"><div class="foto" id="foto">{foto}</div><div class="miniaturas" id="miniaturas" aria-label="Fotos del producto"></div><small>Imágenes de catálogo asociadas al código publicado. La exhibición puede variar.</small></div>
 <div class="producto-info"><p class="etiqueta">{e(p['marca'])} · {e(p['categoria'])}</p><h1>{e(nombre)}</h1><p class="identidad">{f'Modelo {e(p["modelo"])} · ' if p['modelo'] else ''}Código {e(ref)}</p>
-{f'<ul class="resumen">{datos}</ul>' if datos else '<p class="resumen vacio">Características principales por confirmar para este código.</p>'}
+{f'<ul class="resumen">{datos}</ul>' if datos else '<p class="resumen vacio">Características principales por confirmar para este código.</p>'}{explicacion}
 <div class="stock" id="stock" role="status"><strong>Consultar disponibilidad para despacho</strong><span>La tienda confirma stock y condiciones antes de comprar.</span></div>
 <p class="comercial">Compra presencial en San Pedro de la Paz o consulta despacho a Chile continental. Precio y condiciones se confirman con la tienda.</p>
 <div class="acciones"><a class="primaria" href="tel:+56412907387">Llamar al +56 41 290 7387</a><button id="comparar" class="secundaria" type="button">Agregar a comparación</button></div>
