@@ -1,11 +1,11 @@
 {
-  "generado_utc": "2026-09-28T09:19:38Z",
-  "entrada_productos": 642,
+  "generado_utc": "2026-09-29T09:27:32Z",
+  "entrada_productos": 650,
   "salida_productos": 500,
   "excluidos": {
     "pendiente": 11,
     "ocultar": 0,
-    "sin_decision_publicable": 164
+    "sin_decision_publicable": 167
   },
   "fichas_reconstruidas_desde_control": [
     {
@@ -33,10 +33,6 @@
       "origen": "revision_manual"
     },
     {
-      "sku": "A05594302",
-      "origen": "revision_manual"
-    },
-    {
       "sku": "C59201689",
       "origen": "revision_manual"
     },
@@ -45,19 +41,15 @@
       "origen": "revision_manual"
     },
     {
-      "sku": "A23903008",
-      "origen": "revision_manual"
-    },
-    {
-      "sku": "240087869",
-      "origen": "revision_manual"
-    },
-    {
       "sku": "240077774",
       "origen": "revision_manual"
     },
     {
       "sku": "240077740",
+      "origen": "revision_manual"
+    },
+    {
+      "sku": "240082734",
       "origen": "revision_manual"
     },
     {
@@ -109,27 +101,11 @@
       "origen": "regla_automatica"
     },
     {
-      "sku": "240088894",
-      "origen": "regla_automatica"
-    },
-    {
-      "sku": "240088763",
-      "origen": "regla_automatica"
-    },
-    {
       "sku": "A30305901",
       "origen": "regla_automatica"
     },
     {
-      "sku": "240072689",
-      "origen": "regla_automatica"
-    },
-    {
       "sku": "240069499",
-      "origen": "regla_automatica"
-    },
-    {
-      "sku": "C58511110",
       "origen": "regla_automatica"
     },
     {
@@ -138,6 +114,10 @@
     },
     {
       "sku": "240082377",
+      "origen": "regla_automatica"
+    },
+    {
+      "sku": "240086696",
       "origen": "regla_automatica"
     }
   ],
