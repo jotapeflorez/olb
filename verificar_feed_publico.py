@@ -28,6 +28,7 @@ def main() -> None:
     control = cargar("publicacion_control.json")
     feed = cargar("feed/catalogo_publico.json")
     meta = cargar("feed/catalogo_publico_meta.json")
+    stock = cargar("feed/stock.json")
 
     refs = [sku(producto.get("ref")) for producto in feed]
     ids = [str(producto.get("id") or "").strip() for producto in feed]
@@ -41,6 +42,18 @@ def main() -> None:
         assert str(producto.get("categoria") or "").strip(), f"Falta categoría en {producto.get('ref')}"
         assert producto.get("tipo_catalogo") in {"productos", "accesorios"}, f"Tipo inválido en {producto.get('ref')}"
         assert len(producto.get("imagenes") or []) == 1, f"Falta imagen principal en {producto.get('ref')}"
+        assert producto.get("ficha") == f"p/{sku(producto.get('ref'))}.html", "Ruta de ficha no coincide con SKU"
+        assert "precio" not in producto and "despacho_disponible" not in producto, "Datos internos en feed público"
+        ref = sku(producto.get("ref"))
+        ficha = BASE / "p" / f"{ref}.html"
+        detalle = BASE / "feed" / "fichas" / f"{ref}.json"
+        assert ficha.is_file() and detalle.is_file(), f"Falta ficha interna en {ref}"
+        contenido = ficha.read_text(encoding="utf-8")
+        assert f'data-ref="{ref}"' in contenido, f"Ficha de otro SKU en {ref}"
+        assert not re.search(r'href="https?://(?:www\.)?(?:electrolux|mademsa|tiendamademsa|fensa|totem\.shopclub)', contenido, re.I), f"Enlace de fabricante en {ref}"
+        especificaciones = json.loads(detalle.read_text(encoding="utf-8"))
+        assert especificaciones.get("ref") == producto.get("ref"), f"Datos de otra ficha en {ref}"
+        assert "precio" not in especificaciones and "url" not in especificaciones, f"Campos internos en ficha {ref}"
 
     bloqueados: set[str] = set()
     manual_publicar: set[str] = set()
@@ -59,6 +72,8 @@ def main() -> None:
     assert not (refs_feed & bloqueados), "El feed contiene SKU pendientes u ocultos"
     assert refs_feed <= (automaticos | manual_publicar), "El feed contiene SKU sin decisión publicable"
     assert int(meta.get("productos", -1)) == len(feed), "El total del metadato no coincide con el feed"
+    assert set(stock.get("disponibles") or []) <= refs_feed, "Stock de SKU no publicado"
+    assert meta.get("fuente_stock_actualizado_utc") == stock.get("actualizado_utc"), "Fecha de stock no coincide"
     assert int(meta.get("publicados_por_regla_automatica", -1)) + int(meta.get("publicados_por_revision_manual", -1)) == len(feed), "El origen de las publicaciones no cuadra"
 
     patron_servicio = re.compile(r"garant|extendid|servicio t|instalaci|conexi[oó]n|visita|p[oó]liza|cobertura|plan de protecc", re.I)

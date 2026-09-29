@@ -1,85 +1,76 @@
-# Catálogo · Outlet Línea Blanca San Pedro
+# Catálogo OLB · San Pedro
 
-Catálogo web informativo OLB, **sin precios ni compra en línea**, orientado a consultar,
-visitar la tienda y comprar presencialmente o solicitar despacho a Chile continental.
-La disponibilidad para despacho se actualiza desde Tótem. El surtido se complementa
-con el archivo interno `vigentes.json`, generado desde la planilla vigente de San
-Pedro. Este proceso administrativo no aparece en la interfaz pública.
+Catálogo informativo del Outlet Línea Blanca San Pedro, Mall Arauco Premium
+Outlet, Local 38. No publica precios ni ofrece compra en línea. Cada tarjeta
+enlaza a una ficha **dentro de OLB** con fotos, medidas y especificaciones
+verificadas para su SKU. La ficha invita a llamar al **+56 41 290 7387**.
+El comparador admite hasta tres modelos de una misma categoría.
 
-La grilla no muestra stock. Al abrir un producto se muestran marca, referencia,
-dimensiones publicadas y disponibilidad para despacho. Como el stock puede cambiar
-durante el día, el sitio pide confirmar siempre llamando al teléfono fijo
-**+56 41 290 7387**. WhatsApp se incorporará más adelante.
+## Datos y publicación
 
-El catálogo se puede ordenar por nombre o por precio. El precio actualizado se usa
-solo para definir el orden y no se presenta al público en esta etapa informativa.
+La fuente de despacho es Tótem ShopClub. Electrolux, Mademsa y Fensa
+complementan imágenes y especificaciones mediante su API de catálogo **VTEX**
+cuando coinciden las referencias exactas; las URL de sus tiendas se conservan
+solo en archivos operativos, nunca como enlaces de “Más información” para
+clientes. No se presupone que estos catálogos sean Shopify.
 
-Las garantías no aparecen como productos. El catálogo incluye una explicación breve
-de la garantía legal, voluntaria y especial. Productos y accesorios/repuestos se
-presentan en pestañas separadas.
+El proceso mantiene la regla existente: solo se publican los SKU de
+`publicacion_control.json` aprobados por regla automática o revisión manual.
+Pendientes, ocultos, servicios y packs no permitidos quedan fuera. Las fichas
+reconstruidas desde un control anterior no se tratan como evidencia de stock.
 
-## Archivos
+La disponibilidad pública se consulta desde `feed/stock.json`. Una señal
+positiva de Tótem se presenta únicamente cuando su observación tiene menos de
+24 horas. Si no hay señal vigente, el visitante ve “Consultar disponibilidad”.
+La cantidad ofrecida por la API no es inventario de la sala OLB y no se
+presenta al cliente. Siempre se confirma despacho y condiciones en tienda.
 
-- **index.html** — estructura y estilos del catálogo.
-- **OLB_LOGO_OFICIAL_2026_SAN_PEDRO_ELECTROLUX_MADEMSA.png** — logo oficial exacto sobre fondo negro.
-- **catalogo.js** — filtros, ficha de producto, dimensiones, despacho y llamadas a tienda.
-- **datos_catalogo.js** — salida técnica completa del recolector, conservada como base de trabajo.
-- **feed/catalogo_publico.json** — datos controlados que carga el catálogo publicado.
-- **feed/catalogo_publico.js** — respaldo integrado para abrir `index.html` directamente.
-- **vigentes.json** — SKU y descripción vigentes de San Pedro, importados desde la planilla oficial entregada por la tienda.
-- **actualizar_vigentes.py** — reemplaza internamente la lista vigente desde un nuevo Excel, sin agregar controles al sitio público.
-- **fuentes_oficiales.json** — caché interna de fichas e imágenes verificadas por SKU en Electrolux, Mademsa y Fensa.
-- **armar_catalogo_auto.py** — cruza la lista vigente con Tótem y arma `productos.json`, `catalogo_meta.json` y `datos_catalogo.js` (usa el Extractor OLB para las imágenes).
-- **publicacion_control.json** — copia de trabajo de las decisiones PUBLICAR/REVISAR/OCULTAR del informe en Drive.
-- **generar_feed_publico.py** — crea en `feed/` una salida liviana usando publicaciones automáticas más aprobaciones manuales.
-- **verificar_feed_publico.py** — comprueba que el feed no incluya pendientes, ocultos, duplicados ni fichas sin imagen.
-- **extractor_olb.py** — Extractor OLB (lo usa el script anterior; también se puede correr solo: `python extractor_olb.py MODELO --descargar`).
-- **.github/workflows/actualizar.yml** — corre el proceso una vez al día.
+## Archivos principales
 
-## Publicar / actualizar en tu repositorio
+| Archivo | Función |
+| --- | --- |
+| `index.html`, `catalogo.js` | Grilla, búsqueda, filtros y selección de comparación |
+| `p/<SKU>.html`, `ficha.css`, `ficha.js` | Páginas internas con URL compartible, ficha técnica y galería |
+| `comparar.html`, `comparar.js` | Comparación por categoría |
+| `armar_catalogo_auto.py` | Consulta Tótem y catálogos oficiales VTEX por SKU |
+| `generar_feed_publico.py` | Aplica el control de publicación y crea feed liviano y stock |
+| `generar_fichas.py` | Genera HTML y JSON de cada SKU publicado |
+| `verificar_feed_publico.py` | Valida decisiones, SKU, datos y enlaces internos |
+| `feed/catalogo_olb_os.csv` | Salida operativa con URL de origen, separada de la interfaz |
 
-1. Sube todo el contenido de esta carpeta al repositorio oficial, incluida la carpeta `feed/`.
-2. **Settings → Actions → General → Workflow permissions → Read and write**.
-3. **Actions → Actualizar catálogo → Run workflow** (actualiza la base, genera el feed controlado y lo valida antes de guardar cambios).
-4. **Settings → Pages** → rama `main`, carpeta `/ (root)`.
+Los archivos `productos.json`, `vigentes.json`, `fuentes_oficiales.json`,
+`publicacion_control.json` y `catalogo_meta.json` alimentan la generación.
+Las páginas no incrustan HTML, iframe ni manuales externos de proveedores.
+Cuando faltan características se indica expresamente. No se deduce una
+garantía especial para un modelo sin dato en su ficha.
 
-De ahí en adelante se actualiza solo cada día.
+## Actualizar
 
-La regla de publicación combina dos fuentes: se muestra un SKU si está en el archivo
-interno de vigentes o si Tótem registra stock para despacho. El stock de Tótem se usa
-solo para informar despacho y no representa por sí solo todo lo disponible en tienda.
-Un SKU sin vigencia y sin stock se oculta aunque exista en el maestro. Los accesorios
-y repuestos siguen la misma regla.
+```bash
+python armar_catalogo_auto.py
+python generar_feed_publico.py
+python generar_fichas.py
+python generar_feed_olb_os.py
+python verificar_feed_publico.py
+```
 
-Para los SKU vigentes sin imagen en Tótem, la actualización cruza por código exacto
-los catálogos oficiales de Electrolux, Mademsa y Fensa y conserva la última ficha
-verificada. Garantías, visitas, conexiones, instalaciones y otros servicios se
-excluyen como artículos. También se ocultan kits, combos, packs y referencias
-combinadas; la única excepción son los conjuntos de aire acondicionado.
+El workflow `.github/workflows/actualizar.yml` ejecuta la secuencia a
+diario y guarda los resultados solo si pasa la validación. Para probar el
+sitio localmente:
 
-Para renovar la lista interna se ejecuta `python actualizar_vigentes.py "archivo.xlsx"`
-y luego el actualizador normal del catálogo. El importador detecta las columnas SKU y
-DESCRIPCION y conserva los datos oficiales adicionales ya verificados por código.
+```bash
+python -m http.server 8000
+```
 
-El catálogo carga inicialmente 24 resultados y agrega más a pedido. Solo publica la
-primera imagen utilizada por cada ficha, difiere la carga de fotografías y reutiliza
-los datos en caché cuando corresponde.
+Abrir `http://localhost:8000/`. GitHub Pages puede publicar la rama
+`main` desde la carpeta raíz. Si una ficha aprobada deja de publicarse, el
+generador retira sus HTML y JSON antiguos.
 
-## Feed público controlado
+### Límites de la información
 
-El feed nuevo se genera con `python generar_feed_publico.py` y se valida con
-`python verificar_feed_publico.py`. Sus archivos quedan dentro de `feed/` y son la
-fuente que utiliza la página. La salida mantiene una sola imagen por ficha, unifica
-categorías equivalentes y conserva el precio únicamente para el orden interno.
-
-La regla del feed es: incluir las filas `PUBLICAR` de `CRUCE_SKU` y las filas de
-`REVISAR` cuya `Decisión final` sea `Publicar`. Las decisiones `Pendiente` y
-`Ocultar` nunca entran. Si una ficha aprobada no está en `productos.json`, se
-reconstruye con los datos verificados del informe en vez de descartarla.
-
-## Ajustes
-
-- Datos de la tienda (nombre, teléfono fijo, dirección, mapa): constante `CONFIG` en `catalogo.js`.
-- Color de marca: variable `--accent` al inicio de index.html.
-- Marcas / tamaño de imagen: al inicio de armar_catalogo_auto.py (`MARCAS`, `IMG_LADO`).
-- Términos excluidos como garantías o servicios: `PATRON_NO_CATALOGO` en armar_catalogo_auto.py.
+El feed antiguo tenía una foto por SKU y muchos productos sin modelo o
+especificaciones. El recolector actualizado puede traer hasta ocho fotos y
+sus atributos técnicos por SKU en la próxima actualización. El lote incluido
+en esta entrega incorpora fichas enriquecidas de M100DI, M150DI, M200DI y
+M400DI como ejemplos reales. El resto se enriquece progresivamente cuando
+las APIs entregan datos; sus campos faltantes siguen visibles como tales.
