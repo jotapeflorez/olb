@@ -1,21 +1,15 @@
-name: Actualizar catálogo y sitio público
+name: Preparar actualización diaria del catálogo
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/actualizar.yml'
   schedule:
     - cron: '17 9 * * *'
 
-# La consulta de fuentes no dispone de un token de escritura. Solo el segundo
-# job puede publicar los datos validados en main.
 permissions:
   contents: read
 
 concurrency:
-  group: publicacion-catalogo
+  group: propuesta-catalogo
   cancel-in-progress: false
 
 jobs:
@@ -27,34 +21,23 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
-
       - name: Configurar Python
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.12'
-
       - name: Consultar catálogos
         run: python armar_catalogo_auto.py
-
       - name: Generar feed público
         run: python generar_feed_publico.py
-
-      - name: Generar fichas si la versión las incluye
-        run: |
-          if [ -f generar_fichas.py ]; then python generar_fichas.py; fi
-
+      - name: Generar fichas
+        run: python generar_fichas.py
       - name: Generar feed operativo
         run: python generar_feed_olb_os.py
-
       - name: Validar fichas y descartar caídas de las fuentes
         run: |
           python verificar_feed_publico.py
           python validar_actualizacion_diaria.py
-
-      - name: Mostrar cambios generados
-        run: git status --short
-
-      - name: Guardar datos validados
+      - name: Guardar datos validados para publicación controlada
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: catalogo-validado
@@ -67,51 +50,3 @@ jobs:
             p/
           if-no-files-found: error
           retention-days: 7
-
-  publicar:
-    if: github.ref == 'refs/heads/main'
-    needs: preparar
-    runs-on: ubuntu-24.04
-    timeout-minutes: 25
-    permissions:
-      contents: write
-    steps:
-      - name: Obtener la rama pública
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-        with:
-          ref: main
-          persist-credentials: true
-
-      - name: Configurar Python
-        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
-        with:
-          python-version: '3.12'
-
-      - name: Recuperar datos de la consulta sin credenciales
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
-        with:
-          name: catalogo-validado
-          path: ${{ runner.temp }}/catalogo-validado
-
-      - name: Instalar únicamente archivos generados
-        env:
-          CATALOGO_VALIDADO: ${{ runner.temp }}/catalogo-validado
-        run: python publicar_catalogo_diario.py "$CATALOGO_VALIDADO"
-
-      - name: Validar el resultado que se publicará
-        run: python verificar_feed_publico.py
-
-      - name: Publicar datos en la rama conectada a Cloudflare Pages
-        run: |
-          git add -A -- productos.json fuentes_oficiales.json catalogo_meta.json datos_catalogo.js feed p
-          if git diff --cached --quiet; then
-            echo 'El catálogo no cambió.'
-            exit 0
-          fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Actualizar datos del catálogo OLB'
-          git push origin HEAD:main
-
-      - name: Confirmar actualización del sitio público
-        run: python verificar_sitio_publico.py
