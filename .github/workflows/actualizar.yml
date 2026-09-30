@@ -104,6 +104,12 @@ jobs:
           wranglerVersion: '4.136.3'
           command: pages deploy dist --project-name=olbsanpedro --branch=main
 
+      - name: Desactivar despliegues Git que exponen archivos internos
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: python controlar_pages.py
+
       - name: Confirmar fecha visible en el sitio
         env:
           OLB_FEED_META: dist/feed/catalogo_publico_meta.json

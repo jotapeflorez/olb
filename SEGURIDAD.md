@@ -39,7 +39,14 @@ crear una copia, pero eso no altera el repositorio OLB.
 El workflow diario genera y valida un artefacto descargable en Actions. Con
 las dos credenciales configuradas, publica solo páginas y feeds desde `dist/`
 en el proyecto Pages `olbsanpedro`, sin cambiar la rama `main`. Comprueba la
-fecha de stock servida después del despliegue. Sin credenciales, no despliega;
+fecha de stock servida después del despliegue. El mismo job desactiva en ese
+proyecto los despliegues Git automáticos de producción y de vistas previas:
+si permanecen activos, un commit a `main` puede volver a publicar la raíz del
+repositorio, incluidos archivos que no pertenecen al sitio. Antes de cambiar
+esa configuración, el job comprueba que el proyecto está conectado a
+`jotapeflorez/olb` y a la rama `main`.
+
+Sin credenciales, no despliega;
 el último sitio sigue visible y el stock deja de mostrarse como reciente a
 las 24 horas. La publicación de cambios de código continúa bajo el control
 de la rama GitHub.
