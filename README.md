@@ -42,10 +42,9 @@ presenta al cliente. Siempre se confirma despacho y condiciones en tienda.
 | `verificar_feed_publico.py` | Valida decisiones, SKU, datos, enlaces internos y cobertura mínima |
 | `feed/calidad_fichas.json` | Conteo real de descripciones, atributos, medidas y galerías visibles |
 | `feed/catalogo_olb_os.csv` | Salida operativa con URL de origen, separada de la interfaz |
-| `.github/workflows/actualizar.yml` | Consulta, valida y publica datos diarios en `main` |
+| `.github/workflows/actualizar.yml` | Consulta y valida datos diarios con permiso de solo lectura |
 | `validar_actualizacion_diaria.py` | Detiene caídas anormales de cobertura o stock |
-| `publicar_catalogo_diario.py` | Copia solo archivos generados desde el job sin permiso de escritura |
-| `verificar_sitio_publico.py` | Comprueba que Cloudflare Pages sirve la versión diaria |
+| `verificar_sitio_publico.py` | Permite comprobar un despliegue de Cloudflare Pages |
 | `.github/workflows/verificar.yml` | Comprueba pull requests hacia `main` con token de solo lectura |
 | `SEGURIDAD.md` | Pasos para proteger la rama y revisar los accesos en GitHub |
 
@@ -84,21 +83,13 @@ python verificar_feed_publico.py
 El workflow `.github/workflows/actualizar.yml` consulta a diario a las
 09:17 UTC (06:17 en Chile durante horario de verano, 05:17 durante horario
 de invierno). Valida fichas, frescura y variaciones anormales, guarda el
-artefacto `catalogo-validado` por siete días y hace un commit **solo de
-archivos generados** en `main`. Cloudflare Pages publica el nuevo commit de
-su rama de producción conectada a GitHub. El workflow también admite ejecución
-manual; el cambio inicial del propio workflow inicia una ejecución.
-
-La consulta a terceros se ejecuta con `contents: read` y sin credenciales de
-Git. Solo el job posterior de publicación dispone de `contents: write`; copia
-una lista cerrada de salidas y vuelve a validar las fichas antes de hacer
-`git push`. No modifica scripts, workflows ni decisiones en
-`publicacion_control.json`. Si falla una fuente o una validación, no se
-publica el resultado y el stock deja de mostrarse como reciente después de
-24 horas. Después del push, el job espera hasta diez minutos a que el sitio
-público muestre la nueva fecha; si Cloudflare no despliega, la ejecución
-queda marcada como fallida. Consulta `SEGURIDAD.md` antes de aplicar una regla de rama que
-podría bloquear al publicador automático. Para probar el sitio localmente:
+artefacto `catalogo-validado` por siete días. Usa `contents: read`, no guarda
+credenciales de Git y no modifica `main`. Una publicación posterior de esos
+datos debe pasar por una cuenta autorizada; un commit en la rama de producción
+conectada a Cloudflare Pages activa su despliegue. Si no se publica el
+resultado, el stock deja de mostrarse como reciente después de 24 horas. El
+workflow también admite ejecución manual. Consulta `SEGURIDAD.md` para los
+controles de acceso. Para probar el sitio localmente:
 
 ```bash
 python -m http.server 8000
