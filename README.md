@@ -42,8 +42,9 @@ presenta al cliente. Siempre se confirma despacho y condiciones en tienda.
 | `verificar_feed_publico.py` | Valida decisiones, SKU, datos, enlaces internos y cobertura mínima |
 | `feed/calidad_fichas.json` | Conteo real de descripciones, atributos, medidas y galerías visibles |
 | `feed/catalogo_olb_os.csv` | Salida operativa con URL de origen, separada de la interfaz |
-| `.github/workflows/actualizar.yml` | Consulta y valida datos diarios con permiso de solo lectura |
+| `.github/workflows/actualizar.yml` | Consulta datos y, si está configurado Cloudflare, despliega a diario sin escribir en GitHub |
 | `validar_actualizacion_diaria.py` | Detiene caídas anormales de cobertura o stock |
+| `construir_publico.py` | Crea una carpeta `dist/` solo con páginas y feeds públicos |
 | `verificar_sitio_publico.py` | Permite comprobar un despliegue de Cloudflare Pages |
 | `.github/workflows/verificar.yml` | Comprueba pull requests hacia `main` con token de solo lectura |
 | `SEGURIDAD.md` | Pasos para proteger la rama y revisar los accesos en GitHub |
@@ -84,12 +85,24 @@ El workflow `.github/workflows/actualizar.yml` consulta a diario a las
 09:17 UTC (06:17 en Chile durante horario de verano, 05:17 durante horario
 de invierno). Valida fichas, frescura y variaciones anormales, guarda el
 artefacto `catalogo-validado` por siete días. Usa `contents: read`, no guarda
-credenciales de Git y no modifica `main`. Una publicación posterior de esos
-datos debe pasar por una cuenta autorizada; un commit en la rama de producción
-conectada a Cloudflare Pages activa su despliegue. Si no se publica el
-resultado, el stock deja de mostrarse como reciente después de 24 horas. El
-workflow también admite ejecución manual. Consulta `SEGURIDAD.md` para los
-controles de acceso. Para probar el sitio localmente:
+credenciales de Git y no modifica `main`. Si están configurados los secretos
+`CLOUDFLARE_ACCOUNT_ID` y `CLOUDFLARE_API_TOKEN` y la variable de Actions
+`OLB_PUBLICACION_DIARIA` vale `SI`, un segundo job crea `dist/`
+con los archivos públicos del artefacto validado, lo despliega en el proyecto
+Pages `olbsanpedro` y comprueba la fecha visible. Sin ambos secretos, el
+despliegue se omite y el stock deja de mostrarse como reciente después de
+24 horas. El workflow también admite ejecución manual.
+
+Para activar la publicación, crea en Cloudflare un token limitado a la cuenta
+OLB con permiso **Account → Cloudflare Pages → Edit**. Obtén el ID de esa
+cuenta. Guarda ambos valores directamente en los secretos de Actions del
+repositorio con los nombres anteriores y configura la variable de Actions
+`OLB_PUBLICACION_DIARIA=SI`; no incluyas el token en archivos ni en
+mensajes. Luego ejecuta manualmente `Preparar actualización diaria del
+catálogo` en Actions y verifica la fecha en la web pública. El token puede
+desplegar sitios Pages de la cuenta autorizada, pero no editar el repositorio.
+Consulta `SEGURIDAD.md` para los controles de acceso. Para probar el sitio
+localmente:
 
 ```bash
 python -m http.server 8000
