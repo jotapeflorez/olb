@@ -42,7 +42,10 @@ presenta al cliente. Siempre se confirma despacho y condiciones en tienda.
 | `verificar_feed_publico.py` | Valida decisiones, SKU, datos, enlaces internos y cobertura mínima |
 | `feed/calidad_fichas.json` | Conteo real de descripciones, atributos, medidas y galerías visibles |
 | `feed/catalogo_olb_os.csv` | Salida operativa con URL de origen, separada de la interfaz |
-| `.github/workflows/actualizar.yml` | Prepara una propuesta diaria sin publicar cambios |
+| `.github/workflows/actualizar.yml` | Consulta, valida y publica datos diarios en `main` |
+| `validar_actualizacion_diaria.py` | Detiene caídas anormales de cobertura o stock |
+| `publicar_catalogo_diario.py` | Copia solo archivos generados desde el job sin permiso de escritura |
+| `verificar_sitio_publico.py` | Comprueba que Cloudflare Pages sirve la versión diaria |
 | `.github/workflows/verificar.yml` | Comprueba pull requests hacia `main` con token de solo lectura |
 | `SEGURIDAD.md` | Pasos para proteger la rama y revisar los accesos en GitHub |
 
@@ -78,21 +81,32 @@ python generar_feed_olb_os.py
 python verificar_feed_publico.py
 ```
 
-El workflow `.github/workflows/actualizar.yml` ejecuta la secuencia a diario
-y guarda los resultados validados como artefacto `catalogo-propuesto` durante
-siete días. No hace commit ni `git push`. El dueño revisa la propuesta y la
-publica mediante un pull request. Configura `Settings → Actions → General →
-Workflow permissions` en solo lectura y aplica el ruleset de `SEGURIDAD.md`.
-Si no se publica una actualización, el stock deja de mostrarse como reciente
-después de 24 horas. Para probar el sitio localmente:
+El workflow `.github/workflows/actualizar.yml` consulta a diario a las
+09:17 UTC (06:17 en Chile durante horario de verano, 05:17 durante horario
+de invierno). Valida fichas, frescura y variaciones anormales, guarda el
+artefacto `catalogo-validado` por siete días y hace un commit **solo de
+archivos generados** en `main`. Cloudflare Pages publica el nuevo commit de
+su rama de producción conectada a GitHub. El workflow también admite ejecución
+manual; el cambio inicial del propio workflow inicia una ejecución.
+
+La consulta a terceros se ejecuta con `contents: read` y sin credenciales de
+Git. Solo el job posterior de publicación dispone de `contents: write`; copia
+una lista cerrada de salidas y vuelve a validar las fichas antes de hacer
+`git push`. No modifica scripts, workflows ni decisiones en
+`publicacion_control.json`. Si falla una fuente o una validación, no se
+publica el resultado y el stock deja de mostrarse como reciente después de
+24 horas. Después del push, el job espera hasta diez minutos a que el sitio
+público muestre la nueva fecha; si Cloudflare no despliega, la ejecución
+queda marcada como fallida. Consulta `SEGURIDAD.md` antes de aplicar una regla de rama que
+podría bloquear al publicador automático. Para probar el sitio localmente:
 
 ```bash
 python -m http.server 8000
 ```
 
-Abrir `http://localhost:8000/`. GitHub Pages puede publicar la rama
-`main` desde la carpeta raíz. Si una ficha aprobada deja de publicarse, el
-generador retira sus HTML y JSON antiguos.
+Abrir `http://localhost:8000/`. La web pública es
+`https://olbsanpedro.pages.dev/`. Si una ficha aprobada deja de publicarse,
+el generador retira sus HTML y JSON antiguos.
 
 ### Límites de la información
 
