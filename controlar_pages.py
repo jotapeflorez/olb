@@ -12,8 +12,10 @@ REPOSITORY = "olb"
 
 
 def main():
-    account = os.environ["CLOUDFLARE_ACCOUNT_ID"]
-    token = os.environ["CLOUDFLARE_API_TOKEN"]
+    account = os.environ["CLOUDFLARE_ACCOUNT_ID"].strip()
+    token = os.environ["CLOUDFLARE_API_TOKEN"].strip()
+    if not account or not token or "\r" in token or "\n" in token:
+        raise RuntimeError("La credencial de Pages contiene caracteres de control o está vacía")
     url = f"https://api.cloudflare.com/client/v4/accounts/{account}/pages/projects/{PROJECT}"
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
 
