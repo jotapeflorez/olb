@@ -1,39 +1,62 @@
-name: Actualizar catálogo
+name: Preparar actualización del catálogo
 
 on:
-  workflow_dispatch: # Permite ejecutarlo manualmente desde la pestaña Actions
+  workflow_dispatch:
   schedule:
-    - cron: '0 3 * * *' # Se ejecuta automáticamente todos los días a las 3:00 AM UTC
+    - cron: '0 3 * * *'
+
+# El proceso diario genera una propuesta descargable. No puede cambiar el sitio.
+permissions:
+  contents: read
+
+concurrency:
+  group: propuesta-catalogo
+  cancel-in-progress: false
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
+  preparar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
     steps:
-      - name: Checkout del repositorio
-        uses: actions/checkout@v4
+      - name: Obtener versión publicada sin credenciales de escritura
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
 
       - name: Configurar Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
-          python-version: '3.x'
+          python-version: '3.12'
 
-      - name: Ejecutar script de actualización
+      - name: Consultar catálogos
         run: python armar_catalogo_auto.py
 
-      - name: Generar feed público controlado
+      - name: Generar feed público
         run: python generar_feed_publico.py
 
-      - name: Generar feed operativo OLB OS
+      - name: Generar fichas si la versión las incluye
+        run: |
+          if [ -f generar_fichas.py ]; then python generar_fichas.py; fi
+
+      - name: Generar feed operativo
         run: python generar_feed_olb_os.py
 
-      - name: Verificar feed antes de publicarlo
+      - name: Validar datos antes de ofrecer la propuesta
         run: python verificar_feed_publico.py
 
-      - name: Guardar cambios en el repositorio
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add .
-          git commit -m "Actualización automática del catálogo" || exit 0
-          git push
+      - name: Mostrar cambios propuestos
+        run: git status --short
+
+      - name: Guardar propuesta para revisión manual
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: catalogo-propuesto
+          path: |
+            productos.json
+            fuentes_oficiales.json
+            catalogo_meta.json
+            datos_catalogo.js
+            feed/
+            p/
+          if-no-files-found: error
+          retention-days: 7

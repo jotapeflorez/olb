@@ -34,16 +34,21 @@ presentan en pestañas separadas.
 - **generar_feed_publico.py** — crea en `feed/` una salida liviana usando publicaciones automáticas más aprobaciones manuales.
 - **verificar_feed_publico.py** — comprueba que el feed no incluya pendientes, ocultos, duplicados ni fichas sin imagen.
 - **extractor_olb.py** — Extractor OLB (lo usa el script anterior; también se puede correr solo: `python extractor_olb.py MODELO --descargar`).
-- **.github/workflows/actualizar.yml** — corre el proceso una vez al día.
+- **.github/workflows/actualizar.yml** — prepara una propuesta diaria sin publicar cambios.
+- **.github/workflows/verificar.yml** — valida los cambios propuestos a `main` con un token de solo lectura.
+- **SEGURIDAD.md** — instrucciones para proteger el repositorio desde GitHub.
 
 ## Publicar / actualizar en tu repositorio
 
 1. Sube todo el contenido de esta carpeta al repositorio oficial, incluida la carpeta `feed/`.
-2. **Settings → Actions → General → Workflow permissions → Read and write**.
-3. **Actions → Actualizar catálogo → Run workflow** (actualiza la base, genera el feed controlado y lo valida antes de guardar cambios).
+2. **Settings → Actions → General → Workflow permissions → Read repository contents and packages permissions**.
+3. **Actions → Preparar actualización del catálogo → Run workflow**. El resultado validado queda como artefacto `catalogo-propuesto` durante siete días; no se publica automáticamente.
 4. **Settings → Pages** → rama `main`, carpeta `/ (root)`.
 
-De ahí en adelante se actualiza solo cada día.
+La tarea diaria consulta las fuentes, pero solo el dueño del repositorio debe
+incorporar los archivos revisados a `main`. La disponibilidad antigua deja de
+mostrarse como vigente después de 24 horas. Sigue `SEGURIDAD.md` para proteger
+la rama, revisar accesos y activar la verificación obligatoria.
 
 La regla de publicación combina dos fuentes: se muestra un SKU si está en el archivo
 interno de vigentes o si Tótem registra stock para despacho. El stock de Tótem se usa

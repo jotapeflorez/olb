@@ -1,0 +1,30 @@
+name: Verificar cambios OLB
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Obtener cambios sin credenciales de escritura
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Configurar Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+
+      - name: Comprobar sintaxis y publicación
+        run: |
+          python -m compileall -q -f -b armar_catalogo_auto.py generar_feed_publico.py generar_feed_olb_os.py verificar_feed_publico.py
+          python verificar_feed_publico.py
+          node --check catalogo.js
+          node --check sync.js
