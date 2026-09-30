@@ -17,6 +17,8 @@ Uso manual:
 from __future__ import annotations
 import json, re, time
 from datetime import datetime, timezone
+from html.parser import HTMLParser
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 # Reutiliza funciones de TU extractor (debe estar junto a este archivo)
@@ -26,7 +28,7 @@ from extractor_olb import buscar_en_vtex, http_json, extraer_imagenes, obtener_u
 TIENDA = "https://www.totem.shopclub.cl"
 MARCAS = {"electrolux", "fensa", "mademsa"}   # deja set() para incluir todas
 IMG_LADO = 800          # imágenes cuadradas de 800x800 para que queden encuadradas
-MAX_IMAGENES = 1        # la interfaz usa una imagen; no descargamos datos que no se muestran
+MAX_IMAGENES = 8        # galería de la ficha interna, siempre del SKU verificado
 PAGINA = 50             # tope de VTEX por consulta
 PAUSA = 0.25            # pausa entre consultas
 CATEGORIA_DEFECTO = "Electrohogar"
@@ -36,8 +38,8 @@ SALIDA_JS = Path(__file__).parent / "datos_catalogo.js"
 VIGENTES = Path(__file__).parent / "vigentes.json"
 FUENTES_CACHE = Path(__file__).parent / "fuentes_oficiales.json"
 
-# Las APIs por cuenta permiten descargar los catálogos oficiales por lotes.
-# Las URL públicas se usan únicamente como enlace de ficha para el usuario.
+# Las APIs por cuenta permiten enriquecer fichas por SKU exacto. Las URL de origen
+# permanecen solo en el archivo operativo; la web enlaza a páginas internas OLB.
 FUENTES_OFICIALES = [
     ("Electrolux", "https://electroluxcl.vtexcommercestable.com.br", "https://www.electrolux.cl"),
     ("Mademsa", "https://mademsacl.vtexcommercestable.com.br", "https://www.tiendamademsa.cl"),
@@ -133,6 +135,22 @@ def referencias_sku(prod):
                 referencias.append(sku)
     return list(dict.fromkeys(referencias))
 
+def imagenes_sku(prod, sku):
+    """No mezcla fotos de variantes diferentes de un mismo producto VTEX."""
+    items = prod.get("items") or []
+    coincidentes = []
+    for item in items:
+        referencias = [normalizar_sku(item.get("itemId")), normalizar_sku(item.get("ean"))]
+        referencias.extend(
+            normalizar_sku(ref.get("Value") or ref.get("value"))
+            for ref in item.get("referenceId") or [] if isinstance(ref, dict)
+        )
+        if sku in referencias:
+            coincidentes.append(str(item.get("itemId")))
+    if not coincidentes and len(items) == 1:
+        coincidentes = [str(items[0].get("itemId"))]
+    return [imagen for imagen in extraer_imagenes(prod) if imagen.get("item_id") in coincidentes]
+
 def referencia_principal(prod, vigentes_skus):
     referencias = referencias_sku(prod)
     return next((sku for sku in referencias if sku in vigentes_skus), referencias[0] if referencias else "")
@@ -178,7 +196,7 @@ def respaldo_vigente(sku, fila, fuente_componente=None, fuente_oficial=None):
     fuente_oficial = fuente_oficial or {}
     modelo = str(fuente_oficial.get("modelo") or fila.get("modelo") or modelo_vigente(fila)).strip()
     imagenes_verificadas = fuente_oficial.get("imagenes") or fila.get("imagenes") or []
-    imagenes = list(imagenes_verificadas)[:1] or imagenes_componente(modelo, fuente_componente)
+    imagenes = list(imagenes_verificadas)[:MAX_IMAGENES] or imagenes_componente(modelo, fuente_componente)
     marca = str(
         fuente_oficial.get("marca") or fila.get("marca") or
         (fuente_componente or {}).get("marca") or ""
@@ -204,8 +222,10 @@ def respaldo_vigente(sku, fila, fuente_componente=None, fuente_oficial=None):
         "tipo_catalogo": tipo_vigente(fila),
         "despacho_disponible": False,
         "vigente": True,
-        "precio": None,
         "dimensiones": fuente_oficial.get("dimensiones") or {},
+        "especificaciones": fuente_oficial.get("especificaciones") or {},
+        "descripcion": fuente_oficial.get("descripcion") or "",
+        "caracteristicas": fuente_oficial.get("caracteristicas") or [],
         "imagenes": imagenes,
         "url": url,
         "fuente_datos": fuente,
@@ -221,20 +241,6 @@ def disponible_de(prod):
             if (s.get("commertialOffer") or {}).get("AvailableQuantity", 0) > 0:
                 return True
     return False
-
-def precio_de(prod):
-    """Precio vigente más bajo publicado, usado únicamente para ordenar."""
-    precios = []
-    for it in prod.get("items") or []:
-        for seller in it.get("sellers") or []:
-            oferta = seller.get("commertialOffer") or {}
-            try:
-                precio = float(oferta.get("Price") or 0)
-            except (TypeError, ValueError):
-                precio = 0
-            if precio > 0:
-                precios.append(precio)
-    return min(precios) if precios else None
 
 def valor_especificacion(prod, *nombres):
     """Devuelve el primer valor no vacío de una especificación VTEX."""
@@ -262,6 +268,51 @@ def dimensiones_de(prod):
         ),
     }
     return {clave: valor for clave, valor in dimensiones.items() if valor}
+
+class TextoSeguro(HTMLParser):
+    """Convierte texto del catálogo a texto plano; jamás publica iframes o scripts."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.partes = []
+        self.omitir = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in {"script", "style", "iframe"}:
+            self.omitir += 1
+        elif not self.omitir and tag in {"p", "br", "li", "div"}:
+            self.partes.append(". ")
+
+    def handle_endtag(self, tag):
+        if tag in {"script", "style", "iframe"} and self.omitir:
+            self.omitir -= 1
+
+    def handle_data(self, data):
+        if not self.omitir:
+            self.partes.append(data)
+
+def texto_plano(valor, limite=900):
+    parser = TextoSeguro()
+    parser.feed(str(valor or ""))
+    texto = re.sub(r"\s+", " ", "".join(parser.partes)).strip(" .")
+    texto = re.sub(r"(?:\.\s*){2,}", ". ", texto)
+    return texto[:limite].rstrip()
+
+def especificaciones_de(prod):
+    """Solo valores de texto publicados por VTEX, sin medios externos ni campos de venta."""
+    excluir = re.compile(r"feature|manual|infogr[aá]f|url|link|video|precio|sku", re.I)
+    salida = {}
+    for nombre in prod.get("allSpecifications") or []:
+        if excluir.search(nombre):
+            continue
+        valor = texto_plano(valor_especificacion(prod, nombre), 180)
+        if valor and not re.search(r"https?://|<[^>]+>", valor, re.I):
+            salida[nombre] = valor
+    return salida
+
+def caracteristicas_de(prod):
+    bruto = prod.get("Features") or []
+    texto = texto_plano(" ".join(bruto) if isinstance(bruto, list) else bruto, 1500)
+    return [parte.strip() for parte in re.split(r"\.\s+", texto) if len(parte.strip()) > 15][:6]
 
 def arbol_categorias():
     try:
@@ -297,6 +348,11 @@ def productos_de_categoria(cid):
         frm += PAGINA
         time.sleep(PAUSA)
     return out
+
+def lotes_categorias(categorias):
+    """Descarga categorías en paralelo y conserva el orden de la navegación."""
+    with ThreadPoolExecutor(max_workers=6) as ejecutor:
+        yield from zip(categorias, ejecutor.map(productos_de_categoria, categorias))
 
 def cargar_fuentes_cache():
     if not FUENTES_CACHE.exists():
@@ -334,17 +390,21 @@ def url_publica_oficial(base_publica, prod):
 
 def ficha_oficial(sku, prod, marca, base_publica):
     imagenes = []
-    for imagen in extraer_imagenes(prod):
+    for imagen in imagenes_sku(prod, sku):
         url = imagen.get("url_original") or imagen.get("url_vtex")
         if url:
             imagenes.append(cuadrar(url))
-            break
+            if len(imagenes) >= MAX_IMAGENES:
+                break
     return {
         "sku": sku,
         "marca": marca,
         "modelo": valor_especificacion(prod, "Modelo", "Modelo comercial", "Código modelo"),
         "nombre": str(prod.get("productName") or "").strip(),
         "dimensiones": dimensiones_de(prod),
+        "especificaciones": especificaciones_de(prod),
+        "descripcion": texto_plano(prod.get("description"), 1200),
+        "caracteristicas": caracteristicas_de(prod),
         "imagenes": imagenes,
         "url": url_publica_oficial(base_publica, prod),
         "fuente": f"Ficha oficial {marca}",
@@ -386,13 +446,17 @@ def producto_publico(item):
     """Entrega a la web solo los campos usados por la interfaz."""
     campos = (
         "id", "ref", "modelo", "nombre", "marca", "categoria", "tipo_catalogo",
-        "despacho_disponible", "precio", "dimensiones", "imagenes",
+        "despacho_disponible", "dimensiones", "imagenes", "especificaciones",
+        "descripcion", "caracteristicas", "fuente_datos",
     )
     return {campo: item.get(campo) for campo in campos}
 
 def a_catalogo(prod, vigentes_skus):
+    nombre = prod.get("productName") or ""
+    referencias = referencias_sku(prod)
+    ref = referencia_principal(prod, vigentes_skus)
     urls = []
-    for im in extraer_imagenes(prod):          # <- tu extractor (URL original)
+    for im in imagenes_sku(prod, ref):
         u = im.get("url_original") or im.get("url_vtex")
         if u:
             u = cuadrar(u)
@@ -400,9 +464,6 @@ def a_catalogo(prod, vigentes_skus):
                 urls.append(u)
         if len(urls) >= MAX_IMAGENES:
             break
-    nombre = prod.get("productName") or ""
-    referencias = referencias_sku(prod)
-    ref = referencia_principal(prod, vigentes_skus)
     coincidencias_vigentes = [sku for sku in referencias if sku in vigentes_skus]
     tipo_catalogo = tipo_catalogo_de(prod.get("categories"))
     return {
@@ -415,8 +476,10 @@ def a_catalogo(prod, vigentes_skus):
         "tipo_catalogo": tipo_catalogo,
         "despacho_disponible": disponible_de(prod),
         "vigente": bool(coincidencias_vigentes),
-        "precio": precio_de(prod),
         "dimensiones": dimensiones_de(prod),
+        "especificaciones": especificaciones_de(prod),
+        "descripcion": texto_plano(prod.get("description"), 1200),
+        "caracteristicas": caracteristicas_de(prod),
         "imagenes": urls,
         "url": obtener_url_ficha(TIENDA, prod),
         "fuente_datos": "Tótem ShopClub",
@@ -435,8 +498,7 @@ def main():
     vigentes_encontrados = set()
     fuentes_componentes = {}
     servicios_omitidos = set()
-    for cid in categorias:
-        productos = productos_de_categoria(cid)
+    for cid, productos in lotes_categorias(categorias):
         for p in productos:
             pid = p.get("productId")
             if es_servicio_oculto(p) or es_kit_oculto(p):
@@ -458,22 +520,25 @@ def main():
                     continue
                 por_id[pid] = item
         print(f"  cat {cid}: {len(productos)} productos ({len(por_id)} catálogo)")
-        time.sleep(PAUSA)
 
     # La búsqueda por categorías puede omitir productos publicados en rutas incompletas.
     # Se consulta cada SKU vigente faltante porque la navegación puede omitir fichas publicadas.
     faltantes = [sku for sku in vigentes_skus if sku not in vigentes_encontrados]
     print(f"Buscando directamente {len(faltantes)} SKU vigentes no encontrados por categoría…")
-    for posicion, sku in enumerate(faltantes, start=1):
+    def consultar_faltante(sku):
         candidatos = buscar_en_vtex(TIENDA, sku)
-        exacto = next((p for p in candidatos if sku in referencias_sku(p)), None)
-        if exacto and not es_servicio_oculto(exacto) and not es_kit_oculto(exacto):
-            item = a_catalogo(exacto, vigentes_skus)
-            vigentes_encontrados.update(set(referencias_sku(exacto)) & vigentes_skus)
-            por_id.setdefault(exacto.get("productId") or f"sku-{sku}", item)
-        if posicion % 25 == 0:
-            print(f"  {posicion}/{len(faltantes)} SKU revisados")
-        time.sleep(PAUSA)
+        return sku, next((p for p in candidatos if sku in referencias_sku(p)), None)
+
+    with ThreadPoolExecutor(max_workers=4) as ejecutor:
+        consultas = [ejecutor.submit(consultar_faltante, sku) for sku in faltantes]
+        for posicion, futuro in enumerate(as_completed(consultas), start=1):
+            sku, exacto = futuro.result()
+            if exacto and not es_servicio_oculto(exacto) and not es_kit_oculto(exacto):
+                item = a_catalogo(exacto, vigentes_skus)
+                vigentes_encontrados.update(set(referencias_sku(exacto)) & vigentes_skus)
+                por_id.setdefault(exacto.get("productId") or f"sku-{sku}", item)
+            if posicion % 25 == 0:
+                print(f"  {posicion}/{len(faltantes)} SKU revisados")
 
     print("Actualizando imágenes desde tiendas oficiales…")
     fuentes_oficiales = actualizar_fuentes_oficiales(vigentes_skus)
@@ -482,11 +547,14 @@ def main():
     for item in por_id.values():
         sku = normalizar_sku(item.get("ref"))
         fuente = fuentes_oficiales.get(sku)
-        if fuente and not item.get("imagenes"):
-            item["imagenes"] = list(fuente.get("imagenes") or [])[:1]
+        if fuente:
+            item["imagenes"] = item.get("imagenes") or list(fuente.get("imagenes") or [])[:MAX_IMAGENES]
             item["modelo"] = item.get("modelo") or fuente.get("modelo") or ""
             item["marca"] = item.get("marca") or fuente.get("marca") or ""
             item["dimensiones"] = item.get("dimensiones") or fuente.get("dimensiones") or {}
+            item["especificaciones"] = item.get("especificaciones") or fuente.get("especificaciones") or {}
+            item["descripcion"] = item.get("descripcion") or fuente.get("descripcion") or ""
+            item["caracteristicas"] = item.get("caracteristicas") or fuente.get("caracteristicas") or []
 
     respaldos = 0
     for sku in sorted(vigentes_skus - vigentes_encontrados):

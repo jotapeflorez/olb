@@ -24,7 +24,7 @@ jobs:
 
       - name: Comprobar sintaxis y publicación
         run: |
-          python -m compileall -q -f -b armar_catalogo_auto.py generar_feed_publico.py generar_feed_olb_os.py verificar_feed_publico.py
+          python -m compileall -q -f -b armar_catalogo_auto.py generar_feed_publico.py generar_fichas.py generar_feed_olb_os.py verificar_feed_publico.py validar_actualizacion_diaria.py publicar_catalogo_diario.py verificar_sitio_publico.py
           python verificar_feed_publico.py
           node --check catalogo.js
           node --check sync.js

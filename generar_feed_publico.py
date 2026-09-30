@@ -17,6 +17,8 @@ BASE = Path(__file__).resolve().parent
 PRODUCTOS = BASE / "productos.json"
 CONTROL = BASE / "publicacion_control.json"
 SALIDA = BASE / "feed"
+FUENTES = BASE / "fuentes_oficiales.json"
+META_ORIGEN = BASE / "catalogo_meta.json"
 
 
 def normalizar_sku(valor: object) -> str:
@@ -64,8 +66,8 @@ def categoria_publica(nombre: object, categoria: object) -> str:
         (r"lavadora.?secadora|lavaseca|lavado y secado", "Lavasecadoras"),
         (r"\bsecadora", "Secadoras"),
         (r"\blavadora|centr[ií]fuga", "Lavadoras"),
-        (r"\bfreezer|congelador", "Freezers"),
         (r"refrigerador|frigobar|enfriador", "Refrigeración"),
+        (r"\bfreezer|congelador", "Freezers"),
         (r"\bmicroondas", "Microondas"),
         (r"\bhorno", "Hornos"),
         (r"\bcocina", "Cocinas"),
@@ -99,7 +101,44 @@ def categoria_publica(nombre: object, categoria: object) -> str:
     return equivalencias.get(origen, origen or "Producto")
 
 
-def producto_liviano(producto: dict) -> dict:
+def marca_publica(marca: object, nombre: object) -> str:
+    valor = str(marca or "").strip()
+    if valor and valor.casefold() not in {"brand name", "marca", "sin marca"}:
+        return valor
+    coincidencia = re.search(r"\b(Electrolux|Mademsa|Fensa)\b", str(nombre or ""), re.I)
+    return coincidencia.group(1).title() if coincidencia else "Marca por confirmar"
+
+
+def datos_clave(especificaciones: dict, dimensiones: dict) -> list[str]:
+    if not isinstance(especificaciones, dict):
+        especificaciones = {}
+    claves = (
+        (r"capacidad neta total|capacidad de lavado|capacidad de secado|capacidad total", "Capacidad"),
+        (r"consumo \(|consumo de energ[ií]a", "Consumo"),
+        (r"indice de eficiencia|eficiencia energ", "Eficiencia"),
+        (r"tecnolog[ií]a compresor", "Tecnología"),
+    )
+    salida = []
+    for patron, etiqueta in claves:
+        valor = next((v for k, v in especificaciones.items() if re.search(patron, k, re.I) and isinstance(v, str) and v.strip()), "")
+        if valor and not re.search(r"https?://|[<>]", valor):
+            salida.append(f"{etiqueta}: {valor[:55]}")
+        if len(salida) == 2:
+            break
+    if len(salida) < 2:
+        inalambrica = next((v for k, v in especificaciones.items() if re.search(r"^inal[aá]mbrica$", k, re.I)), "")
+        if str(inalambrica).casefold() in {"sí", "si"}:
+            salida.append("Inalámbrica")
+    if len(salida) < 2:
+        peso = next((v for k, v in especificaciones.items() if re.search(r"^peso \(kg\)$|^peso producto", k, re.I)), "")
+        if peso and not re.search(r"https?://|[<>]", str(peso)):
+            salida.append(f"Peso: {str(peso)[:35]}")
+    if dimensiones.get("ancho"):
+        salida.append(f"Ancho: {dimensiones['ancho']}")
+    return salida[:3]
+
+
+def producto_liviano(producto: dict, oficial: dict) -> dict:
     imagenes = [str(url).strip() for url in producto.get("imagenes", []) if str(url).strip()]
     dimensiones = producto.get("dimensiones")
     if not isinstance(dimensiones, dict):
@@ -109,27 +148,22 @@ def producto_liviano(producto: dict) -> dict:
         for clave, valor in dimensiones.items()
         if clave in {"alto", "ancho", "profundidad"} and str(valor).strip()
     }
-    precio = producto.get("precio")
-    if not isinstance(precio, (int, float)) or isinstance(precio, bool) or precio <= 0:
-        precio = None
+    especificaciones = producto.get("especificaciones") or oficial.get("especificaciones") or {}
+    dimensiones = dimensiones or oficial.get("dimensiones") or {}
+    ref = str(producto.get("ref") or "").strip()
     return {
         "id": str(producto.get("id") or producto.get("ref") or "").strip(),
-        "ref": str(producto.get("ref") or "").strip(),
-        "modelo": str(producto.get("modelo") or "").strip(),
+        "ref": ref,
+        "modelo": str(producto.get("modelo") or oficial.get("modelo") or "").strip(),
         "nombre": str(producto.get("nombre") or "").strip(),
-        "marca": str(producto.get("marca") or "").strip(),
+        "marca": marca_publica(producto.get("marca") or oficial.get("marca"), producto.get("nombre")),
         "categoria": categoria_publica(producto.get("nombre"), producto.get("categoria")),
         "tipo_catalogo": "accesorios" if producto.get("tipo_catalogo") == "accesorios" else "productos",
-        "despacho_disponible": bool(producto.get("despacho_disponible")),
-        "precio": precio,
         "dimensiones": dimensiones,
         "imagenes": imagenes[:1],
+        "datos_clave": datos_clave(especificaciones, dimensiones),
+        "ficha": f"p/{normalizar_sku(ref)}.html",
     }
-
-
-def precio_control(valor: object):
-    digitos = re.sub(r"[^0-9]", "", str(valor or ""))
-    return int(digitos) if digitos else None
 
 
 def producto_desde_control(fila: dict) -> dict:
@@ -137,19 +171,18 @@ def producto_desde_control(fila: dict) -> dict:
     ref = str(fila.get("sku_totem") or fila.get("sku_maestro") or "").strip()
     tipo = str(fila.get("tipo") or "").casefold()
     imagen = str(fila.get("imagen_oficial") or fila.get("imagen_totem") or "").strip()
-    disponible = str(fila.get("disponible_despacho") or "").strip().casefold() in {"sí", "si", "true"}
     return {
         "id": f"control-{normalizar_sku(ref)}",
         "ref": ref,
         "modelo": "",
         "nombre": str(fila.get("nombre") or ref).strip(),
-        "marca": str(fila.get("marca") or "").strip(),
+        "marca": marca_publica(fila.get("marca"), fila.get("nombre")),
         "categoria": categoria_publica(fila.get("nombre"), fila.get("familia")),
         "tipo_catalogo": "accesorios" if "accesorio" in tipo or "repuesto" in tipo else "productos",
-        "despacho_disponible": disponible,
-        "precio": precio_control(fila.get("precio_totem")),
         "dimensiones": {},
         "imagenes": [imagen] if imagen else [],
+        "datos_clave": [],
+        "ficha": f"p/{normalizar_sku(ref)}.html",
     }
 
 
@@ -174,6 +207,8 @@ def razon_exclusion_dura(producto: dict) -> str:
 def main() -> None:
     productos = cargar_json(PRODUCTOS)
     control = cargar_json(CONTROL)
+    fuentes = cargar_json(FUENTES) if FUENTES.exists() else {}
+    meta_origen = cargar_json(META_ORIGEN) if META_ORIGEN.exists() else {}
     if not isinstance(productos, list) or not productos:
         raise RuntimeError("productos.json no contiene productos válidos")
 
@@ -221,10 +256,10 @@ def main() -> None:
             excluidos["pendiente"] += 1
             continue
         if "publicar" in decisiones:
-            incorporar(producto_liviano(producto), sku, "manual")
+            incorporar(producto_liviano(producto, fuentes.get(sku, {})), sku, "manual")
             continue
         if sku in automaticos:
-            incorporar(producto_liviano(producto), sku, "automatico")
+            incorporar(producto_liviano(producto, fuentes.get(sku, {})), sku, "automatico")
             continue
 
         excluidos["sin_decision_publicable"] += 1
@@ -272,12 +307,17 @@ def main() -> None:
     publicados_manual = {sku for sku, origen in origen_por_sku.items() if origen == "manual"}
 
     actualizado = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    fecha_stock = str(meta_origen.get("actualizado_utc") or "")
+    # Las fichas reconstruidas desde controles antiguos nunca heredan su stock.
+    disponibles = sorted({normalizar_sku(p.get("ref")) for p in productos if p.get("despacho_disponible") and not str(p.get("id") or "").startswith("vigente-")} & set(origen_por_sku))
+    escribir_json_atomico(SALIDA / "stock.json", {"actualizado_utc": fecha_stock, "disponibles": disponibles}, compacto=True)
     meta = {
         "actualizado_utc": actualizado,
         "fuente_control": control.get("fuente", {}).get("url", ""),
         "regla_publicacion": "publicar_automatico_mas_aprobacion_manual",
         "productos": len(publicados),
-        "disponibles_despacho": sum(bool(p["despacho_disponible"]) for p in publicados),
+        "disponibles_despacho": len(disponibles),
+        "fuente_stock_actualizado_utc": fecha_stock,
         "cantidad_productos": sum(p["tipo_catalogo"] == "productos" for p in publicados),
         "cantidad_accesorios_repuestos": sum(p["tipo_catalogo"] == "accesorios" for p in publicados),
         "publicados_por_regla_automatica": len(publicados_auto),

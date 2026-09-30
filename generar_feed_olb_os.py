@@ -51,6 +51,8 @@ def normalizar_ref(valor: object) -> str:
 def main() -> None:
     productos = cargar_json(FEED_JSON, [])
     meta = cargar_json(META_JSON, {})
+    stock = cargar_json(BASE / "feed" / "stock.json", {})
+    disponibles = set(stock.get("disponibles") or [])
     fuentes = cargar_json(FUENTES_JSON, {})
 
     if not isinstance(productos, list) or not productos:
@@ -96,7 +98,7 @@ def main() -> None:
             "nombre": str(producto.get("nombre") or oficial.get("nombre") or "").strip(),
             "marca": str(producto.get("marca") or oficial.get("marca") or "").strip(),
             "categoria": str(producto.get("categoria") or "").strip(),
-            "disponible": "SI" if bool(producto.get("despacho_disponible")) else "NO",
+            "disponible": "SI" if ref in disponibles else "NO",
             "url": str(oficial.get("url") or "").strip(),
             "imagen1": imagenes[0] if len(imagenes) > 0 else "",
             "imagen2": imagenes[1] if len(imagenes) > 1 else "",
@@ -108,7 +110,7 @@ def main() -> None:
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     temporal = SALIDA.with_suffix(".csv.tmp")
     with temporal.open("w", encoding="utf-8-sig", newline="") as archivo:
-        writer = csv.DictWriter(archivo, fieldnames=CAMPOS, extrasaction="ignore")
+        writer = csv.DictWriter(archivo, fieldnames=CAMPOS, extrasaction="ignore", lineterminator="\n")
         writer.writeheader()
         writer.writerows(filas)
     temporal.replace(SALIDA)

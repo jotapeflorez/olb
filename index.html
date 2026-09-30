@@ -51,27 +51,6 @@
   .brandline{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;justify-content:center}
   .brandline span{font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:.05em;text-transform:uppercase;padding:6px 11px;border:1px solid var(--hairline);border-radius:999px;background:var(--card);color:var(--ink)}
 
-  /* --- MODAL DE DETALLE DE PRODUCTO --- */
-  .modal{display:none;position:fixed;z-index:100;left:0;top:0;width:100%;height:100%;background-color:rgba(22,24,29,.8);backdrop-filter:blur(5px)}
-  .modal-content{background-color:var(--card);margin:5vh auto;padding:30px;border-radius:16px;width:90%;max-width:800px;position:relative;box-shadow:0 20px 40px rgba(0,0,0,.3);max-height:90vh;overflow-y:auto}
-  .close-btn{position:absolute;top:20px;right:24px;font-size:28px;font-weight:bold;color:var(--steel);cursor:pointer;transition:color .2s;line-height:1}
-  button.close-btn{background:transparent;border:0;padding:2px 7px}
-  .close-btn:hover{color:var(--accent)}
-  .modal-body{display:flex;flex-direction:column;gap:24px}
-  @media (min-width:600px){
-    .modal-body{flex-direction:row;align-items:flex-start}
-    .modal-img-container{flex:1;position:sticky;top:0}
-    .modal-details{flex:1.2}
-  }
-  .modal-img-container{background:#fff;padding:20px;border-radius:12px;border:1px solid var(--hairline);text-align:center}
-  .modal-img-container img{max-width:100%;max-height:400px;object-fit:contain}
-  .modal-img-container .ph{width:46%;height:46%;color:#c8ccd3;margin:60px auto}
-  .modal-details h2{margin:10px 0;font-size:24px;color:var(--ink);line-height:1.2}
-  .modal-features{margin:16px 0;padding:16px;background:var(--porcelain);border-radius:8px;font-size:15px;border-left:4px solid var(--accent)}
-  .modal-features ul{margin:0;padding-left:20px;color:var(--ink)}
-  .modal-features li{margin-bottom:8px}
-  #modal-ask{display:inline-flex;margin-top:10px;width:100%;justify-content:center;padding:14px;font-size:16px;border-radius:12px}
-
   .controls{padding:14px 0 6px;margin-top:6px;scroll-margin-top:128px}
   .controls-in{max-width:1160px;margin:0 auto;padding:0 20px}
   .search{display:flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--hairline);border-radius:11px;padding:0 13px;margin-bottom:11px}
@@ -206,19 +185,6 @@
   .card .ask{border:0;width:100%;background:linear-gradient(135deg,var(--accent),var(--accent-deep))}
   .nameplate{color:#5e6570}
 
-  .modal-eyebrow{font-size:12px;color:var(--steel);margin:0 0 4px;font-weight:600}
-  .modal-content{margin:2vh auto;max-height:96vh;border:1px solid rgba(255,255,255,.45)}
-  .dimensions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
-  .dimension{border:1px solid var(--hairline);background:#fff;border-radius:10px;padding:10px}
-  .dimension span{display:block;color:var(--steel);font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:700}
-  .dimension strong{display:block;font-size:14px;margin-top:3px}
-  .availability{border-radius:12px;padding:14px 15px;margin:14px 0;border:1px solid}
-  .availability.available{color:#126b36;background:#eef8f1;border-color:#bfe2ca}
-  .availability.consult{color:#714c00;background:#fff8e7;border-color:#ead6a2}
-  .availability strong{display:block;font-size:15px}
-  .availability p{margin:5px 0 0;color:var(--ink);font-size:13px}
-  .modal-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}
-  .modal-actions .btn{justify-content:center;padding:13px 12px}
   .catalog-note{max-width:1160px;margin:0 auto;padding:0 20px 10px;color:var(--steel);font-size:12px}
 
   .guarantee-info{background:#fff;border-top:1px solid var(--hairline);padding:48px 20px}
@@ -239,6 +205,24 @@
   .warranty-simple li+li{margin-top:7px}
   .load-error{max-width:620px;margin:0 auto}
   .load-error a{display:inline-flex;margin-top:14px}
+  .card-link{display:flex;flex-direction:column;flex:1;min-height:0}
+  .card-code{font-size:11px;color:var(--steel);line-height:1.45}
+  .card-facts{margin:1px 0 5px;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;color:#37424d;font-size:11px;line-height:1.45}
+  .card-facts li::before{content:'•';color:var(--local);font-weight:900;margin-right:5px}
+  .card-facts.pendiente{color:var(--steel)}
+  .card .ask{margin-top:auto}
+  .compare-add{margin:0 14px 14px;background:#fff;color:#333a42;border:1px solid #ced4db;border-radius:9px;padding:9px;font:700 11px 'Montserrat',sans-serif;cursor:pointer}
+  .compare-add[aria-pressed="true"]{border-color:var(--local);color:var(--local);background:var(--local-soft)}
+  .reference-card a{display:flex;flex-direction:column;gap:8px}
+  .reference-card .compare-add{margin:7px 0 0}
+  .compare-bar{position:fixed;z-index:50;bottom:15px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:16px;background:#17191e;color:white;padding:12px 16px;border-radius:14px;box-shadow:0 12px 42px #0006;font-size:12px}
+  .compare-bar[hidden]{display:none}
+  .compare-bar a{background:var(--accent);padding:10px 14px;border-radius:9px;color:white;font-weight:800;white-space:nowrap}
+  .compare-bar button{border:0;background:transparent;color:white;text-decoration:underline;cursor:pointer}
+  .category-quick{display:flex;gap:7px;overflow-x:auto;padding:1px 0 13px;scrollbar-width:thin}
+  .category-quick button{flex:none;background:white;color:var(--ink);border:1px solid var(--hairline);border-radius:999px;padding:8px 13px;font:700 11px 'Montserrat',sans-serif;cursor:pointer}
+  .category-quick button[aria-pressed="true"]{background:var(--signage);border-color:var(--signage);color:white}
+  @media(max-width:520px){.compare-bar{width:calc(100% - 24px);justify-content:space-between;gap:7px;padding:9px}.compare-bar a{padding:9px}.compare-bar span{max-width:70px}}
 
   @media (max-width:720px){
     .hero::after{right:-190px;top:-180px;opacity:.24}
@@ -259,8 +243,6 @@
     .brandline{gap:6px}
     .brandline span{font-size:10.5px;padding:5px 9px}
     .service-strip-in{justify-content:flex-start;font-size:12px;gap:10px}
-    .modal-actions{grid-template-columns:1fr}
-    .modal-content{margin:2vh auto;padding:24px 18px;width:95%;max-height:96vh}
   }
 </style>
 </head>
@@ -287,9 +269,9 @@
   <section class="hero">
     <div class="hero-in">
       <p class="eyebrow">OUTLET LÍNEA BLANCA · SAN PEDRO</p>
-      <h1 id="heroTitle">Para tu hogar. Cerca de ti.</h1>
-      <p id="heroSub">Electrodomésticos, accesorios y repuestos Electrolux, Mademsa y Fensa.</p>
-      <p class="hero-support" id="heroSupport">Revisa nuestro catálogo, visítanos en San Pedro de la Paz o consulta por despacho a Chile continental.</p>
+      <h1 id="heroTitle">Elige con los datos a la vista.</h1>
+      <p id="heroSub">Fotos, medidas y características por modelo para comparar con calma.</p>
+      <p class="hero-support" id="heroSupport">Electrolux, Mademsa y Fensa en San Pedro de la Paz. Consulta despacho a Chile continental.</p>
       <div class="hero-actions">
         <a class="btn btn-call" href="#catalogo">Ver catálogo</a>
         <a class="btn btn-secondary" id="heroMap" href="#" target="_blank" rel="noopener">Cómo llegar</a>
@@ -315,6 +297,7 @@
         <button class="tab" type="button" data-vista="productos" role="tab" aria-selected="true">Productos</button>
         <button class="tab" type="button" data-vista="accesorios" role="tab" aria-selected="false">Accesorios y repuestos</button>
       </div>
+      <div class="category-quick" id="categoryQuick" aria-label="Categorías destacadas"></div>
       <label class="search">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
         <input id="q" type="search" placeholder="Buscar por nombre, modelo o código…" aria-label="Buscar productos" />
@@ -332,8 +315,7 @@
           <label for="sortOrder">Ordenar por</label>
           <select id="sortOrder" aria-label="Ordenar catálogo">
             <option value="nombre">Nombre A–Z</option>
-            <option value="precio_asc">Precio: menor a mayor</option>
-            <option value="precio_desc">Precio: mayor a menor</option>
+            <option value="marca">Marca A–Z</option>
           </select>
         </div>
       </div>
@@ -345,7 +327,7 @@
   <section class="reference-only" id="referenceOnly" hidden aria-labelledby="referenceOnlyTitle">
     <div class="reference-only-head">
       <h2 id="referenceOnlyTitle">Otros productos para consultar</h2>
-      <p>Para estos productos aún no contamos con una ficha pública completa. Llámanos para confirmar marca, medidas, exhibición y disponibilidad.</p>
+      <p>Estas fichas están en desarrollo. Llámanos para confirmar marca, medidas, exhibición y disponibilidad.</p>
     </div>
     <div class="reference-grid" id="referenceGrid"></div>
   </section>
@@ -357,15 +339,14 @@
   <section class="guarantee-info" aria-labelledby="garantiaTitulo">
     <div class="guarantee-in">
       <p class="section-kicker">Compra con respaldo</p>
-      <h2 id="garantiaTitulo">Todos nuestros productos tienen garantía</h2>
-      <p class="guarantee-lead">La cobertura exacta depende del tipo de producto y modelo. Te la confirmamos en tienda antes de comprar.</p>
+      <h2 id="garantiaTitulo">Consulta la cobertura de tu modelo</h2>
+      <p class="guarantee-lead">La ficha técnica incluye plazos cuando el catálogo los informa para ese código. En tienda confirmamos las condiciones aplicables antes de comprar.</p>
       <div class="warranty-simple">
-        <strong>6 meses de garantía legal</strong>
-        <p>Ante una falla de fabricación dentro de los seis meses siguientes a la recepción, puedes solicitar la garantía legal correspondiente.</p>
+        <strong>Respaldo y atención en tienda</strong>
+        <p>Indícanos el código del producto para revisar la cobertura documentada y resolver tus dudas.</p>
         <ul>
-          <li>Algunos productos incorporan garantía voluntaria Electrolux adicional.</li>
-          <li>Ciertos modelos de lavado y refrigeración pueden incluir garantía especial de 10 años para motor o motorcompresor.</li>
-          <li>Consulta la cobertura de tu producto llamando al <a href="tel:+56412907387">+56 41 290 7387</a>.</li>
+          <li>Confirma la garantía del producto y de sus componentes para el modelo elegido.</li>
+          <li>Consulta por teléfono al <a href="tel:+56412907387">+56 41 290 7387</a> o visítanos en el Local 38.</li>
         </ul>
       </div>
     </div>
@@ -393,44 +374,13 @@
     </div>
   </footer>
 
-  <!-- VENTANA MODAL DE DETALLES DEL PRODUCTO -->
-  <div id="productModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="modal-content">
-      <button class="close-btn" id="modalClose" type="button" aria-label="Cerrar detalle">&times;</button>
-      <div class="modal-body">
-        <div class="modal-img-container" id="modal-img-wrap">
-          <img id="modal-img" src="" alt="Producto" hidden>
-        </div>
-        <div class="modal-details">
-          <p class="nameplate" id="modal-brand"></p>
-          <h2 id="modal-title"></h2>
-          <p id="modal-ref" style="color: var(--steel); font-size: 13px;"></p>
-
-          <div class="modal-features">
-            <p class="modal-eyebrow">Dimensiones publicadas</p>
-            <div class="dimensions" id="modal-dimensions"></div>
-            <p id="modal-dimensions-note" style="margin:0;font-size:13px;color:var(--steel);"></p>
-          </div>
-
-          <div class="availability" id="modal-availability"></div>
-          <p style="font-size:13px;color:var(--steel);margin:0;">Puedes comprar presencialmente o solicitar despacho a domicilio a todas las comunas de Chile continental, sujeto a disponibilidad.</p>
-          <div class="modal-actions">
-            <a id="modal-call" class="btn btn-call" href="tel:+56412907387">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
-              Llamar a tienda
-            </a>
-            <a id="modal-map" class="btn btn-secondary" href="#" target="_blank" rel="noopener">Cómo llegar</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="compare-bar" id="compareBar" hidden><span id="compareCount"></span><a id="compareLink" href="comparar.html">Comparar modelos</a><button type="button" id="compareClear">Limpiar</button></div>
 
 <script>
   if (window.location.protocol === "file:") {
     document.write('<script src="feed/catalogo_publico.js"><\/script>');
   }
 </script>
-<script src="catalogo.js?v=20260914-3"></script>
+<script src="catalogo.js?v=20260929-1"></script>
 </body>
 </html>
