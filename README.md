@@ -42,6 +42,9 @@ presenta al cliente. Siempre se confirma despacho y condiciones en tienda.
 | `verificar_feed_publico.py` | Valida decisiones, SKU, datos, enlaces internos y cobertura mínima |
 | `feed/calidad_fichas.json` | Conteo real de descripciones, atributos, medidas y galerías visibles |
 | `feed/catalogo_olb_os.csv` | Salida operativa con URL de origen, separada de la interfaz |
+| `.github/workflows/actualizar.yml` | Prepara una propuesta diaria sin publicar cambios |
+| `.github/workflows/verificar.yml` | Comprueba pull requests hacia `main` con token de solo lectura |
+| `SEGURIDAD.md` | Pasos para proteger la rama y revisar los accesos en GitHub |
 
 Los archivos `productos.json`, `vigentes.json`, `fuentes_oficiales.json`,
 `publicacion_control.json` y `catalogo_meta.json` alimentan la generación.
@@ -75,9 +78,13 @@ python generar_feed_olb_os.py
 python verificar_feed_publico.py
 ```
 
-El workflow `.github/workflows/actualizar.yml` ejecuta la secuencia a
-diario y guarda los resultados solo si pasa la validación. Para probar el
-sitio localmente:
+El workflow `.github/workflows/actualizar.yml` ejecuta la secuencia a diario
+y guarda los resultados validados como artefacto `catalogo-propuesto` durante
+siete días. No hace commit ni `git push`. El dueño revisa la propuesta y la
+publica mediante un pull request. Configura `Settings → Actions → General →
+Workflow permissions` en solo lectura y aplica el ruleset de `SEGURIDAD.md`.
+Si no se publica una actualización, el stock deja de mostrarse como reciente
+después de 24 horas. Para probar el sitio localmente:
 
 ```bash
 python -m http.server 8000
