@@ -9,5 +9,22 @@ main{max-width:1180px;margin:auto;padding:0 20px}.migas{display:flex;gap:9px;ali
 .secciones{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.panel{padding:25px}.panel p{font-size:13px}.panel.ancho{grid-column:1/-1}.features{padding-left:20px;font-size:13px}.features li+li{margin-top:8px}.datos{margin:0}.datos>div{display:grid;grid-template-columns:minmax(150px,.8fr) 1.2fr;gap:20px;padding:11px 0;border-bottom:1px solid var(--line)}.datos>div:last-of-type{border:0}.datos dt{color:var(--muted);font-size:12px}.datos dd{font-size:13px;font-weight:700;margin:0}.tabla{display:grid;grid-template-columns:1fr 1fr;column-gap:30px}.tabla>div{grid-template-columns:1fr 1fr}.empty-spec{color:var(--muted)}.nota{margin:18px 0 0!important}.cierre{border-radius:18px;background:#171a20;color:white;padding:28px 32px;margin:26px 0 60px;display:flex;gap:15px;align-items:center;flex-wrap:wrap}.cierre h2{width:100%;margin:0}.cierre p{margin:0 auto 0 0;color:#d3d6da;font-size:13px}.volver{color:white;text-decoration:underline;font-size:13px}footer{background:#0e1014;color:#cbd0d6;padding:25px max(20px,calc((100vw - 1140px)/2));display:flex;justify-content:space-between;gap:12px;font-size:12px}footer a{text-decoration:underline}
 .compare-bar{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:10;background:#17191e;color:white;border-radius:14px;box-shadow:0 12px 42px #0006;padding:11px 14px;display:flex;align-items:center;gap:16px;font-size:12px;max-width:calc(100vw - 20px)}.compare-bar[hidden]{display:none}.compare-bar a{background:var(--red);padding:9px 12px;border-radius:8px;font-weight:700;white-space:nowrap}.compare-bar button{background:none;border:0;color:#fff;text-decoration:underline;font-size:12px}
 :focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+/* El tamaño intrínseco de una foto nunca debe ensanchar el catálogo. */
+body{background:#f5f4f2}
+.top-in,main{width:100%;min-width:0}
+.logo{flex-shrink:1;min-width:0}.call{flex-shrink:0}
+.producto>*,.secciones>*,.resumen>*,.datos>div>*{min-width:0}
+.galeria{width:100%;max-width:100%;padding:18px;box-shadow:0 8px 28px rgba(20,22,27,.035)}
+.foto{display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:0;height:465px;padding:18px;border-color:#f0efec;background:#fff}
+.foto img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;min-width:0;min-height:0;object-fit:contain;object-position:center;padding:0}
+.miniaturas{width:100%;max-width:100%;min-width:0;padding:2px 0 8px;overscroll-behavior-x:contain;scrollbar-width:thin}
+.miniaturas button{transition:border-color .15s,box-shadow .15s}
+.miniaturas button[aria-current=true]{box-shadow:0 0 0 2px #d7192010}
+.producto-info,.panel{box-shadow:0 8px 28px rgba(20,22,27,.035);border-color:#e5e2de}
+.resumen{grid-template-columns:repeat(2,minmax(0,1fr))}.resumen li{background:#faf9f7;overflow-wrap:anywhere}
+.datos dd,.panel p,h1{overflow-wrap:anywhere}
+.secciones{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:760px){.logo{width:195px;height:64px}.producto{grid-template-columns:1fr;gap:13px}.foto{height:min(78vw,420px)}.producto-info{padding:23px}.secciones{grid-template-columns:1fr}.panel.ancho{grid-column:auto}.tabla{grid-template-columns:1fr}.acciones{grid-template-columns:1fr}.cierre{padding:23px}.compare-bar{width:calc(100vw - 20px);justify-content:space-between}.compare-bar span{max-width:80px}}
 @media(max-width:440px){main{padding:0 12px}.migas{padding:14px 0}.top-in{padding:3px 12px}.call{padding:10px;font-size:11px}.resumen{grid-template-columns:1fr 1fr}.datos>div,.tabla>div{grid-template-columns:1fr 1fr;gap:8px}.panel{padding:20px}footer{flex-direction:column}}
+@media(max-width:760px){.producto,.secciones{grid-template-columns:minmax(0,1fr)}.foto{height:clamp(260px,78vw,420px);padding:14px}.galeria{padding:12px}.top-in{gap:12px}.producto-info{padding:24px}.miniaturas button{width:62px;height:62px}.resumen{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:360px){.logo{width:170px}.call{font-size:10px;padding:9px}.resumen{grid-template-columns:minmax(0,1fr)}}
