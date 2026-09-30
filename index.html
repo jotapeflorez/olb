@@ -219,6 +219,9 @@
   .compare-bar[hidden]{display:none}
   .compare-bar a{background:var(--accent);padding:10px 14px;border-radius:9px;color:white;font-weight:800;white-space:nowrap}
   .compare-bar button{border:0;background:transparent;color:white;text-decoration:underline;cursor:pointer}
+  .category-quick{display:flex;gap:7px;overflow-x:auto;padding:1px 0 13px;scrollbar-width:thin}
+  .category-quick button{flex:none;background:white;color:var(--ink);border:1px solid var(--hairline);border-radius:999px;padding:8px 13px;font:700 11px 'Montserrat',sans-serif;cursor:pointer}
+  .category-quick button[aria-pressed="true"]{background:var(--signage);border-color:var(--signage);color:white}
   @media(max-width:520px){.compare-bar{width:calc(100% - 24px);justify-content:space-between;gap:7px;padding:9px}.compare-bar a{padding:9px}.compare-bar span{max-width:70px}}
 
   @media (max-width:720px){
@@ -266,9 +269,9 @@
   <section class="hero">
     <div class="hero-in">
       <p class="eyebrow">OUTLET LÍNEA BLANCA · SAN PEDRO</p>
-      <h1 id="heroTitle">Para tu hogar. Cerca de ti.</h1>
-      <p id="heroSub">Electrodomésticos, accesorios y repuestos Electrolux, Mademsa y Fensa.</p>
-      <p class="hero-support" id="heroSupport">Revisa nuestro catálogo, visítanos en San Pedro de la Paz o consulta por despacho a Chile continental.</p>
+      <h1 id="heroTitle">Elige con los datos a la vista.</h1>
+      <p id="heroSub">Fotos, medidas y características por modelo para comparar con calma.</p>
+      <p class="hero-support" id="heroSupport">Electrolux, Mademsa y Fensa en San Pedro de la Paz. Consulta despacho a Chile continental.</p>
       <div class="hero-actions">
         <a class="btn btn-call" href="#catalogo">Ver catálogo</a>
         <a class="btn btn-secondary" id="heroMap" href="#" target="_blank" rel="noopener">Cómo llegar</a>
@@ -294,6 +297,7 @@
         <button class="tab" type="button" data-vista="productos" role="tab" aria-selected="true">Productos</button>
         <button class="tab" type="button" data-vista="accesorios" role="tab" aria-selected="false">Accesorios y repuestos</button>
       </div>
+      <div class="category-quick" id="categoryQuick" aria-label="Categorías destacadas"></div>
       <label class="search">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
         <input id="q" type="search" placeholder="Buscar por nombre, modelo o código…" aria-label="Buscar productos" />

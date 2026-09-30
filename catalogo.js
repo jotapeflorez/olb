@@ -34,8 +34,12 @@ function opciones(id, valores, activo) {
   document.getElementById(id).value = activo;
 }
 function pintarFiltros() {
-  opciones("categoryFilter", ["Todas", ...unico(datosVista().map(p => p.categoria)).sort((a,b) => a.localeCompare(b,"es"))], categoria);
+  const categories = unico(datosVista().map(p => p.categoria)).sort((a,b) => a.localeCompare(b,"es"));
+  opciones("categoryFilter", ["Todas", ...categories], categoria);
   opciones("brandFilter", ["Todas", ...unico(datosVista().map(p => p.marca)).sort((a,b) => a.localeCompare(b,"es"))], marca);
+  const conteos = new Map(categories.map(x => [x, datosVista().filter(p => p.categoria === x).length]));
+  const destacadas = categories.sort((a,b) => conteos.get(b)-conteos.get(a)).slice(0,8);
+  document.getElementById("categoryQuick").innerHTML = ["Todas", ...destacadas].map(x => `<button type="button" data-cat="${esc(x)}" aria-pressed="${x === categoria}">${esc(x)}</button>`).join("");
 }
 function filtrados() {
   const q = termino.trim().toLocaleLowerCase("es");
@@ -50,7 +54,7 @@ function card(p) {
   const thumb = foto ? `<img src="${esc(foto)}" alt="${esc(p.nombre)}" loading="lazy" decoding="async" onerror="imgFail(this)">` : ICON;
   const facts = (p.datos_clave || []).map(x => `<li>${esc(x)}</li>`).join("");
   const selected = seleccion().some(x => x.ref === p.ref);
-  return `<article class="card"><a class="card-link" href="${esc(p.ficha)}" aria-label="Ver ficha técnica de ${esc(p.nombre)}"><div class="thumb">${thumb}</div><div class="card-body"><span class="nameplate">${esc(p.marca)}</span><h3>${esc(p.nombre)}</h3><span class="card-code">${p.modelo ? `Modelo ${esc(p.modelo)} · ` : ""}Código ${esc(p.ref)}</span>${facts ? `<ul class="card-facts">${facts}</ul>` : '<p class="card-facts pendiente">Consulta las características en la ficha</p>'}<span class="ask">Ver ficha técnica →</span></div></a><button type="button" class="compare-add" data-ref="${esc(p.ref)}" aria-pressed="${selected}" aria-label="${selected ? "Quitar" : "Agregar"} ${esc(p.nombre)} ${selected ? "de" : "a"} comparación">${selected ? "✓ En comparación" : "+ Comparar"}</button></article>`;
+  return `<article class="card"><a class="card-link" href="${esc(p.ficha)}" aria-label="Ver ficha técnica de ${esc(p.nombre)}"><div class="thumb">${thumb}</div><div class="card-body"><span class="nameplate">${esc(p.marca)}</span><h3>${esc(p.nombre)}</h3><span class="card-code">${p.modelo ? `Modelo ${esc(p.modelo)} · ` : ""}Código ${esc(p.ref)}</span>${facts ? `<ul class="card-facts">${facts}</ul>` : ""}<span class="ask">Ver ficha →</span></div></a><button type="button" class="compare-add" data-ref="${esc(p.ref)}" aria-pressed="${selected}" aria-label="${selected ? "Quitar" : "Agregar"} ${esc(p.nombre)} ${selected ? "de" : "a"} comparación">${selected ? "✓ En comparación" : "+ Comparar"}</button></article>`;
 }
 function referenceCard(p) {
   const selected = seleccion().some(x => x.ref === p.ref);
@@ -75,8 +79,11 @@ function cambiarVista(nueva) {
 function mostrarMeta(meta) {
   const el = document.getElementById("catalogMeta");
   const fecha = Date.parse(meta && meta.fuente_stock_actualizado_utc);
-  if (!Number.isFinite(fecha)) { el.textContent = "Confirma la disponibilidad y el precio con la tienda."; return; }
-  el.textContent = `Señal de despacho consultada el ${new Intl.DateTimeFormat("es-CL",{timeZone:"America/Santiago",dateStyle:"long",timeStyle:"short"}).format(fecha)}. Si han pasado 24 horas, la ficha solo invita a consultar a tienda.`;
+  if (!Number.isFinite(fecha) || Date.now() - fecha >= 24 * 60 * 60 * 1000) {
+    el.textContent = "Consulta disponibilidad para despacho y stock de entrega inmediata en tienda.";
+    return;
+  }
+  el.textContent = `Disponibilidad para despacho revisada el ${new Intl.DateTimeFormat("es-CL",{timeZone:"America/Santiago",dateStyle:"long",timeStyle:"short"}).format(fecha)}. Para entrega inmediata, consulta stock en tienda.`;
 }
 async function cargar() {
   try {
@@ -99,7 +106,18 @@ document.getElementById("footMap").textContent = CONFIG.direccion;
 document.getElementById("storeText").textContent = CONFIG.direccion;
 document.getElementById("phoneTop").href = `tel:${CONFIG.telefono}`;
 document.getElementById("q").addEventListener("input", e => {termino=e.target.value;limite=CANTIDAD_INICIAL;renderGrid();});
-document.getElementById("categoryFilter").addEventListener("change",e => {categoria=e.target.value;limite=CANTIDAD_INICIAL;renderGrid();});
+document.getElementById("categoryFilter").addEventListener("change",e => {
+  categoria=e.target.value;limite=CANTIDAD_INICIAL;
+  document.querySelectorAll("#categoryQuick button").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.cat===categoria)));
+  renderGrid();
+});
+document.getElementById("categoryQuick").addEventListener("click",e => {
+  const boton=e.target.closest("button[data-cat]"); if(!boton) return;
+  categoria=boton.dataset.cat;limite=CANTIDAD_INICIAL;
+  document.getElementById("categoryFilter").value=categoria;
+  document.querySelectorAll("#categoryQuick button").forEach(x=>x.setAttribute("aria-pressed",String(x===boton)));
+  renderGrid();
+});
 document.getElementById("brandFilter").addEventListener("change",e => {marca=e.target.value;limite=CANTIDAD_INICIAL;renderGrid();});
 document.getElementById("sortOrder").addEventListener("change",e => {orden=e.target.value;renderGrid();});
 document.getElementById("showMore").addEventListener("click",() => {limite+=CANTIDAD_INICIAL;renderGrid();});

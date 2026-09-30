@@ -11,6 +11,7 @@ const tabla = document.getElementById("tabla");
 
 function fila(nombre, productos, obtener) {
   const valores = productos.map(obtener);
+  if (valores.every(v => !v)) return "";
   const distintos = new Set(valores.filter(Boolean).map(x => String(x).toLowerCase())).size > 1;
   return `<tr><th scope="row">${esc(nombre)}</th>${valores.map(v => `<td class="${distintos ? "diferencia" : ""} ${v ? "" : "sin-dato"}">${esc(v || "No informado")}</td>`).join("")}</tr>`;
 }

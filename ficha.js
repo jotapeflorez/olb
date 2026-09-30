@@ -23,26 +23,14 @@ document.getElementById("comparar").addEventListener("click", () => {
 document.getElementById("compareClear").addEventListener("click", () => guardar([]));
 pintarComparacion();
 
-fetch(`../feed/fichas/${encodeURIComponent(ref)}.json`).then(r => {
-  if (!r.ok) throw new Error("Sin ficha"); return r.json();
-}).then(ficha => {
-  const miniaturas = document.getElementById("miniaturas");
-  if (ficha.imagenes.length < 2) return;
-  ficha.imagenes.forEach((url, index) => {
-    const boton = document.createElement("button");
-    boton.type = "button";
-    boton.setAttribute("aria-label", `Ver foto ${index + 1}`);
-    boton.setAttribute("aria-current", String(index === 0));
-    const img = document.createElement("img"); img.src = url; img.alt = ""; img.loading = "lazy";
-    boton.append(img);
-    boton.addEventListener("click", () => {
-      const principal = document.getElementById("fotoPrincipal");
-      if (principal) principal.src = url;
-      miniaturas.querySelectorAll("button").forEach(b => b.setAttribute("aria-current", String(b === boton)));
-    });
-    miniaturas.append(boton);
-  });
-}).catch(() => {});
+const miniaturas = document.getElementById("miniaturas");
+if (miniaturas) miniaturas.addEventListener("click", event => {
+  const boton = event.target.closest("button[data-src]");
+  if (!boton) return;
+  const principal = document.getElementById("fotoPrincipal");
+  if (principal) principal.src = boton.dataset.src;
+  miniaturas.querySelectorAll("button").forEach(b => b.setAttribute("aria-current", String(b === boton)));
+});
 
 fetch("../feed/stock.json", {cache:"no-cache"}).then(r => {
   if (!r.ok) throw new Error("Sin stock"); return r.json();
@@ -52,6 +40,6 @@ fetch("../feed/stock.json", {cache:"no-cache"}).then(r => {
   if (!fresco || !stock.disponibles.includes(ref)) return;
   const elemento = document.getElementById("stock");
   elemento.classList.add("fresco");
-  elemento.querySelector("strong").textContent = "Tótem indica disponibilidad para despacho";
-  elemento.querySelector("span").textContent = "Señal reciente; confirma stock, comuna y condiciones con la tienda antes de comprar.";
+  elemento.querySelector("strong").textContent = "Hay disponibilidad para despacho";
+  elemento.querySelector("span").textContent = "Consulta en tienda si hay stock para entrega inmediata.";
 }).catch(() => {});

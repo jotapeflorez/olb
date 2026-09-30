@@ -125,6 +125,14 @@ def datos_clave(especificaciones: dict, dimensiones: dict) -> list[str]:
             salida.append(f"{etiqueta}: {valor[:55]}")
         if len(salida) == 2:
             break
+    if len(salida) < 2:
+        inalambrica = next((v for k, v in especificaciones.items() if re.search(r"^inal[aá]mbrica$", k, re.I)), "")
+        if str(inalambrica).casefold() in {"sí", "si"}:
+            salida.append("Inalámbrica")
+    if len(salida) < 2:
+        peso = next((v for k, v in especificaciones.items() if re.search(r"^peso \(kg\)$|^peso producto", k, re.I)), "")
+        if peso and not re.search(r"https?://|[<>]", str(peso)):
+            salida.append(f"Peso: {str(peso)[:35]}")
     if dimensiones.get("ancho"):
         salida.append(f"Ancho: {dimensiones['ancho']}")
     return salida[:3]

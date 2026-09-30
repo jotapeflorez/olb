@@ -29,6 +29,7 @@ def main() -> None:
     feed = cargar("feed/catalogo_publico.json")
     meta = cargar("feed/catalogo_publico_meta.json")
     stock = cargar("feed/stock.json")
+    calidad = cargar("feed/calidad_fichas.json")
 
     refs = [sku(producto.get("ref")) for producto in feed]
     ids = [str(producto.get("id") or "").strip() for producto in feed]
@@ -51,9 +52,14 @@ def main() -> None:
         contenido = ficha.read_text(encoding="utf-8")
         assert f'data-ref="{ref}"' in contenido, f"Ficha de otro SKU en {ref}"
         assert not re.search(r'href="https?://(?:www\.)?(?:electrolux|mademsa|tiendamademsa|fensa|totem\.shopclub)', contenido, re.I), f"Enlace de fabricante en {ref}"
+        assert "Tótem" not in contenido and "Antes de instalar" not in contenido, f"Texto interno o genérico en {ref}"
         especificaciones = json.loads(detalle.read_text(encoding="utf-8"))
         assert especificaciones.get("ref") == producto.get("ref"), f"Datos de otra ficha en {ref}"
         assert "precio" not in especificaciones and "url" not in especificaciones, f"Campos internos en ficha {ref}"
+        if not especificaciones.get("descripcion") and not especificaciones.get("caracteristicas"):
+            assert "Qué debes saber" not in contenido, f"Panel descriptivo vacío en {ref}"
+        if len(especificaciones.get("imagenes") or []) > 1:
+            assert 'class="miniaturas"' in contenido, f"Galería no visible en {ref}"
 
     bloqueados: set[str] = set()
     manual_publicar: set[str] = set()
@@ -72,6 +78,10 @@ def main() -> None:
     assert not (refs_feed & bloqueados), "El feed contiene SKU pendientes u ocultos"
     assert refs_feed <= (automaticos | manual_publicar), "El feed contiene SKU sin decisión publicable"
     assert int(meta.get("productos", -1)) == len(feed), "El total del metadato no coincide con el feed"
+    assert calidad.get("fichas") == len(feed), "La auditoría de calidad no coincide con el feed"
+    assert calidad.get("con_descripcion", 0) >= len(feed) * 0.6, "Faltan descripciones verificadas en la mayoría del catálogo"
+    assert calidad.get("con_especificaciones", 0) >= len(feed) * 0.5, "Faltan datos técnicos visibles en la mayoría del catálogo"
+    assert calidad.get("con_galeria", 0) >= len(feed) * 0.5, "Faltan galerías con más de una foto en la mayoría del catálogo"
     assert set(stock.get("disponibles") or []) <= refs_feed, "Stock de SKU no publicado"
     assert meta.get("fuente_stock_actualizado_utc") == stock.get("actualizado_utc"), "Fecha de stock no coincide"
     assert int(meta.get("publicados_por_regla_automatica", -1)) + int(meta.get("publicados_por_revision_manual", -1)) == len(feed), "El origen de las publicaciones no cuadra"

@@ -18,6 +18,7 @@ from __future__ import annotations
 import json, re, time
 from datetime import datetime, timezone
 from html.parser import HTMLParser
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 # Reutiliza funciones de TU extractor (debe estar junto a este archivo)
@@ -348,6 +349,11 @@ def productos_de_categoria(cid):
         time.sleep(PAUSA)
     return out
 
+def lotes_categorias(categorias):
+    """Descarga categorías en paralelo y conserva el orden de la navegación."""
+    with ThreadPoolExecutor(max_workers=6) as ejecutor:
+        yield from zip(categorias, ejecutor.map(productos_de_categoria, categorias))
+
 def cargar_fuentes_cache():
     if not FUENTES_CACHE.exists():
         return {}
@@ -492,8 +498,7 @@ def main():
     vigentes_encontrados = set()
     fuentes_componentes = {}
     servicios_omitidos = set()
-    for cid in categorias:
-        productos = productos_de_categoria(cid)
+    for cid, productos in lotes_categorias(categorias):
         for p in productos:
             pid = p.get("productId")
             if es_servicio_oculto(p) or es_kit_oculto(p):
@@ -515,22 +520,25 @@ def main():
                     continue
                 por_id[pid] = item
         print(f"  cat {cid}: {len(productos)} productos ({len(por_id)} catálogo)")
-        time.sleep(PAUSA)
 
     # La búsqueda por categorías puede omitir productos publicados en rutas incompletas.
     # Se consulta cada SKU vigente faltante porque la navegación puede omitir fichas publicadas.
     faltantes = [sku for sku in vigentes_skus if sku not in vigentes_encontrados]
     print(f"Buscando directamente {len(faltantes)} SKU vigentes no encontrados por categoría…")
-    for posicion, sku in enumerate(faltantes, start=1):
+    def consultar_faltante(sku):
         candidatos = buscar_en_vtex(TIENDA, sku)
-        exacto = next((p for p in candidatos if sku in referencias_sku(p)), None)
-        if exacto and not es_servicio_oculto(exacto) and not es_kit_oculto(exacto):
-            item = a_catalogo(exacto, vigentes_skus)
-            vigentes_encontrados.update(set(referencias_sku(exacto)) & vigentes_skus)
-            por_id.setdefault(exacto.get("productId") or f"sku-{sku}", item)
-        if posicion % 25 == 0:
-            print(f"  {posicion}/{len(faltantes)} SKU revisados")
-        time.sleep(PAUSA)
+        return sku, next((p for p in candidatos if sku in referencias_sku(p)), None)
+
+    with ThreadPoolExecutor(max_workers=4) as ejecutor:
+        consultas = [ejecutor.submit(consultar_faltante, sku) for sku in faltantes]
+        for posicion, futuro in enumerate(as_completed(consultas), start=1):
+            sku, exacto = futuro.result()
+            if exacto and not es_servicio_oculto(exacto) and not es_kit_oculto(exacto):
+                item = a_catalogo(exacto, vigentes_skus)
+                vigentes_encontrados.update(set(referencias_sku(exacto)) & vigentes_skus)
+                por_id.setdefault(exacto.get("productId") or f"sku-{sku}", item)
+            if posicion % 25 == 0:
+                print(f"  {posicion}/{len(faltantes)} SKU revisados")
 
     print("Actualizando imágenes desde tiendas oficiales…")
     fuentes_oficiales = actualizar_fuentes_oficiales(vigentes_skus)

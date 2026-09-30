@@ -51,7 +51,7 @@ def detalle(publico, raw, oficial):
             continue
         for clave, valor in fuente.items():
             nombre, texto = limpiar(clave, 100), limpiar(valor, 180)
-            if nombre and texto and not re.search(r"manual|infogr[aá]f|precio|url|video|feature", nombre, re.I):
+            if nombre and texto and not re.search(r"manual|infogr[aá]f|precio|url|video|feature|^services$|^instalaci[oó]n gratuita$", nombre, re.I):
                 specs[nombre] = texto
     caracteristicas = []
     for frase in (raw.get("caracteristicas") or oficial.get("caracteristicas") or []):
@@ -85,23 +85,42 @@ def detalle(publico, raw, oficial):
     }
 
 
+def especificaciones_visibles(p):
+    """Deja datos del producto y evita repetir medidas o datos del embalaje."""
+    return {
+        k: v for k, v in p["especificaciones"].items()
+        if not re.search(r"^(alt[ou]ra?|ancho|profundidad)(?:\s|\(|$)", k, re.I)
+        and not re.search(r"embalad|^peso bruto", k, re.I)
+    }
+
+
 def ficha_html(p):
     ref, nombre = p["ref"], p["nombre"]
     titulo = f"{nombre} | Ficha OLB San Pedro"
     resumen = p["descripcion"][:155] or f"Características y medidas publicadas de {nombre}. Consulta disponibilidad en Outlet Línea Blanca San Pedro."
     imagenes = p["imagenes"]
-    foto = f'<img id="fotoPrincipal" src="{e(imagenes[0])}" alt="{e(nombre)}" decoding="async">' if imagenes else '<div class="sin-foto">Imagen por confirmar en tienda</div>'
+    foto = f'<img id="fotoPrincipal" src="{e(imagenes[0])}" alt="{e(nombre)}" decoding="async">' if imagenes else '<div class="sin-foto">Imagen por confirmar</div>'
+    miniaturas = "".join(
+        f'<button type="button" data-src="{e(url)}" aria-label="Ver foto {i + 1}" aria-current="{str(i == 0).lower()}">'
+        f'<img src="{e(url)}" alt="" loading="lazy"></button>'
+        for i, url in enumerate(imagenes)
+    ) if len(imagenes) > 1 else ""
+    galeria = f'<p class="gallery-count">{len(imagenes)} fotos · desliza para ver más</p><div class="miniaturas" id="miniaturas" aria-label="Fotos del producto">{miniaturas}</div>' if miniaturas else ""
     datos = "".join(f'<li>{e(x)}</li>' for x in p["datos_clave"])
     dimensiones = "".join(f'<div><dt>{e(label)}</dt><dd>{e(p["dimensiones"][key])}</dd></div>' for key, label in (("alto", "Alto"), ("ancho", "Ancho"), ("profundidad", "Profundidad")) if p["dimensiones"].get(key))
-    if not dimensiones:
-        dimensiones = '<p class="empty-spec">Medidas aún no publicadas para este código. Consúltalas antes de comprar.</p>'
-    especificaciones = "".join(f'<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>' for k, v in p["especificaciones"].items())
-    if not especificaciones:
-        especificaciones = '<p class="empty-spec">Aún no contamos con especificaciones verificadas para este código.</p>'
+    # Las medidas ya tienen su propio bloque; no se repiten en características.
+    specs_visibles = especificaciones_visibles(p)
+    especificaciones = "".join(f'<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>' for k, v in specs_visibles.items())
     caracteristicas = "".join(f'<li>{e(x)}</li>' for x in p["caracteristicas"])
     explicacion = f'\n<aside class="entender"><strong>¿Qué significa 3 en 1?</strong><p>{e(p["explicacion"])}</p></aside>' if p.get("explicacion") else ""
-    description = f'<p>{e(p["descripcion"])}</p>' if p["descripcion"] else '<p>Esta ficha reúne los datos comprobados para el código indicado. Confirma las características faltantes con la tienda.</p>'
-    fuentes = ", ".join(p["fuentes"]) or "Listado vigente OLB y control de publicación"
+    partes_descripcion = [parte.strip() for parte in p["descripcion"].split("•") if parte.strip(" .")]
+    description = f'<p>{e(partes_descripcion[0])}</p>' if partes_descripcion else ""
+    if len(partes_descripcion) > 1:
+        description += '<ul class="features">' + "".join(f'<li>{e(parte)}</li>' for parte in partes_descripcion[1:]) + '</ul>'
+    panel_descripcion = f'<section class="panel"><p class="sobre">Conoce el producto</p><h2>Qué debes saber</h2>{description}{f"<ul class=\"features\">{caracteristicas}</ul>" if caracteristicas else ""}</section>' if description or caracteristicas else ""
+    panel_medidas = f'<section class="panel"><p class="sobre">Para elegir bien</p><h2>Medidas del producto</h2><dl class="datos medidas">{dimensiones}</dl><p class="nota">Revisa las medidas según el espacio donde lo usarás.</p></section>' if dimensiones else ""
+    panel_specs = f'<section class="panel ancho"><p class="sobre">Información útil</p><h2>Características técnicas</h2><dl class="datos tabla">{especificaciones}</dl></section>' if especificaciones else ""
+    paneles = f'<div class="secciones">{panel_descripcion}{panel_medidas}{panel_specs}</div>' if panel_descripcion or panel_medidas or panel_specs else ""
     imagen_social = f'<meta name="twitter:card" content="summary_large_image"><meta property="og:image" content="{e(imagenes[0])}">' if imagenes else ""
     return f'''<!doctype html>
 <html lang="es-CL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -111,16 +130,14 @@ def ficha_html(p):
 <body data-ref="{e(ref)}" data-categoria="{e(p['categoria'])}" data-tipo="{e(p['tipo_catalogo'])}">
 <header class="top"><div class="top-in"><a href="../index.html" class="logo" aria-label="Volver al catálogo OLB"><img src="../OLB_LOGO_OFICIAL_2026_SAN_PEDRO_ELECTROLUX_MADEMSA.png" alt="Outlet Línea Blanca San Pedro"></a><a class="call" href="tel:+56412907387">Llamar a tienda</a></div></header>
 <main><nav class="migas" aria-label="Ruta"><a href="../index.html">Catálogo</a><span>›</span><span>{e(p['categoria'])}</span><span>›</span><span>{e(p['modelo'] or ref)}</span></nav>
-<section class="producto"><div class="galeria"><div class="foto" id="foto">{foto}</div><div class="miniaturas" id="miniaturas" aria-label="Fotos del producto"></div><small>Imágenes de catálogo asociadas al código publicado. La exhibición puede variar.</small></div>
+<section class="producto"><div class="galeria"><div class="foto" id="foto">{foto}</div>{galeria}</div>
 <div class="producto-info"><p class="etiqueta">{e(p['marca'])} · {e(p['categoria'])}</p><h1>{e(nombre)}</h1><p class="identidad">{f'Modelo {e(p["modelo"])} · ' if p['modelo'] else ''}Código {e(ref)}</p>
-{f'<ul class="resumen">{datos}</ul>' if datos else '<p class="resumen vacio">Características principales por confirmar para este código.</p>'}{explicacion}
-<div class="stock" id="stock" role="status"><strong>Consultar disponibilidad para despacho</strong><span>La tienda confirma stock y condiciones antes de comprar.</span></div>
+{f'<ul class="resumen">{datos}</ul>' if datos else ''}{explicacion}
+<div class="stock" id="stock" role="status"><strong>Consulta disponibilidad para despacho</strong><span>Consulta en tienda si hay stock para entrega inmediata.</span></div>
 <p class="comercial">Compra presencial en San Pedro de la Paz o consulta despacho a Chile continental. Precio y condiciones se confirman con la tienda.</p>
 <div class="acciones"><a class="primaria" href="tel:+56412907387">Llamar al +56 41 290 7387</a><button id="comparar" class="secundaria" type="button">Agregar a comparación</button></div>
 <p class="direccion">Mall Arauco Premium Outlet · Local 38 · San Pedro de la Paz</p></div></section>
-<div class="secciones"><section class="panel"><p class="sobre">Conoce el producto</p><h2>Descripción</h2>{description}{f'<ul class="features">{caracteristicas}</ul>' if caracteristicas else ''}</section>
-<section class="panel"><p class="sobre">Antes de instalar</p><h2>Medidas publicadas</h2><dl class="datos medidas">{dimensiones}</dl><p class="nota">Confirma las medidas y el espacio de instalación antes de comprar.</p></section>
-<section class="panel ancho"><p class="sobre">Datos por modelo</p><h2>Ficha técnica</h2><dl class="datos tabla">{especificaciones}</dl><p class="nota">Procedencia: {e(fuentes)}. Puede haber diferencias entre versiones del producto; confirma el modelo y la cobertura de garantía al comprar.</p></section></div>
+{paneles}
 <section class="cierre"><h2>¿Es el modelo que buscas?</h2><p>Indícanos el código <strong>{e(ref)}</strong> y te ayudaremos a confirmar detalles, precio y disponibilidad.</p><a class="primaria" href="tel:+56412907387">Consultar en tienda</a><a class="volver" href="../index.html">Volver al catálogo →</a></section></main>
 <footer><span>Outlet Línea Blanca San Pedro · Local 38</span><a href="../index.html">Explorar catálogo</a></footer>
 <div class="compare-bar" id="compareBar" hidden><span id="compareCount"></span><a href="../comparar.html" id="compareLink">Comparar modelos</a><button id="compareClear" type="button">Limpiar</button></div></body></html>'''
@@ -133,11 +150,19 @@ def main():
     SALIDA.mkdir(exist_ok=True)
     DATOS.mkdir(parents=True, exist_ok=True)
     validos = set()
+    calidad = {"fichas": 0, "con_descripcion": 0, "con_especificaciones": 0, "con_medidas": 0, "con_galeria": 0, "sin_descripcion_ni_especificaciones": 0}
     for publico in feed:
         ref = normalizar_sku(publico["ref"])
         if not ref or publico.get("ficha") != f"p/{ref}.html":
             raise ValueError(f"Ruta insegura para {ref}")
         p = detalle(publico, raw.get(ref, {}), oficiales.get(ref, {}))
+        calidad["fichas"] += 1
+        calidad["con_descripcion"] += bool(p["descripcion"] or p["caracteristicas"])
+        visibles = especificaciones_visibles(p)
+        calidad["con_especificaciones"] += bool(visibles)
+        calidad["con_medidas"] += bool(p["dimensiones"])
+        calidad["con_galeria"] += len(p["imagenes"]) > 1
+        calidad["sin_descripcion_ni_especificaciones"] += not (p["descripcion"] or p["caracteristicas"] or visibles)
         (SALIDA / f"{ref}.html").write_text(ficha_html(p), encoding="utf-8")
         (DATOS / f"{ref}.json").write_text(json.dumps(p, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         validos.add(ref)
@@ -145,7 +170,8 @@ def main():
         for archivo in carpeta.glob(f"*{sufijo}"):
             if archivo.stem not in validos:
                 archivo.unlink()
-    print(f"Fichas internas generadas: {len(validos)}")
+    (BASE / "feed" / "calidad_fichas.json").write_text(json.dumps(calidad, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Fichas internas generadas: {len(validos)} · descripción: {calidad['con_descripcion']} · datos técnicos: {calidad['con_especificaciones']} · galería: {calidad['con_galeria']}")
 
 
 if __name__ == "__main__":
