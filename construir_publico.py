@@ -10,7 +10,7 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent
 ESTATICOS = (
     "index.html", "404.html", "catalogo.js", "comparar.html", "comparar.css", "comparar.js",
-    "ficha.css", "ficha.js", "OLB_LOGO_OFICIAL_2026_SAN_PEDRO_ELECTROLUX_MADEMSA.png",
+    "ficha.css", "ficha.js", "OLB_LOGO_OFICIAL_2026_SAN_PEDRO_ELECTROLUX_MADEMSA.png", "fachada-olb.webp",
 )
 FEED_PUBLICO = ("catalogo_publico.json", "catalogo_publico.js", "catalogo_publico_meta.json", "stock.json")
 SKU = re.compile(r"[A-Z0-9+]+")
