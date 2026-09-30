@@ -7,7 +7,7 @@ import html
 import json
 import re
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 from armar_catalogo_auto import texto_plano
 from generar_feed_publico import normalizar_sku
@@ -35,6 +35,9 @@ def imagenes_de(*fuentes):
     for fuente in fuentes:
         for url in fuente.get("imagenes") or []:
             parsed = urlparse(str(url))
+            nombre_archivo = unquote(parsed.path.rsplit("/", 1)[-1]).casefold()
+            if re.search(r"(?:^|[-_])qr(?:[-_.]|$)|qrcode", nombre_archivo):
+                continue
             if parsed.scheme == "https" and parsed.netloc and url not in imagenes:
                 imagenes.append(url)
             if len(imagenes) >= 8:

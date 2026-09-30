@@ -91,7 +91,7 @@ generador retira sus HTML y JSON antiguos.
 
 La primera entrega tenía información ampliada en solo cuatro de 500 fichas.
 En esta revisión, las 500 fichas publicadas incluyen 487 con descripción, 362
-con atributos técnicos visibles, 383 con medidas y 466 con varias fotos.
+con atributos técnicos visibles, 383 con medidas y 464 con varias fotos útiles.
 Las 13 restantes sin texto ni atributos pertenecen principalmente a repuestos
 o registros antiguos sin ficha verificable: se muestran nombre, código, foto
 y una forma de consultar en tienda, sin inventar especificaciones. La
